@@ -3,174 +3,348 @@
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
     <link href="https://fonts.googleapis.com/css?family=Kanit&display=swap" rel="stylesheet">
 
-    <image style="height:250px;width:100%;object-fit:cover;background-size: cover;background-position: center;" src="https://uppic.cc/d/5BXR"></image>
+{{--    <image style="height:250px;width:100%;object-fit:cover;background-size: cover;background-position: center;" src="https://uppic.cc/d/5BXR"></image>--}}
 {{--    align-content-center--}}
+
+    <!-- slide -->
+    <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
+        <ol class="carousel-indicators">
+            <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+            <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+            <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+        </ol>
+        <div class="carousel-inner">
+            <div class="carousel-item active">
+                <div style="height: 300px;"><img class="d-block w-100" src="https://uppic.cc/d/5BXR" alt="First slide" style="background-position: center"></div>
+                <div class="carousel-caption d-none d-md-block">
+                    <h1>เรามีกว่า 200 ทีม</h1>
+                    <h1 class="testH1img">ที่รอให้คุณมาร่วมสร้างสรรค์ผลงานกับเรา</h1>
+                    <div class="box-buttonBannerHead">
+                        <a class="btnCreatTeam" href="/createteam"><button>สรา้งทีม</button></a>
+                        <a class="btnFindTeam" href="/findteam"><button>หาทีมกับเรา</button></a>
+                    </div>
+                </div>
+            </div>
+            <div class="carousel-item">
+                <div style="height: 300px;"><img class="d-block w-100" src="https://uppic.cc/d/5BXR" alt="First slide" style="background-position: center"></div>
+            </div>
+
+{{--            <div class="carousel-item">--}}
+{{--                <div style="height: 300px;"><img class="d-block w-100" src="https://uppic.cc/d/5BXR" alt="First slide" style="background-position: center"></div>--}}
+{{--            </div>--}}
+
+        </div>
+        <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="sr-only">Previous</span>
+        </a>
+        <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="sr-only">Next</span>
+        </a>
+    </div><!-- slide -->
+
+
+    <div class="box-under-slide">
+        <p class="text-center">สังคมสำหรับผู้ที่รักการทำโปรดักชั่น และสายงานวิดีโอทุกประเภท</p>
+    </div><!-- box-under-slide -->
+
+
     <div class="container">
         <div class="row">
 
-            <div class="col-12" style="width: 358px;height: 76px;">
-                <h2 style="margin-top: 40px;font-family:Kanit,serif !important;font-size: 24px;font-weight: 600;font-stretch:normal;font-style: normal;line-height: 1.52;letter-spacing: normal;color: #000000;">
-                    คุณกำลังมองหา</h2>
-            </div>
+            <div class="col">
+                <div class="box-headTopic">
+                    <p class="text-left">คุณกำลังมองหา</p>
+                </div>
+            </div><!-- col-sm 1 -->
 
-            <div class="col-12">
-                <div class="container my-4">
-
-                    <!--Carousel Wrapper-->
-                    <div id="multi-item-example" class="carousel slide carousel-multi-item" data-ride="carousel">
-
-                        <!--Controls-->
-                    {{--            <div class="controls-top">--}}
-                    {{--                <a class="btn-floating" href="#multi-item-example" data-slide="prev"><i class="fa fa-chevron-left"></i></a>--}}
-                    {{--                <a class="btn-floating" href="#multi-item-example" data-slide="next"><i class="fa fa-chevron-right"></i></a>--}}
-                    {{--            </div>--}}
-                    <!--/.Controls-->
-
-                        <!--Indicators-->
-                        <ol class="carousel-indicators">
-                            <li data-target="#multi-item-example" data-slide-to="0" class="active"></li>
-                            <li data-target="#multi-item-example" data-slide-to="1"></li>
-                            <li data-target="#multi-item-example" data-slide-to="2"></li>
-                        </ol>
-                        <!--/.Indicators-->
+        </div><!-- row -->
 
 
 
-                        <!--Slides-->
-                        <div class="carousel-inner" role="listbox">
-                            <!--First slide-->
+        <div class="row">
+            <div class="col">
+                <div class="card bg-dark text-white" style="width: 250px; height: 290px; border-radius: 15px; border: none;">
 
-                            <div class="carousel-item active">
-
-                                <div class="row">
-                                    <div class="col-md-3">
-                                        <div class="mb-2">
-                                            <div class="text-center m-auto" style="width:120px;height:120px;border-radius: 15px;border: solid 2px #fbb040;margin: 10px;">
-                                                <img class="card-img-top m-auto" src="https://uppic.cc/d/5BcR"
-                                                     alt="Card image cap" style="width: 70%;margin-top: 15px !important;">
-                                            </div>
-                                            <div class="card-body" style="text-align: center">
-                                                <p class="card-text">ช่างภาพ</p>
-                                            </div>
-                                        </div>
-                                    </div>
-
-                                    <div class="col-md-3 clearfix d-none d-md-block">
-                                        <div class="mb-2">
-                                            <div class="text-center m-auto" style="width:120px;height:120px;border-radius: 15px;border: solid 2px #ff88b0;margin: 10px;">
-                                                <img class="card-img-top m-auto" src="https://uppic.cc/d/5Bc4"
-                                                     alt="Card image cap" style="width: 70%;margin-top: 15px !important;">
-                                            </div>
-                                            <div class="card-body" style="text-align: center">
-                                                <p class="card-text">ช่างแต่งหน้า</p>
-                                            </div>
-                                        </div>
-                                    </div>
-
-                                    <div class="col-md-3 clearfix d-none d-md-block">
-                                        <div class="mb-2">
-                                            <div class="text-center m-auto" style="width:120px;height:120px;border-radius: 15px;border: solid 2px #5dd3ff;margin: 10px;">
-                                                <img class="card-img-top" src="https://uppic.cc/d/5Bct"
-                                                     alt="Card image cap" style="width: 70%;margin-top: 15px !important;">
-                                            </div>
-
-                                            <div class="card-body" style="text-align: center">
-                                                <p class="card-text">ผู้ช่วยผู้กำกับ</p>
-                                            </div>
-                                        </div>
-                                    </div>
-
-                                    <div class="col-md-3 clearfix d-none d-md-block">
-                                        <div class="mb-2">
-                                            <div class="text-center m-auto" style="width:120px;height:120px;border-radius: 15px;border: solid 2px #8b48f7;margin: 10px;">
-                                                <img class="card-img-top" src="https://uppic.cc/d/5BcZ"
-                                                     alt="Card image cap" style="width: 70%;margin-top: 15px !important;">
-                                            </div>
-
-                                            <div class="card-body" style="text-align: center">
-                                                <p class="card-text">เขียนบท</p>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-
-                            </div>
-                            <!--/.First slide-->
-
-                            <!--Second slide-->
-                            <div class="carousel-item">
-
-                                <div class="row">
-                                    <div class="col-md-3">
-                                        <div class="mb-2">
-                                            <div class="text-center m-auto" style="width:120px;height:120px;border-radius: 15px;border: solid 2px #5493f7;margin: 10px;text-align: center">
-                                                <img class="card-img-top m-auto" src="https://uppic.cc/d/5BcN"
-                                                     alt="Card image cap" style="width: 70%;margin-top: 15px !important;">
-                                            </div>
-
-                                            <div class="card-body" style="text-align: center">
-                                                <p class="card-text">ตัดต่อ</p>
-                                            </div>
-                                        </div>
-                                    </div>
-
-                                    <div class="col-md-3 clearfix d-none d-md-block">
-                                        <div class="mb-2">
-                                            <div class="text-center m-auto" style="width:120px;height:120px;border-radius: 15px;border: solid 2px #ff7c5d;margin: 10px;text-align: center">
-                                                <img class="card-img-top m-auto" src="https://uppic.cc/d/5BcQ"
-                                                     alt="Card image cap" style="width: 70%;margin-top: 15px !important;">
-                                            </div>
-
-                                            <div class="card-body" style="text-align: center">
-                                                <p class="card-text">เบื้องหลัง</p>
-                                            </div>
-                                        </div>
-                                    </div>
-
-                                    <div class="col-md-3 clearfix d-none d-md-block">
-                                        <div class="mb-2">
-                                            <div class="text-center m-auto" style="width:120px;height:120px;border-radius: 15px;border: solid 2px #5dd3ff;margin: 10px;text-align: center">
-                                                <img class="card-img-top" src="https://uppic.cc/d/5BcS"
-                                                     alt="Card image cap" style="width: 70%;margin-top: 15px !important;">
-                                            </div>
-
-                                            <div class="card-body" style="text-align: center">
-                                                <p class="card-text">ผู้กำกับ</p>
-                                            </div>
-                                        </div>
-                                    </div>
-
-                                    <div class="col-md-3 clearfix d-none d-md-block">
-                                        <div class="mb-2">
-                                            <div class="text-center m-auto" style="width:120px;height:120px;border-radius: 15px;border: solid 2px #24c140;margin: 10px;text-align: center">
-                                                <img class="card-img-top" src="https://uppic.cc/d/5Bcs"
-                                                     alt="Card image cap" style="width: 70%;margin-top: 15px !important;">
-                                            </div>
-
-                                            <div class="card-body" style="text-align: center">
-                                                <p class="card-text">ควบคุมแสง</p>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-
-                            </div>
-                            <!--/.Second slide-->
-
-                        </div>
-                        <!--/.Slides-->
-
+                    <div class="box-imgPosition">
+                        <img class="align-self-start mr-3" src="image/BgCamera_01.jpg" alt="Generic placeholder image">
                     </div>
-                    <!--/.Carousel Wrapper-->
+                    <div class="card-img-overlay">
+                        <div class="box-detailInCard">
+                            <p class="text-center">ต้องการ</p>
+                            <img class="align-self-start mr-3" src="image/Icon_camera.png" alt="Generic placeholder image">
+                        </div>
+                        <h5 class="text-center">ช่างภาพ</h5>
+                        <p class="text-center" style="font-size: 35px; margin-top: -13px; font-weight: bold;"><b>112 คน</b></p>
+                    </div>
+                </div><!-- card -->
+            </div><!-- col 1 -->
+
+            <div class="col">
+                <div class="card bg-dark text-white" style="width: 250px; height: 290px; border-radius: 15px; border: none;">
+
+                    <div class="box-imgPosition">
+                        <img class="align-self-start mr-3" src="image/BgEditor_02.jpg" alt="Generic placeholder image">
+                    </div>
+                    <div class="card-img-overlay">
+                        <div class="box-detailInCard">
+                            <p class="text-center">ต้องการ</p>
+                            <img class="align-self-start mr-3" src="image/Icon_editor.png" alt="Generic placeholder image">
+                        </div>
+                        <h5 class="text-center">ตัดต่อวิดีโอ</h5>
+                        <p class="text-center" style="font-size: 35px; margin-top: -13px; font-weight: bold;"><b>98 คน</b></p>
+                    </div>
+                </div><!-- card -->
+            </div><!-- col 1 -->
+
+            <div class="col">
+                <div class="card bg-dark text-white" style="width: 250px; height: 290px; border-radius: 15px; border: none;">
+                    <div class="box-imgPosition">
+                        <img class="align-self-start mr-3" src="image/BgScreenWriter_03.jpg" alt="Generic placeholder image">
+                    </div>
+                    <div class="card-img-overlay">
+                        <div class="box-detailInCard">
+                            <p class="text-center">ต้องการ</p>
+                            <img class="align-self-start mr-3" src="image/Icon_screenwriter.png" alt="Generic placeholder image">
+                        </div>
+                        <h5 class="text-center">เขียนบท</h5>
+                        <p class="text-center" style="font-size: 35px; margin-top: -13px; font-weight: bold;"><b>73 คน</b></p>
+                    </div>
+                </div><!-- card -->
+            </div><!-- col 1 -->
+            <div class="col">
+                <div class="card bg-dark text-white" style="width: 250px; height: 290px; border-radius: 15px; border: none;">
+                    <div class="box-imgPosition">
+                        <img class="align-self-start mr-3" src="image/BgDirector_04.jpg" alt="Generic placeholder image">
+                    </div>
+                    <div class="card-img-overlay">
+                        <div class="box-detailInCard">
+                            <p class="text-center">ต้องการ</p>
+                            <img class="align-self-start mr-3" src="image/Icon_director.png" alt="Generic placeholder image">
+                        </div>
+                        <h5 class="text-center">ผู้กำกับ</h5>
+                        <p class="text-center" style="font-size: 35px; margin-top: -13px; font-weight: bold;"><b>61 คน</b></p>
+                    </div>
+                </div><!-- card -->
+            </div><!-- col 1 -->
+
+        </div><!-- row -->
+
+        <div class="row">
+
+            <div class="col">
+                <p style="color: #000000; font-family: Kanit; font-size: 25px; font-weight: bold; padding: 50px 0 20px 0;" class="text-left">หาทีม</p>
+            </div><!-- col-sm 1 -->
+
+        </div><!-- row -->
+
+        <div class="row">
+
+            <div class="col">
+                <div class="box-imgCover">
+                    <img class="card-img-top" src="image/cover_team_01.jpg" alt="Card image cap">
+                </div>
+                <div class="media position-relative">
+                    <img src="image/profile_01.jpg" class="rounded-circle" alt="...">
+                    <div class="media-body">
+                        <a href="#"><h5 class="mt-0">มาทำคลิปหนังโฆษณา
+                                ภายใต้แนวคิด “Game in...</h5></a>
+                        <div class="box-statusText">
+                            <p>Status: ด่วน</p>
+                        </div>
+                        <div class="box-statusPosition">
+                            <p>ต้องการ: 4 ตำแหน่ง</p>
+                        </div>
+                        <div class="box-buttonViewPage">
+                            <a href="#" class="stretched-link">รายละเอียด</a>
+                        </div>
+                    </div><!-- media-body -->
+                </div><!-- media -->
+            </div><!-- col -->
 
 
+            <div class="col">
+                <div class="box-imgCover">
+                    <img class="card-img-top" src="image/cover_team_02.jpg" alt="Card image cap" style="border-radius: 15px 15px 0 0;">
+                </div><!-- box-imgCover -->
+                <div class="media position-relative">
+                    <img src="image/profile_02.jpg" class="rounded-circle" alt="...">
+                    <div class="media-body">
+                        <a href="#"><h5 class="mt-0">งานถ่าย MV เพลงใหม่ค่าย
+                                White music</h5></a>
+                        <div class="box-statusText2">
+                            <p>Status: ไม่เก่งก็เข้าร่วมได้</p>
+                        </div>
+                        <div class="box-textStatus2" >
+                            <p>ต้องการ: 8 ตำแหน่ง</p>
+                        </div>
+                        <div class="box-buttonViewPage">
+                            <a href="#" class="stretched-link">รายละเอียด</a>
+                        </div>
+                    </div><!-- media-body -->
+                </div><!-- media -->
+            </div><!-- col -->
+
+
+            <div class="col">
+                <div class="box-imgCover">
+                    <img class="card-img-top" src="image/cover_team_03.jpg" alt="Card image cap">
+                </div>
+                <div class="media position-relative">
+                    <img src="image/profile_03.jpg" class="rounded-circle" alt="...">
+                    <div class="media-body">
+                        <a href="#"><h5 class="mt-0">งานหนังสั้นนักศึกษา ม.กรุงเทพ</h5></a>
+                        <div class="box-statusText2">
+                            <p>Status: ด่วนมาก</p>
+                        </div>
+                        <div class="box-textStatus2" >
+                            <p>ต้องการ: 5 ตำแหน่ง</p>
+                        </div>
+                        <div class="box-buttonViewPage">
+                            <a href="#" class="stretched-link">รายละเอียด</a>
+                        </div>
+                    </div>
+                </div>
+            </div><!-- col -->
+
+        </div><!-- row -->
+
+
+        <div class="row">
+            <div class="col-12" style="padding: 30px 0 0 475px;">
+                <div class="box-buttonViewAll">
+                    <a href="findTeam.html"><button type="button" class="btn btn-outline-warning">ดูทีมเพิ่มเติม</button></a>
                 </div>
             </div>
+        </div><!-- row -->
 
-        </div>
-    </div>
 
-    <br>
+        <div class="row">
+
+            <div class="col">
+                <p style="color: #000000; font-family: Kanit; font-size: 25px; font-weight: bold; padding: 50px 0 20px 0;" class="text-left">งานประกวดล่าสุด</p>
+            </div><!-- col-sm 1 -->
+
+        </div><!-- row -->
+
+
+        <div class="row">
+
+            <div class="col-6">
+                <div class="mediaa position-relative">
+                    <img src="image/contest_00.jpg" class="mr-3" alt="...">
+                    <div class="box-detailCardContest">
+                        <div class="media-bodyy">
+                            <a href="#"><h5 class="mt-0">ประกวดคลิปหนังโฆษณา<br>
+                                    ภายใต้แนวคิด<br>
+                                    “Game in real life”</h5></a>
+                            <div class="box-buttonHeadContest">
+                                <a href="#" class="stretched-link"><button>รายละเอียด</button></a>
+                            </div><!-- box-buttonHeadContest -->
+                        </div>
+                    </div><!-- box-detailCardContest -->
+                </div><!-- mediaa -->
+            </div><!-- col -->
+
+            <div class="col-3" style="padding: 0 0 0 60px;">
+                <div class="box-cardContest">
+                    <img class="card-img-top" src="image/contest_01.jpg" alt="">
+                    <div class="card-body">
+                        <a href="#"><h5 class="card-title">ประกวดคลิปวิดีโอ “คนรุ่น
+                                ใหม่ไร้ Food Waste ปีที่2”...</h5></a>
+                        <div class="box-btnDetail text-center"><a href="#" class="btn btn-primary">รายละเอียด</a></div>
+                    </div>
+                </div><!-- box-cardContest -->
+            </div><!-- col -->
+
+            <div class="col-3" style="padding: 0 0 0 40px;">
+                <div class="box-cardContest">
+                    <img class="card-img-top" src="image/contest_02.jpg" alt="">
+                    <div class="card-body">
+                        <a href="#"><h5 class="card-title">ประกวด KRUNGSRI IMAX
+                                Video Contest 2019</h5></a>
+                        <div class="box-btnDetail text-center"><a href="#" class="btn btn-primary">รายละเอียด</a></div>
+
+                    </div>
+                </div>
+            </div><!-- col -->
+
+        </div><!-- row -->
+
+
+        <div class="row">
+            <div class="col-12" style="padding: 30px 0 0 475px;">
+                <div class="box-buttonViewAll">
+                    <a href="contest.html"><button type="button" class="btn btn-outline-warning">ดูงานประกวด</button></a>
+                </div>
+            </div>
+        </div><!-- row -->
+
+
+        <div class="row">
+
+            <div class="col">
+                <p style="color: #000000; font-family: Kanit; font-size: 25px; font-weight: bold; padding: 29px 0 20.5px 0;" class="text-left">บทความ</p>
+            </div><!-- col-sm 1 -->
+
+        </div><!-- row -->
+
+
+        <div class="row">
+
+            <div class="col-6">
+
+                <div class="box-cardArticle bg-dark text-white">
+                    <a href="#">
+                        <img class="card-img" src="image/Article_01.jpg" alt="ต้องการ">
+                        <div class="card-img-overlay">
+                            <h5 class="text-right">7 พื้นฐาน<br>
+                                สร้างวิดีโอคอนเทนต์ สำหรับมือใหม่<br>
+                                ที่อยากทำVlog, Video Review</h5>
+                        </div>
+                    </a>
+                </div><!-- card -->
+
+            </div><!-- col 1 -->
+
+            <div class="col-6">
+
+                <div class="box-cardArticleSmall bg-dark text-white">
+                    <a href="#">
+                        <img class="card-img" src="image/Article_02.jpg" alt="ต้องการ">
+                        <div class="card-img-overlay">
+                            <h5 class="text-right">เทคนิคง่ายๆ จัดแสงในห้องในด้วยงบที่จำกัด</h5>
+                        </div>
+                    </a>
+                </div><!-- card -->
+
+                <div class="box-articleRight" style="padding-top: 18px;">
+                    <div class="box-cardArticleSmallDown bg-dark text-white">
+                        <a href="#">
+                            <img class="card-img" src="image/Article_03.jpg" alt="ต้องการ">
+                            <div class="card-img-overlay">
+                                <h5 class="text-right">5 เทคนิคเปลี่ยนหนังบ้านๆ ให้เป็นหนังมือโปร</h5>
+                            </div>
+                        </a>
+                    </div><!-- card -->
+                </div><!-- box-articleRight -->
+
+            </div><!-- col 1 -->
+
+        </div><!-- row -->
+
+
+        <div class="row">
+            <div class="col-12" style="padding: 30px 0 50px 475px;">
+                <div class="box-buttonViewAll">
+                    <a href="contest.html"><button type="button" class="btn btn-outline-warning">บทความทั้งหมด</button></a>
+                </div>
+            </div>
+        </div><!-- row -->
+
+
+    </div><!-- container -->
 
 
 @endsection

@@ -15,15 +15,13 @@ Route::get('/', function () {
     return view('index');
 });
 
-Route::get('/albums','FindworkController@index');
-Route::get('/albums/create','FindworkController@create');
-Route::get('/albums/{id}','FindworkController@show');
-Route::post('/albums/store','FindworkController@store');
+Route::get('/findTeam','FindteamController@index');
+Route::get('/createTeam','FindteamController@create');
 
-Auth::routes();
-
-Route::get('/home', 'HomeController@index')->name('home');
-
-Auth::routes();
-
-Route::get('/home', 'HomeController@index')->name('home');
+//Auth::routes();
+//
+//Route::get('/home', 'HomeController@index')->name('home');
+//
+//Auth::routes();
+//
+//Route::get('/home', 'HomeController@index')->name('home');

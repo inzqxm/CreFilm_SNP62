@@ -1,0 +1,404 @@
+@extends('layouts.app')
+@section('content')
+
+    <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav" style="font-family: Kanit; padding-right: 153px;">
+            <li class="nav-item" style="padding: 0 32px 0 30px;">
+                <a class="nav-link" href="index.html">หน้าหลัก</a>
+            </li>
+            <li class="nav-item active" style="padding-right: 32px;">
+                <a class="nav-link" href="#">หาทีม <span class="sr-only">(current)</span></a>
+            </li>
+            <li class="nav-item" style="padding-right: 32px;">
+                <a class="nav-link" href="#">รวมคนทำงาน</a>
+            </li>
+            <li class="nav-item" style="padding-right: 32px;">
+                <a class="nav-link disabled" href="contest.html">งานประกวด</a>
+            </li>
+            <li class="nav-item" style="padding-right: 32px;">
+                <a class="nav-link disabled" href="#">บทความ</a>
+            </li>
+            <li class="nav-item" style="padding-right: 32px;">
+                <a class="nav-link disabled" href="#">ติดต่อเรา</a>
+            </li>
+        </ul>
+
+        <div class="box-buttonRegister" style="padding-right: 18px;">
+            <a href="#"><button style="width: 126px; height: 45px; border-radius: 23px; background-color: #fbb040; color: #ffffff;" type="button" class="btn btn-outline-warning">สมัครสมาชิก</button></a>
+        </div>
+        <a href="#"><button style="width: 126px; height: 45px; border-radius: 23px; font-color: #ffffff; border: solid 2px #fbb040;" type="button" class="btn btn-outline-warning">เข้าสู่ระบบ</button></a>
+    </div>
+    </nav>
+
+
+    <div class="container" style="font-family: Kanit;">
+        <div class="row">
+
+            <div class="col-6">
+                <div class="box-headPage">
+                    <p class="text-left">หาทีม</p>
+                </div>
+            </div><!-- col 1 -->
+
+            <div class="col-6">
+                <div class="box-buttonCreatTeam">
+                    <a href="/createTeam"><button class="buttonCreatTeam" type="button">สร้างทีม</button></a>
+                </div>
+            </div><!-- col -->
+
+        </div><!-- row -->
+
+        <div class="row">
+            <div class="col-8">
+
+                <div class="col-md-12">
+                    <div class="box-teammer">
+                        <div class="card" style="border: none;">
+                            <div class="box-imgCoverTeamBig">
+                                <div class="box-joinNum">
+                                    <div class="box-textUpImg01">
+                                        <p class="text-center">ผู้ขอเข้าร่วม</p>
+                                    </div>
+                                    <div class="box-textUpImg02">
+                                        <p class="text-center">8</p>
+                                    </div>
+                                    <div class="box-textUpImg03">
+                                        <p class="text-center">/4</p>
+                                    </div>
+                                </div><!-- box-joinNum -->
+                                <div class="box-headTeamName">
+                                    <a href="#"><h3>&#9679; ประกวดคลิปหนังโฆษณา ภายใต้แนวคิด “Game in real life”</h2></a>
+                                </div><!-- box-headTeamName -->
+                                <img class="card-img-top" src="image/coverbig_team_01.jpg" alt="Card image cap">
+                            </div><!-- box-imgCover -->
+                            <div class="card-body" style="width: 100%; height: 110px; box-shadow: 0 -0.5px 10px 0 rgba(96, 96, 96, 0.16); border-radius: 15px; margin-top: -100px; background-color: #ffffff; ">
+                                <a href="#"><img src="image/profile_01.jpg" alt="..." class="rounded-circle" style="width: 60px; height: 60px; margin-top: -40px; border: 4px solid #ffffff;"></a>
+                                <div class="box-team">
+                                    <div class="mediaCardTeam-body">
+                                        <a href="#"><h5 class="mt-0">ttaanntts</h5></a>
+                                        <div class="row">
+                                            <p style="color: #939393; font-size: 14px; font-weight: lighter; padding-left: 15px;">สถานะ: <code style="color: #39b54a; font-family: Kanit; font-size: 14px;"> ด่วน</code></p>
+                                            <p class="offset-md-4" style="color: #939393; font-size: 14px; font-weight: lighter; ">| ฿500 - 5,000 บาท</p>
+                                        </div><!-- row -->
+                                    </div><!-- media-body -->
+                                    <div class="box-tag-position">
+                                        <a href="#"><button type="button" class="btn btn text-center">โฟกัส</button></a>
+                                        <a href="#"><button type="button" class="btn btn text-center">ช่างภาพ</button></a>
+                                        <div class="box-btnViewDetailTeam">
+                                            <a href="#" class="btn btn-primary">รายละเอียด</a>
+                                        </div>
+                                    </div><!-- box-tag-position -->
+                                </div><!-- box-team -->
+                            </div><!-- card-body -->
+
+                        </div><!-- card -->
+                    </div><!-- box-teammer -->
+
+
+                    <div class="box-teammer" style="padding-top: 30px;">
+                        <div class="card" style="border: none;">
+                            <div class="box-imgCoverTeamBig">
+                                <div class="box-joinNum">
+                                    <div class="box-textUpImg01">
+                                        <p class="text-center">ผู้ขอเข้าร่วม</p>
+                                    </div>
+                                    <div class="box-textUpImg02">
+                                        <p class="text-center">11</p>
+                                    </div>
+                                    <div class="box-textUpImg03">
+                                        <p class="text-center">/6</p>
+                                    </div>
+                                </div><!-- box-joinNum -->
+                                <div class="box-headTeamName">
+                                    <a href="#"><h3>&#9679; ประกวดคลิปหนังโฆษณา ภายใต้แนวคิด “Game in real life”</h2></a>
+                                </div><!-- box-headTeamName -->
+                                <img class="card-img-top" src="image/coverbig_team_02.jpg" alt="Card image cap">
+                            </div><!-- box-imgCover -->
+                            <div class="card-body" style="width: 100%; height: 110px; box-shadow: 0 -0.5px 10px 0 rgba(96, 96, 96, 0.16); border-radius: 15px; margin-top: -100px; background-color: #ffffff; ">
+                                <a href="#"><img src="image/profile_02.jpg" alt="..." class="rounded-circle" style="width: 60px; height: 60px; margin-top: -40px; border: 4px solid #ffffff;"></a>
+                                <div class="box-team">
+                                    <div class="mediaCardTeam-body">
+                                        <a href="#"><h5 class="mt-0">nzqxm</h5></a>
+                                        <div class="row">
+                                            <p style="color: #939393; font-size: 14px; font-weight: lighter; padding-left: 15px;">สถานะ: <code style="color: #39b54a; font-family: Kanit; font-size: 14px;"> ไม่เก่งก็เข้าร่วมได้</code></p>
+                                            <p class="offset-md-4" style="color: #939393; font-size: 14px; font-weight: lighter; ">| ฿500 - 5,000 บาท</p>
+                                        </div><!-- row -->
+                                    </div><!-- media-body -->
+                                    <div class="box-tag-position">
+                                        <a href="#"><button type="button" class="btn btn text-center">โฟกัส</button></a>
+                                        <a href="#"><button type="button" class="btn btn text-center">ช่างภาพ</button></a>
+                                        <div class="box-btnViewDetailTeam">
+                                            <a href="#" class="btn btn-primary">รายละเอียด</a>
+                                        </div>
+                                    </div><!-- box-tag-position -->
+                                </div><!-- box-team -->
+                            </div><!-- card-body -->
+
+                        </div><!-- card -->
+                    </div><!-- box-teammer -->
+
+
+                    <div class="box-teammer" style="padding-top: 30px;">
+                        <div class="card" style="border: none;">
+                            <div class="box-imgCoverTeamBig">
+                                <div class="box-joinNum">
+                                    <div class="box-textUpImg01">
+                                        <p class="text-center">ผู้ขอเข้าร่วม</p>
+                                    </div>
+                                    <div class="box-textUpImg02">
+                                        <p class="text-center">11</p>
+                                    </div>
+                                    <div class="box-textUpImg03">
+                                        <p class="text-center">/3</p>
+                                    </div>
+                                </div><!-- box-joinNum -->
+                                <div class="box-headTeamName">
+                                    <a href="#"><h3>&#9679; ประกวดคลิปหนังโฆษณา ภายใต้แนวคิด “Game in real life”</h2></a>
+                                </div><!-- box-headTeamName -->
+                                <img class="card-img-top" src="image/coverbig_team_03.jpg" alt="Card image cap">
+                            </div><!-- box-imgCover -->
+                            <div class="card-body" style="width: 100%; height: 110px; box-shadow: 0 -0.5px 10px 0 rgba(96, 96, 96, 0.16); border-radius: 15px; margin-top: -100px; background-color: #ffffff; ">
+                                <a href="#"><img src="image/profile_03.jpg" alt="..." class="rounded-circle" style="width: 60px; height: 60px; margin-top: -40px; border: 4px solid #ffffff;"></a>
+                                <div class="box-team">
+                                    <div class="mediaCardTeam-body">
+                                        <a href="#"><h5 class="mt-0">Redapple</h5></a>
+                                        <div class="row">
+                                            <p style="color: #939393; font-size: 14px; font-weight: lighter; padding-left: 15px;">สถานะ: <code style="color: #39b54a; font-family: Kanit; font-size: 14px;"> ด่วนมาก</code></p>
+                                            <p class="offset-md-4" style="color: #939393; font-size: 14px; font-weight: lighter; ">| ฿300 - 1,500 บาท</p>
+                                        </div><!-- row -->
+                                    </div><!-- media-body -->
+                                    <div class="box-tag-position">
+                                        <a href="#"><button type="button" class="btn btn text-center">โฟกัส</button></a>
+                                        <a href="#"><button type="button" class="btn btn text-center">ช่างภาพ</button></a>
+                                        <div class="box-btnViewDetailTeam">
+                                            <a href="#" class="btn btn-primary">รายละเอียด</a>
+                                        </div>
+                                    </div><!-- box-tag-position -->
+                                </div><!-- box-team -->
+                            </div><!-- card-body -->
+
+                        </div><!-- card -->
+                    </div><!-- box-teammer -->
+
+                </div><!-- col-md-12 -->
+
+
+                <div class="col-md-3 offset-md-4 boxNextPageView">
+                    <nav aria-label="...">
+                        <ul class="pagination">
+                            <li class="page-item disabled">
+                                <a class="page-link" href="/findTeam" tabindex="-1" style="color: #000000;">Previous</a>
+                            </li>
+
+                            <li class="page-item active" style="background-color: #fbb040;"><a class="page-link" href="/findTeam" style="color: #ffffff; background-color: #fbb040; border: none;">1</a></li>
+
+                            <li class="page-item">
+                                <a class="page-link" href="/findTeamSecond" style="color: #939393;">2 <span class="sr-only" style="color: #939393;">(current)</span></a>
+                            </li>
+
+                            <li class="page-item" style="color: #939393;"><a class="page-link" href="/findTeamThird" style="color: #939393;">3</a></li>
+
+                            <li class="page-item">
+                                <a class="page-link" href="#" style="color: #000000;">Next</a>
+                            </li>
+                        </ul>
+                    </nav>
+
+                </div><!-- col-md-3 offset-md-5 -->
+
+            </div><!-- col -->
+
+            <div class="col-4">
+                <div class="col-md-10 boxListCheckPosition">
+                    <div class="card bg-white text-white" style="width: 280px; height: 890px; border-radius: 15px; border: 2px solid #fbb040; box-shadow: 0 0 10px 0 rgba(96, 96, 96, 0.16);">
+
+                        <div class="card-img-overlayy">
+                            <h4 class="text-center" style="font-size: 18px; font-weight: bold; padding-top: 10px; color: #000000;">ตัวกรอง</h4>
+                            <!-- <br> = เว้นบรรทัด -->
+                            <!-- line -->
+                            <hr style="border: solid 0.5px #fbb040; width: 90%">
+                            <h5 class="text-left" style="font-size: 16px; color: #000000; font-weight: bold; padding-left: 20px;">เลือกตำแหน่งจากที่สนใจ</h5>
+                        </div>
+
+                        <div class="box-checkboxx">
+                            <div class="box-checkListPosition">
+                                <label class="fillterCheck" style="font-size: 15px;">ผู้กำกับนักแสดง
+                                    <input type="checkbox">
+                                    <span class="checkmark" style="width: 20px; height: 20px; text-align: center;"></span>
+                                </label>
+                            </div>
+
+                            <div class="box-checkListPosition">
+                                <label class="fillterCheck" style="font-size: 15px;">ผู้กำกับฝ่ายศิลป์
+                                    <input type="checkbox">
+                                    <span class="checkmark" style="width: 20px; height: 20px; text-align: center;"></span>
+                                </label>
+                            </div>
+
+                            <div class="box-checkListPosition">
+                                <label class="fillterCheck" style="font-size: 15px;">ผู้กำกับภาพ
+                                    <input type="checkbox">
+                                    <span class="checkmark" style="width: 20px; height: 20px; text-align: center;"></span>
+                                </label>
+                            </div>
+
+                            <div class="box-checkListPosition">
+                                <label class="fillterCheck" style="font-size: 15px;">ผู้กำกับเสียง
+                                    <input type="checkbox">
+                                    <span class="checkmark" style="width: 20px; height: 20px; text-align: center;"></span>
+                                </label>
+                            </div>
+
+                            <div class="box-checkListPosition">
+                                <label class="fillterCheck" style="font-size: 15px;">ผู้ช่วยผู้กำกับ
+                                    <input type="checkbox">
+                                    <span class="checkmark" style="width: 20px; height: 20px; text-align: center;"></span>
+                                </label>
+                            </div>
+
+                            <div class="box-checkListPosition">
+                                <label class="fillterCheck" style="font-size: 15px;">ผู้ดูแลอุปกรณ์ประกอบฉาก
+                                    <input type="checkbox">
+                                    <span class="checkmark" style="width: 20px; height: 20px; text-align: center;"></span>
+                                </label>
+                            </div>
+
+                            <div class="box-checkListPosition">
+                                <label class="fillterCheck" style="font-size: 15px;">ผู้ดูแลไมค์บูม
+                                    <input type="checkbox">
+                                    <span class="checkmark" style="width: 20px; height: 20px; text-align: center;"></span>
+                                </label>
+                            </div>
+
+                            <div class="box-checkListPosition">
+                                <label class="fillterCheck" style="font-size: 15px;">ผู้ตัดต่อลำดับภาพ
+                                    <input type="checkbox">
+                                    <span class="checkmark" style="width: 20px; height: 20px; text-align: center;"></span>
+                                </label>
+                            </div>
+
+                            <div class="box-checkListPosition">
+                                <label class="fillterCheck" style="font-size: 15px;">ผู้ปรับแต่งสีภาพ, แก้สีภาพ
+                                    <input type="checkbox">
+                                    <span class="checkmark" style="width: 20px; height: 20px; text-align: center;"></span>
+                                </label>
+                            </div>
+
+                            <div class="box-checkListPosition">
+                                <label class="fillterCheck" style="font-size: 15px;">ผู้ปรับโฟกัสระยะถ่าย
+                                    <input type="checkbox">
+                                    <span class="checkmark" style="width: 20px; height: 20px; text-align: center;"></span>
+                                </label>
+                            </div>
+
+                            <div class="box-checkListPosition">
+                                <label class="fillterCheck" style="font-size: 15px;">ผู้แต่งหน้าและทำผม
+                                    <input type="checkbox">
+                                    <span class="checkmark" style="width: 20px; height: 20px; text-align: center;"></span>
+                                </label>
+                            </div>
+
+                            <div class="box-checkListPosition">
+                                <label class="fillterCheck" style="font-size: 15px;">ช่างไฟ
+                                    <input type="checkbox">
+                                    <span class="checkmark" style="width: 20px; height: 20px; text-align: center;"></span>
+                                </label>
+                            </div>
+
+                            <div class="box-checkListPosition">
+                                <label class="fillterCheck" style="font-size: 15px;">ช่างภาพเบื้องหลัง
+                                    <input type="checkbox">
+                                    <span class="checkmark" style="width: 20px; height: 20px; text-align: center;"></span>
+                                </label>
+                            </div>
+
+                            <div class="box-checkListPosition">
+                                <label class="fillterCheck" style="font-size: 15px;">ช่างภาพ
+                                    <input type="checkbox">
+                                    <span class="checkmark" style="width: 20px; height: 20px; text-align: center;"></span>
+                                </label>
+                            </div>
+
+                            <div class="box-checkListPosition">
+                                <label class="fillterCheck" style="font-size: 15px;">เขียนบท
+                                    <input type="checkbox">
+                                    <span class="checkmark" style="width: 20px; height: 20px; text-align: center;"></span>
+                                </label>
+                            </div>
+
+                            <div class="box-checkListPosition">
+                                <label class="fillterCheck" style="font-size: 15px;">โปรดิวเซอร์
+                                    <input type="checkbox">
+                                    <span class="checkmark" style="width: 20px; height: 20px; text-align: center;"></span>
+                                </label>
+                            </div>
+
+                        </div><!-- box-checkboxx -->
+
+
+                        <div class="box-moneylow" style="width:250px;">
+                            <h5 class="text-left">เลือกรายได้ขั้นต่ำ</h5>
+                            <select class="custom-select" style="border-radius: 18px;background-color: #f4f4f4;color: #d0d0d0;border: none;">
+                                <option selected>Choose...</option>
+                                <option value="1">300</option>
+                                <option value="2">400</option>
+                                <option value="3">500</option>
+                                <option value="4">600</option>
+                                <option value="5">700</option>
+                                <option value="6">800</option>
+                                <option value="7">900</option>
+                                <option value="8">1,000</option>
+                                <option value="9">2,000</option>
+                                <option value="10">3,000</option>
+                                <option value="11">4,000</option>
+                                <option value="12">5,000</option>
+                                <option value="13">6,000</option>
+                                <option value="14">7,000</option>
+                                <option value="15">8,000</option>
+                                <option value="16">9,000</option>
+                                <option value="17">10,000</option>
+                            </select>
+                        </div>
+
+                        <div class="box-moneylow" style="width:250px;">
+                            <h5 class="text-left">เลือกรายได้สูงสุด</h5>
+                            <select class="custom-select" style="border-radius: 18px;background-color: #f4f4f4;color: #d0d0d0;border: none;">
+                                <option selected>Choose...</option>
+                                <option value="1">300</option>
+                                <option value="2">400</option>
+                                <option value="3">500</option>
+                                <option value="4">600</option>
+                                <option value="5">700</option>
+                                <option value="6">800</option>
+                                <option value="7">900</option>
+                                <option value="8">1,000</option>
+                                <option value="9">2,000</option>
+                                <option value="10">3,000</option>
+                                <option value="11">4,000</option>
+                                <option value="12">5,000</option>
+                                <option value="13">6,000</option>
+                                <option value="14">7,000</option>
+                                <option value="15">8,000</option>
+                                <option value="16">9,000</option>
+                                <option value="17">10,000</option>
+                            </select>
+
+                            <div class="box-selectposition">
+                                <a href="#"><input class="btn btn-primary" type="submit" value="กรอง"></a>
+                            </div><!-- box-selectposition -->
+                        </div>
+
+
+
+
+
+                    </div><!-- card -->
+                </div><!-- col-md-10 -->
+            </div><!-- col-4 -->
+
+        </div><!-- row -->
+
+
+    </div><!-- container -->
+
+@endsection
