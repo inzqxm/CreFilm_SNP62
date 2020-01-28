@@ -12,4 +12,8 @@ class FindteamController extends Controller
     {
         return view('findteam.findteam');
     }
+
+    public function create(){
+        return view('findteam.createteam');
+    }
 }

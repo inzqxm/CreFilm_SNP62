@@ -11,6 +11,8 @@
 |
 */
 
+Auth::routes();
+
 Route::get('/', function () {
     return view('index');
 });
@@ -18,10 +20,4 @@ Route::get('/', function () {
 Route::get('/findTeam','FindteamController@index');
 Route::get('/createTeam','FindteamController@create');
 
-//Auth::routes();
-//
-//Route::get('/home', 'HomeController@index')->name('home');
-//
-//Auth::routes();
-//
-//Route::get('/home', 'HomeController@index')->name('home');
+
