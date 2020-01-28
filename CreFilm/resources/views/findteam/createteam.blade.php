@@ -26,70 +26,70 @@
             <div class="stepwizard-row setup-panel">
                 <div class="stepwizard-step">
                     <a href="#step-1" type="button" class="btn btn-primary btn-circle">1</a>
-                    <p style="color: #6c757d">รายละเอียดของทีม</p>
+                    <h5 style="color: #6c757d">รายละเอียดของทีม</h5>
                 </div>
                 <div class="stepwizard-step">
                     <a href="#step-2" type="button" class="btn btn-default btn-circle" disabled="disabled">2</a>
-                    <p style="color: #6c757d">Pre-Production</p>
+                    <h5 style="color: #6c757d">Pre-Production</h5>
                 </div>
                 <div class="stepwizard-step">
                     <a href="#step-3" type="button" class="btn btn-default btn-circle" disabled="disabled">3</a>
-                    <p style="color: #6c757d">Production</p>
+                    <h5 style="color: #6c757d">Production</h5>
                 </div>
                 <div class="stepwizard-step">
                     <a href="#step-4" type="button" class="btn btn-default btn-circle" disabled="disabled">4</a>
-                    <p style="color: #6c757d">Post-Production</p>
+                    <h5 style="color: #6c757d">Post-Production</h5>
                 </div>
                 <div class="stepwizard-step">
                     <a href="#step-5" type="button" class="btn btn-default btn-circle" disabled="disabled">5</a>
-                    <p style="color: #6c757d">ยืนยันรายละเอียดของทีม</p>
+                    <h5 style="color: #6c757d">ยืนยันรายละเอียดของทีม</h5>
                 </div>
             </div>
         </div>
 
         <br>
 
-        <form role="form" action="" method="post">
-
-{{--            -----------------------step1----------------------}}
+        <form role="form" action="{{action('PositionController@store')}}" method="post">
+            {{csrf_field()}}
+<!-- {{--            -----------------------step1----------------------}} -->
             <div class="row setup-content" id="step-1">
                 <div class="col-md-12">
                     <div class="col-md-12">
                         <div class="col-12">
-                            <h4>ชื่อหัวข้องาน</h4>
-                            <input type="text" name="fname" placeholder="กรอกชื่อหัวข้องานที่ทำ เช่น ชื่องานที่ลงประกวด, งานหนังสั้นนักศึกษา มหาวิทยาลัย" style="width:100%;height: 50px;background-color: #f4f4f4;box-sizing: border-box;font-family: Kanit;border: none;padding: 20px;color: #000000;border-radius: 15px;font-size: 18px;" />
+                            <h5>ชื่อหัวข้องาน</h5>
+                            <input type="text" id="name"  name="name" placeholder="กรอกชื่อหัวข้องานที่ทำ เช่น ชื่องานที่ลงประกวด, งานหนังสั้นนักศึกษา มหาวิทยาลัย" style="width:100%;height: 50px;background-color: #f4f4f4;box-sizing: border-box;font-family: Kanit;border: none;padding: 20px;color: #000000;border-radius: 15px;font-size: 18px;" />
+
                         </div>
                         <div class="col-12">
-                            <h4 style="padding-top: 28px;">สถานะของงาน</h4>
-{{--                            <input type="text" name="lname" placeholder="กรอกสถานะสั้นๆ เช่น ด่วนมาก, สายลุย, ไม่เก่งก็ทำได้" style="width:100%;height: 50px;background-color: #f4f4f4;box-sizing: border-box;font-family: Kanit;border: none;padding: 15px;color: #000000;border-radius: 20px;font-size: 18px;" />--}}
-                            <h4>tag jaaaa</h4>
+                            <h5 style="padding-top: 28px;">สถานะของงาน</h5>
+{{--                            <input type="text" name="status" placeholder="กรอกสถานะสั้นๆ เช่น ด่วนมาก, สายลุย, ไม่เก่งก็ทำได้" style="width:100%;height: 50px;background-color: #f4f4f4;box-sizing: border-box;font-family: Kanit;border: none;padding: 15px;color: #000000;border-radius: 20px;font-size: 18px;" />--}}
+                            <h5>tag jaaaa</h5>
                         </div>
-{{--                        <div class="form-group">--}}
-{{--                            <label class="control-label">Email</label>--}}
-{{--                            <input maxlength="100" type="text" required="required" class="form-control" placeholder="Enter Email" />--}}
-{{--                        </div>--}}
+
                         <div class="col-12">
-                            <h4 style="padding-top: 28px;">รายละเอียดงานโดยรวม</h4>
-                            <textarea type="text" name="lname" placeholder="กรอกรายละเอียดงานโดยรวมแบบสั้นๆ เช่น ต้องการคนมาช่วยเขียนบท เป็นงานถ่ายโฆษณาแบรนด์ดังจากเกาหลี วันเวลาคุยกันอีกทีครับ" style="width:100%;background-color: #f4f4f4;box-sizing: border-box;font-family: Kanit;border: none;padding: 20px;color: #000000;border-radius: 15px;font-size: 18px;" rows="5"></textarea>
+                            <h5 style="padding-top: 28px;">รายละเอียดงานโดยรวม</h5>
+                            <textarea type="text" name="detail" placeholder="กรอกรายละเอียดงานโดยรวมแบบสั้นๆ เช่น ต้องการคนมาช่วยเขียนบท เป็นงานถ่ายโฆษณาแบรนด์ดังจากเกาหลี วันเวลาคุยกันอีกทีครับ" style="width:100%;background-color: #f4f4f4;box-sizing: border-box;font-family: Kanit;border: none;padding: 20px;color: #000000;border-radius: 15px;font-size: 18px;" rows="5"></textarea>
                         </div>
                         <div class="col-12">
-                            <h4 style="padding-top: 28px;">กำหนดวันเริ่ม/จบ Project</h4>
-                            <div class="col-1 boxTextCreatH4">
-                                <h6>เริ่ม</h6>
-                            </div>
-                            <div id="datepick" class="col-4 input-group date" data-provide="datepicker">
-                                <i class="fas">&#xf073;</i>&nbsp;&nbsp;<input type="text" class="form-control" style="background-color: #f4f4f4;border-radius: 50px;border-color: transparent;font-family: Kanit" placeholder="mm/dd/yyy">
-                                <div class="input-group-addon">
-                                    <span class="glyphicon glyphicon-th"></span>
+                            <h5 style="padding-top: 28px;">กำหนดวันเริ่ม/จบ Project</h5>
+                            <div class="row">
+                                <div class="col-4">
+                                    <h6>เริ่ม : </h6>
+                                    <div id="datepick" class="col-12 input-group date" data-provide="datepicker">
+                                        <i class="fas">&#xf073;</i>&nbsp;&nbsp;<input type="text" class="form-control" name="start_date"  style="background-color: #f4f4f4;border-radius: 50px;border-color: transparent;font-family: Kanit" placeholder="mm/dd/yyy">
+                                        <div class="input-group-addon">
+                                            <span class="glyphicon glyphicon-th"></span>
+                                        </div>
+                                    </div>
                                 </div>
-                            </div>
-                            <div class="col-1 boxTextCreatH4">
-                                <h6>สิ้นสุด</h6>
-                            </div>
-                            <div id="datepick" class="col-4 input-group date" data-provide="datepicker">
-                                <i class="fas">&#xf073;</i> &nbsp;&nbsp; <input type="text" class="form-control" style="background-color: #f4f4f4;border-radius: 50px;border-color: transparent;font-family: Kanit;" placeholder="mm/dd/yyy">
-                                <div class="input-group-addon">
-                                    <span class="glyphicon glyphicon-th"></span>
+                                <div class="col-4">
+                                    <h6>สิ้นสุด : </h6>
+                                    <div id="datepick" class="col-12 input-group date" data-provide="datepicker">
+                                        <i class="fas">&#xf073;</i>&nbsp;&nbsp;<input type="text" class="form-control" name="end_date" style="background-color: #f4f4f4;border-radius: 50px;border-color: transparent;font-family: Kanit" placeholder="mm/dd/yyy">
+                                        <div class="input-group-addon">
+                                            <span class="glyphicon glyphicon-th"></span>
+                                        </div>
+                                    </div>
                                 </div>
                             </div>
                         </div>
@@ -100,7 +100,7 @@
 
                         <div class="col-12">
                             <div class="text-center">
-                                <button class="btn nextBtn btn-lg col-3" type="button" style="background-color: #fbb040;color: #fff;border-radius: 25px;">ต่อไป</button>
+                                <button class="btn nextBtn btn-lg col-3" type="button"  style="background-color: #fbb040;color: #fff;border-radius: 25px;">ต่อไป</button>
                             </div>
 
                         </div>
@@ -129,12 +129,17 @@
                             </div>
                         </div>
 
+
+
+                        @foreach ($positions as $row)
+                        @if($row->type_id == 1)
                         <div class="row">
+
                             <div class="col-md-6">
                                 <div class="box-checkboxx">
                                     <div class="box-checkListPosition">
-                                        <label class="fillterCheck" style="font-size: 15px;">position_name
-                                            <input type="checkbox">
+                                        <label class="fillterCheck" style="font-size: 15px;">{{$row->position_name}}
+                                        <input type="checkbox" value="{{$row->id}}" name="pre_position_id[]" id="pre_position_id" >
                                             <span class="checkmark" style="width: 20px; height: 20px; text-align: center;"></span>
                                         </label>
                                     </div>
@@ -142,7 +147,7 @@
                             </div>
                             <div class="col-md-3 ">
                                 <div class="box-moneylow" style="width:240px;">
-                                    <select class="custom-select" style="border-radius: 18px;background-color: #f4f4f4;border: none;">
+                                    <select class="custom-select" style="border-radius: 18px;background-color: #f4f4f4;border: none;" name="pre_person[]">
                                         <option selected>0</option>
                                         <option value="1">1</option>
                                         <option value="2">2</option>
@@ -159,40 +164,46 @@
                             </div>
                             <div class="col-md-3">
                                 <div class="box-moneylow" style="width:240px;">
-                                    <select class="custom-select" style="border-radius: 18px;background-color: #f4f4f4;border: none;">
+                                    <select class="custom-select" style="border-radius: 18px;background-color: #f4f4f4;border: none;" name="pre_budget[]">
                                         <option selected>Choose...</option>
-                                        <option value="1">300</option>
-                                        <option value="2">400</option>
-                                        <option value="3">500</option>
-                                        <option value="4">600</option>
-                                        <option value="5">700</option>
-                                        <option value="6">800</option>
-                                        <option value="7">900</option>
-                                        <option value="8">1,000</option>
-                                        <option value="9">2,000</option>
-                                        <option value="10">3,000</option>
-                                        <option value="11">4,000</option>
-                                        <option value="12">5,000</option>
-                                        <option value="13">10,000</option>
-                                        <option value="14">15,000</option>
-                                        <option value="15">20,000</option>
-                                        <option value="16">25,000</option>
-                                        <option value="17">30,000</option>
+                                        <option value="300">300</option>
+                                        <option value="400">400</option>
+                                        <option value="500">500</option>
+                                        <option value="600">600</option>
+                                        <option value="700">700</option>
+                                        <option value="800">800</option>
+                                        <option value="900">900</option>
+                                        <option value="1,000">1,000</option>
+                                        <option value="2,000">2,000</option>
+                                        <option value="3,000">3,000</option>
+                                        <option value="4,000">4,000</option>
+                                        <option value="5,000">5,000</option>
+                                        <option value="10,000">10,000</option>
+                                        <option value="15,000">15,000</option>
+                                        <option value="20,000">20,000</option>
+                                        <option value="25,000">25,000</option>
+                                        <option value="30,000">30,000</option>
                                     </select>
                                 </div>
                             </div>
                         </div>
 
-                        <br>
 
+
+                        <br>
+                        @endif
+                        @endforeach
                         <div class="col-12">
                             <div class="text-center">
                                 <button class="btn nextBtn col-3" type="button" style="background-color: #fbb040;color: #fff;border-radius: 25px;">ต่อไป</button>
                             </div>
 
                         </div>
+                        <br>
                     </div>
-                </div>
+                    </div>
+
+
             </div>
 
 
@@ -202,7 +213,7 @@
                     <div class="col-md-12">
                         <div class="row">
                             <div class="col-md-6">
-                                <h5>1. Pre-Production</h5>
+                                <h5>2. Production</h5>
                                 <p style="color: #6c757d">เลือกตำแหน่งที่ต้องการเพื่อนร่วมทีม
                                     (เลือกได้มากกว่า 1 ตำแหน่ง)</p>
                             </div>
@@ -215,21 +226,23 @@
                                 <p class="text-center" style="color: #6c757d">เลือกอัตรารายได้/วัน</p>
                             </div>
                         </div>
+                        @foreach ($positions as $row)
+@if($row->type_id == 2)
 
                         <div class="row">
                             <div class="col-md-6">
                                 <div class="box-checkboxx">
                                     <div class="box-checkListPosition">
-                                        <label class="fillterCheck" style="font-size: 15px;">position_name
-                                            <input type="checkbox">
-                                            <span class="checkmark" style="width: 20px; height: 20px; text-align: center;"></span>
+                                        <label class="fillterCheck" style="font-size: 15px;">{{$row->position_name}}
+                                        <input type="checkbox" value="{{$row->id}}" name="pro_position_id[]">
+                                            <span class="checkmark" style="width: 20px; height: 20px; text-align: center;" ></span>
                                         </label>
                                     </div>
                                 </div>
                             </div>
                             <div class="col-md-3 ">
                                 <div class="box-moneylow" style="width:240px;">
-                                    <select class="custom-select" style="border-radius: 18px;background-color: #f4f4f4;border: none;">
+                                    <select class="custom-select" style="border-radius: 18px;background-color: #f4f4f4;border: none;" name="pro_person[]" >
                                         <option selected>0</option>
                                         <option value="1">1</option>
                                         <option value="2">2</option>
@@ -246,30 +259,31 @@
                             </div>
                             <div class="col-md-3">
                                 <div class="box-moneylow" style="width:240px;">
-                                    <select class="custom-select" style="border-radius: 18px;background-color: #f4f4f4;border: none;">
+                                    <select class="custom-select" style="border-radius: 18px;background-color: #f4f4f4;border: none;" name="pro_budget[]">
                                         <option selected>Choose...</option>
-                                        <option value="1">300</option>
-                                        <option value="2">400</option>
-                                        <option value="3">500</option>
-                                        <option value="4">600</option>
-                                        <option value="5">700</option>
-                                        <option value="6">800</option>
-                                        <option value="7">900</option>
-                                        <option value="8">1,000</option>
-                                        <option value="9">2,000</option>
-                                        <option value="10">3,000</option>
-                                        <option value="11">4,000</option>
-                                        <option value="12">5,000</option>
-                                        <option value="13">10,000</option>
-                                        <option value="14">15,000</option>
-                                        <option value="15">20,000</option>
-                                        <option value="16">25,000</option>
-                                        <option value="17">30,000</option>
+                                        <option value="300">300</option>
+                                        <option value="400">400</option>
+                                        <option value="500">500</option>
+                                        <option value="600">600</option>
+                                        <option value="700">700</option>
+                                        <option value="800">800</option>
+                                        <option value="900">900</option>
+                                        <option value="1,000">1,000</option>
+                                        <option value="2,000">2,000</option>
+                                        <option value="3,000">3,000</option>
+                                        <option value="4,000">4,000</option>
+                                        <option value="5,000">5,000</option>
+                                        <option value="10,000">10,000</option>
+                                        <option value="15,000">15,000</option>
+                                        <option value="20,000">20,000</option>
+                                        <option value="25,000">25,000</option>
+                                        <option value="30,000">30,000</option>
                                     </select>
                                 </div>
                             </div>
                         </div>
-
+                        @endif
+                        @endforeach
                         <br>
 
                         <div class="col-12">
@@ -289,7 +303,7 @@
                     <div class="col-md-12">
                         <div class="row">
                             <div class="col-md-6">
-                                <h5>1. Pre-Production</h5>
+                                <h5>3. Post-Production</h5>
                                 <p style="color: #6c757d">เลือกตำแหน่งที่ต้องการเพื่อนร่วมทีม
                                     (เลือกได้มากกว่า 1 ตำแหน่ง)</p>
                             </div>
@@ -302,13 +316,15 @@
                                 <p class="text-center" style="color: #6c757d">เลือกอัตรารายได้/วัน</p>
                             </div>
                         </div>
+@foreach ($positions as $row)
+    @if($row->type_id == 3)
 
                         <div class="row">
                             <div class="col-md-6">
                                 <div class="box-checkboxx">
                                     <div class="box-checkListPosition">
-                                        <label class="fillterCheck" style="font-size: 15px;">position_name
-                                            <input type="checkbox">
+                                        <label class="fillterCheck" style="font-size: 15px;">{{$row->position_name}}
+                                        <input type="checkbox" value="{{$row->id}}" name="post_position_id[]">
                                             <span class="checkmark" style="width: 20px; height: 20px; text-align: center;"></span>
                                         </label>
                                     </div>
@@ -316,7 +332,7 @@
                             </div>
                             <div class="col-md-3 ">
                                 <div class="box-moneylow" style="width:240px;">
-                                    <select class="custom-select" style="border-radius: 18px;background-color: #f4f4f4;border: none;">
+                                    <select class="custom-select" style="border-radius: 18px;background-color: #f4f4f4;border: none;" name="post_person[]">
                                         <option selected>0</option>
                                         <option value="1">1</option>
                                         <option value="2">2</option>
@@ -333,35 +349,36 @@
                             </div>
                             <div class="col-md-3">
                                 <div class="box-moneylow" style="width:240px;">
-                                    <select class="custom-select" style="border-radius: 18px;background-color: #f4f4f4;border: none;">
+                                    <select class="custom-select" style="border-radius: 18px;background-color: #f4f4f4;border: none;" name="post_budget[]">
                                         <option selected>Choose...</option>
-                                        <option value="1">300</option>
-                                        <option value="2">400</option>
-                                        <option value="3">500</option>
-                                        <option value="4">600</option>
-                                        <option value="5">700</option>
-                                        <option value="6">800</option>
-                                        <option value="7">900</option>
-                                        <option value="8">1,000</option>
-                                        <option value="9">2,000</option>
-                                        <option value="10">3,000</option>
-                                        <option value="11">4,000</option>
-                                        <option value="12">5,000</option>
-                                        <option value="13">10,000</option>
-                                        <option value="14">15,000</option>
-                                        <option value="15">20,000</option>
-                                        <option value="16">25,000</option>
-                                        <option value="17">30,000</option>
+                                        <option value="300">300</option>
+                                        <option value="400">400</option>
+                                        <option value="500">500</option>
+                                        <option value="600">600</option>
+                                        <option value="700">700</option>
+                                        <option value="800">800</option>
+                                        <option value="900">900</option>
+                                        <option value="1,000">1,000</option>
+                                        <option value="2,000">2,000</option>
+                                        <option value="3,000">3,000</option>
+                                        <option value="4,000">4,000</option>
+                                        <option value="5,000">5,000</option>
+                                        <option value="10,000">10,000</option>
+                                        <option value="15,000">15,000</option>
+                                        <option value="20,000">20,000</option>
+                                        <option value="25,000">25,000</option>
+                                        <option value="30,000">30,000</option>
                                     </select>
                                 </div>
                             </div>
                         </div>
 
                         <br>
-
+                        @endif
+                        @endforeach
                         <div class="col-12">
                             <div class="text-center">
-                                <button class="btn nextBtn col-3" type="button" style="background-color: #fbb040;color: #fff;border-radius: 25px;">ต่อไป</button>
+                                <button class="btn nextBtn col-3" type="button" onclick="myFunction()" style="background-color: #fbb040;color: #fff;border-radius: 25px;">ต่อไป</button>
                             </div>
 
                         </div>
@@ -393,10 +410,14 @@
 
                         <div class="col-12">
                             <h4 style="padding-top: 28px;">รายละเอียดงานโดยรวม</h4>
-                            <textarea type="text" name="lname" placeholder="กรอกรายละเอียดงานโดยรวมแบบสั้นๆ เช่น ต้องการคนมาช่วยเขียนบท เป็นงานถ่ายโฆษณาแบรนด์ดังจากเกาหลี วันเวลาคุยกันอีกทีครับ" style="width:100%;background-color: #f4f4f4;box-sizing: border-box;font-family: Kanit;border: none;padding: 20px;color: #000000;border-radius: 15px;font-size: 18px;" rows="5"></textarea>
+
+                             <p id="pre_pos"></p>
+                             {{-- <p id="name1"></p> --}}
+                             <p id="text" style="display:none"></p>
                         </div>
                         <div class="col-12">
                             <h4 style="padding-top: 28px;">ภาพปกของงาน</h4>
+                            <input type="file">
 
                         </div>
 
@@ -480,6 +501,25 @@
                 orientation: "button"
             });
         });
+
+
+        function myFunction() {
+            var x =
+                // document.getElementById("pre_position_id").value;
+
+            document.getElementById(
+              "pre_pos").innerHTML = x;
+        }
+        function myFunction2() {
+  var checkBox = document.getElementById("pre_position_id");
+  var text = document.getElementById("text");
+  if (checkBox.checked == true){
+    text.style.display = "block";
+  } else {
+     text.style.display = "none";
+  }
+}
+
     </script>
 
 

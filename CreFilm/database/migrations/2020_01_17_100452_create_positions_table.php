@@ -16,8 +16,11 @@ class CreatePositionsTable extends Migration
         Schema::create('positions', function (Blueprint $table) {
             $table->bigIncrements('id');
             $table->text('position_name');
-            $table->string('img_url');
-            $table->integer('type_id');
+            $table->string('img_url')->nullable();
+
+            $table->bigInteger('type_id')->unsigned();
+            $table->foreign('type_id')->references('id')->on('types')->onDelete('cascade');
+
             $table->timestamps();
         });
     }

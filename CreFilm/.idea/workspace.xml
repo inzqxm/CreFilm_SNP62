@@ -3,8 +3,11 @@
   <component name="ChangeListManager">
     <list default="true" id="5d066003-5556-4220-ad84-00343c608811" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/FindteamController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/FindteamController.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/database/migrations/2020_01_17_100452_create_positions_table.php" beforeDir="false" afterPath="$PROJECT_DIR$/database/migrations/2020_01_17_100452_create_positions_table.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/database/migrations/2020_01_17_101021_create_types_table.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/database/seeds/DatabaseSeeder.php" beforeDir="false" afterPath="$PROJECT_DIR$/database/seeds/DatabaseSeeder.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/resources/views/findteam/createteam.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/findteam/createteam.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/routes/web.php" beforeDir="false" afterPath="$PROJECT_DIR$/routes/web.php" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -156,7 +159,7 @@
       <updated>1579247017531</updated>
       <workItem from="1579247020007" duration="3682000" />
       <workItem from="1579343716272" duration="5254000" />
-      <workItem from="1580198905177" duration="19530000" />
+      <workItem from="1580198905177" duration="22189000" />
     </task>
     <servers />
   </component>

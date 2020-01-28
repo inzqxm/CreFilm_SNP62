@@ -16,8 +16,11 @@ Auth::routes();
 Route::get('/', function () {
     return view('index');
 });
-
 Route::get('/findTeam','FindteamController@index');
-Route::get('/createTeam','FindteamController@create');
+Route::resource('/createTeam', 'PositionController');
+
+
+
+// Route::get('/createTeam','FindteamController@create');
 
 
