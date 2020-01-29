@@ -5,7 +5,7 @@
     </button>
     <!-- navbar -->
     <div class="collapse navbar-collapse" id="navbarNav">
-        <ul class="navbar-nav col-10">
+        <ul class="navbar-nav">
             <li class="nav-item" style="padding: 0 32px 0 30px;">
                 <a class="nav-link" href="/">หน้าหลัก</a>
             </li>
@@ -28,7 +28,7 @@
 
 
 
-        <ul class="nav navbar-nav navbar-right col-2">
+        <ul class="nav navbar-nav navbar-right">
 
             <!-- Authentication Links -->
             @if (Auth::guest())

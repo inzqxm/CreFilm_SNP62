@@ -374,6 +374,7 @@
                         </div>
 
                         <br>
+
                         @endif
                         @endforeach
                         <div class="col-12">

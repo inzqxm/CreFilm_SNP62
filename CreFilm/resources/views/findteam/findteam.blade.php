@@ -81,6 +81,7 @@
                                             <p class="offset-md-4" style="color: #939393; font-size: 14px; font-weight: lighter; ">| ฿500 - 5,000 บาท</p>
                                         </div><!-- row -->
                                     </div><!-- media-body -->
+
                                     <div class="box-tag-position">
                                         <a href="#"><button type="button" class="btn btn text-center">โฟกัส</button></a>
                                         <a href="#"><button type="button" class="btn btn text-center">ช่างภาพ</button></a>
@@ -95,7 +96,7 @@
                     </div><!-- box-teammer -->
 
 
-                    <div class="box-teammer" style="padding-top: 30px;">
+                    {{-- <div class="box-teammer" style="padding-top: 30px;">
                         <div class="card" style="border: none;">
                             <div class="box-imgCoverTeamBig">
                                 <div class="box-joinNum">
@@ -178,7 +179,7 @@
                             </div><!-- card-body -->
 
                         </div><!-- card -->
-                    </div><!-- box-teammer -->
+                    </div><!-- box-teammer --> --}}
 
                 </div><!-- col-md-12 -->
 
@@ -210,7 +211,7 @@
 
             <div class="col-4">
                 <div class="col-md-10 boxListCheckPosition">
-                    <div class="card bg-white text-white" style="width: 280px; height: 890px; border-radius: 15px; border: 2px solid #fbb040; box-shadow: 0 0 10px 0 rgba(96, 96, 96, 0.16);">
+                    <div class="card bg-white text-white" style="width: 280px; padding-bottom: 20px; border-radius: 15px; border: 2px solid #fbb040; box-shadow: 0 0 10px 0 rgba(96, 96, 96, 0.16);">
 
                         <div class="card-img-overlayy">
                             <h4 class="text-center" style="font-size: 18px; font-weight: bold; padding-top: 10px; color: #000000;">ตัวกรอง</h4>
@@ -220,119 +221,22 @@
                             <h5 class="text-left" style="font-size: 16px; color: #000000; font-weight: bold; padding-left: 20px;">เลือกตำแหน่งจากที่สนใจ</h5>
                         </div>
 
+
                         <div class="box-checkboxx">
-                            <div class="box-checkListPosition">
-                                <label class="fillterCheck" style="font-size: 15px;">ผู้กำกับนักแสดง
-                                    <input type="checkbox">
-                                    <span class="checkmark" style="width: 20px; height: 20px; text-align: center;"></span>
-                                </label>
-                            </div>
+                            <form action="/search" method="get">
+                            @foreach ($positions as $row)
 
-                            <div class="box-checkListPosition">
-                                <label class="fillterCheck" style="font-size: 15px;">ผู้กำกับฝ่ายศิลป์
-                                    <input type="checkbox">
-                                    <span class="checkmark" style="width: 20px; height: 20px; text-align: center;"></span>
-                                </label>
-                            </div>
+                                <div class="box-checkListPosition">
+                                    <label class="fillterCheck" style="font-size: 15px;">{{$row->position_name}}
+                                        <input type="checkbox" multiple value="{{$row->id}}" name="search[]">
+                                        <span class="checkmark" style="width: 20px; height: 20px; text-align: center;"></span>
+                                    </label>
+                                </div>
 
-                            <div class="box-checkListPosition">
-                                <label class="fillterCheck" style="font-size: 15px;">ผู้กำกับภาพ
-                                    <input type="checkbox">
-                                    <span class="checkmark" style="width: 20px; height: 20px; text-align: center;"></span>
-                                </label>
-                            </div>
 
-                            <div class="box-checkListPosition">
-                                <label class="fillterCheck" style="font-size: 15px;">ผู้กำกับเสียง
-                                    <input type="checkbox">
-                                    <span class="checkmark" style="width: 20px; height: 20px; text-align: center;"></span>
-                                </label>
-                            </div>
-
-                            <div class="box-checkListPosition">
-                                <label class="fillterCheck" style="font-size: 15px;">ผู้ช่วยผู้กำกับ
-                                    <input type="checkbox">
-                                    <span class="checkmark" style="width: 20px; height: 20px; text-align: center;"></span>
-                                </label>
-                            </div>
-
-                            <div class="box-checkListPosition">
-                                <label class="fillterCheck" style="font-size: 15px;">ผู้ดูแลอุปกรณ์ประกอบฉาก
-                                    <input type="checkbox">
-                                    <span class="checkmark" style="width: 20px; height: 20px; text-align: center;"></span>
-                                </label>
-                            </div>
-
-                            <div class="box-checkListPosition">
-                                <label class="fillterCheck" style="font-size: 15px;">ผู้ดูแลไมค์บูม
-                                    <input type="checkbox">
-                                    <span class="checkmark" style="width: 20px; height: 20px; text-align: center;"></span>
-                                </label>
-                            </div>
-
-                            <div class="box-checkListPosition">
-                                <label class="fillterCheck" style="font-size: 15px;">ผู้ตัดต่อลำดับภาพ
-                                    <input type="checkbox">
-                                    <span class="checkmark" style="width: 20px; height: 20px; text-align: center;"></span>
-                                </label>
-                            </div>
-
-                            <div class="box-checkListPosition">
-                                <label class="fillterCheck" style="font-size: 15px;">ผู้ปรับแต่งสีภาพ, แก้สีภาพ
-                                    <input type="checkbox">
-                                    <span class="checkmark" style="width: 20px; height: 20px; text-align: center;"></span>
-                                </label>
-                            </div>
-
-                            <div class="box-checkListPosition">
-                                <label class="fillterCheck" style="font-size: 15px;">ผู้ปรับโฟกัสระยะถ่าย
-                                    <input type="checkbox">
-                                    <span class="checkmark" style="width: 20px; height: 20px; text-align: center;"></span>
-                                </label>
-                            </div>
-
-                            <div class="box-checkListPosition">
-                                <label class="fillterCheck" style="font-size: 15px;">ผู้แต่งหน้าและทำผม
-                                    <input type="checkbox">
-                                    <span class="checkmark" style="width: 20px; height: 20px; text-align: center;"></span>
-                                </label>
-                            </div>
-
-                            <div class="box-checkListPosition">
-                                <label class="fillterCheck" style="font-size: 15px;">ช่างไฟ
-                                    <input type="checkbox">
-                                    <span class="checkmark" style="width: 20px; height: 20px; text-align: center;"></span>
-                                </label>
-                            </div>
-
-                            <div class="box-checkListPosition">
-                                <label class="fillterCheck" style="font-size: 15px;">ช่างภาพเบื้องหลัง
-                                    <input type="checkbox">
-                                    <span class="checkmark" style="width: 20px; height: 20px; text-align: center;"></span>
-                                </label>
-                            </div>
-
-                            <div class="box-checkListPosition">
-                                <label class="fillterCheck" style="font-size: 15px;">ช่างภาพ
-                                    <input type="checkbox">
-                                    <span class="checkmark" style="width: 20px; height: 20px; text-align: center;"></span>
-                                </label>
-                            </div>
-
-                            <div class="box-checkListPosition">
-                                <label class="fillterCheck" style="font-size: 15px;">เขียนบท
-                                    <input type="checkbox">
-                                    <span class="checkmark" style="width: 20px; height: 20px; text-align: center;"></span>
-                                </label>
-                            </div>
-
-                            <div class="box-checkListPosition">
-                                <label class="fillterCheck" style="font-size: 15px;">โปรดิวเซอร์
-                                    <input type="checkbox">
-                                    <span class="checkmark" style="width: 20px; height: 20px; text-align: center;"></span>
-                                </label>
-                            </div>
-
+                            @endforeach
+                            <button type="submit" >search</button>
+                        </form>
                         </div><!-- box-checkboxx -->
 
 
@@ -340,23 +244,23 @@
                             <h5 class="text-left">เลือกรายได้ขั้นต่ำ</h5>
                             <select class="custom-select" style="border-radius: 18px;background-color: #f4f4f4;color: #d0d0d0;border: none;">
                                 <option selected>Choose...</option>
-                                <option value="1">300</option>
-                                <option value="2">400</option>
-                                <option value="3">500</option>
-                                <option value="4">600</option>
-                                <option value="5">700</option>
-                                <option value="6">800</option>
-                                <option value="7">900</option>
-                                <option value="8">1,000</option>
-                                <option value="9">2,000</option>
-                                <option value="10">3,000</option>
-                                <option value="11">4,000</option>
-                                <option value="12">5,000</option>
-                                <option value="13">6,000</option>
-                                <option value="14">7,000</option>
-                                <option value="15">8,000</option>
-                                <option value="16">9,000</option>
-                                <option value="17">10,000</option>
+                                <option value="300">300</option>
+                                <option value="400">400</option>
+                                <option value="500">500</option>
+                                <option value="600">600</option>
+                                <option value="700">700</option>
+                                <option value="800">800</option>
+                                <option value="900">900</option>
+                                <option value="1,000">1,000</option>
+                                <option value="2,000">2,000</option>
+                                <option value="3,000">3,000</option>
+                                <option value="4,000">4,000</option>
+                                <option value="5,000">5,000</option>
+                                <option value="10,000">10,000</option>
+                                <option value="15,000">15,000</option>
+                                <option value="20,000">20,000</option>
+                                <option value="25,000">25,000</option>
+                                <option value="30,000">30,000</option>
                             </select>
                         </div>
 
@@ -364,28 +268,30 @@
                             <h5 class="text-left">เลือกรายได้สูงสุด</h5>
                             <select class="custom-select" style="border-radius: 18px;background-color: #f4f4f4;color: #d0d0d0;border: none;">
                                 <option selected>Choose...</option>
-                                <option value="1">300</option>
-                                <option value="2">400</option>
-                                <option value="3">500</option>
-                                <option value="4">600</option>
-                                <option value="5">700</option>
-                                <option value="6">800</option>
-                                <option value="7">900</option>
-                                <option value="8">1,000</option>
-                                <option value="9">2,000</option>
-                                <option value="10">3,000</option>
-                                <option value="11">4,000</option>
-                                <option value="12">5,000</option>
-                                <option value="13">6,000</option>
-                                <option value="14">7,000</option>
-                                <option value="15">8,000</option>
-                                <option value="16">9,000</option>
-                                <option value="17">10,000</option>
+                                <option value="300">300</option>
+                                <option value="400">400</option>
+                                <option value="500">500</option>
+                                <option value="600">600</option>
+                                <option value="700">700</option>
+                                <option value="800">800</option>
+                                <option value="900">900</option>
+                                <option value="1,000">1,000</option>
+                                <option value="2,000">2,000</option>
+                                <option value="3,000">3,000</option>
+                                <option value="4,000">4,000</option>
+                                <option value="5,000">5,000</option>
+                                <option value="10,000">10,000</option>
+                                <option value="15,000">15,000</option>
+                                <option value="20,000">20,000</option>
+                                <option value="25,000">25,000</option>
+                                <option value="30,000">30,000</option>
                             </select>
 
                             <div class="box-selectposition">
-                                <a href="#"><input class="btn btn-primary" type="submit" value="กรอง"></a>
+                                <input class="btn btn-primary" type="submit" value="กรอง">
                             </div><!-- box-selectposition -->
+
+
                         </div>
 
 
