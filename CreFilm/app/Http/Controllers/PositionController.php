@@ -55,63 +55,144 @@ class PositionController extends Controller
         //     "post_person" =>  'required',
         //     "post_budget" =>  'required',
         // ]);
-        $stores = new PostTeam;
 
-        $stores->name = $request->input('name');
-        $stores->detail = $request->input('detail');
-        $stores->start_date = $request->input('start_date');
-        $stores->end_date = $request->input('end_date');
-        $stores->status = 1;
-        $stores->pre_position_id = $request->input('pre_position_id[]');
-        $stores->pre_person = $request->input('pre_person[]');
-        $stores->pre_budget = $request->input('pre_budget[]');
-        $stores->pro_person = $request->input('pro_person[]');
-        $stores->pro_budget = $request->input('pro_budget[]');
-        $stores->pro_position_id = $request->input('pro_position_id[]');
-        $stores->post_position_id = $request->input('post_position_id[]');
-        $stores->post_person = $request->input('post_person[]');
-        $stores->post_budget = $request->input('post_budget[]');
-
-
-        if(count($stores->pre_position_id) > count($stores->pre_person))
-        $count = count($stores->pre_person);
-    else $count = count($stores->pre_position_id);
-
-
-    // for($i = 0; $i < $count; $i++){
-    //     $data = array(
-    //         'pre_position_id' => $stores->pre_position_id[$i],
-    //         'pre_person' => $stores->pre_person[$i],
-    //         'pre_budget' => $stores->pre_budget[$i],
-    //         'pro_person' => $stores->pro_person[$i],
-    //         'pro_budget' => $stores->pro_budget[$i],
-    //         'pro_position_id' => $stores->pro_position_id[$i],
-    //         'post_position_id' => $stores->post_position_id[$i],
-    //         'post_person' => $stores->post_person[$i],
-    //         'post_budget' => $stores->post_budget[$i],
-
-    //     );
-
-    //     $insertData[] = $data;
-    // }
-
-        $stores->save();
-        // PostTeam::insert($insertData);
-        // return redirect()->route('/findTeam')->with('success','data insert');
-
-        if(!empty($request['pro_position_id'])){
-            $pro_id = '';
-            foreach($request['pro_position_id'] as $stores){
-                if($pro_id != ''){
-                    $pro_id = $pro_id.','.$stores;
+        // ------------pre-----------
+        if(!empty($request->pre_position_id)){
+                $pre_id = '';
+            foreach($request->pre_position_id as $key => $position_id){
+                if($key != 0){
+                    $pre_id = $pre_id.','.$position_id;
                 }else{
-                    $pro_id = $stores;
+                    $pre_id = $position_id;
                 }
             }
-            $request['pro_position_id'] = $pro_id;
+        }
+        if(!empty($request->pre_person)){
+            $pre_person = '';
+            foreach($request->pre_person as $key => $person){
+                if($person != 0){
+                    if($key != 0){
+                        $pre_person = $pre_person.','.$person;
+                    }else{
+                        $pre_person = $person;
+                    }
+                }
+            }
+        }
+        if(!empty($request->pre_budget)){
+            $pre_budget = '';
+            foreach($request->pre_budget as $key => $budget){
+                if($budget != "Choose..."){
+                    if($key != 0){
+                        $pre_budget = $pre_budget.','.$budget;
+                    }else{
+                        $pre_budget = $budget;
+                    }
+                }
+            }
         }
 
-        return $request;
+        // ------------pro-----------
+        if(!empty($request->pro_position_id)){
+            $pro_id = '';
+            foreach($request->pro_position_id as $key => $position_id){
+                if($key != 0){
+                    $pro_id = $pro_id.','.$position_id;
+                }else{
+                    $pro_id = $position_id;
+                }
+            }
+        }
+        if(!empty($request->pro_person)){
+            $pro_person = '';
+            foreach($request->pro_person as $key => $person){
+                if($person != 0){
+                    if($key != 0){
+                        $pro_person = $pro_person.','.$person;
+                    }else{
+                        $pro_person = $person;
+                    }
+                }
+            }
+        }
+        if(!empty($request->pro_budget)){
+            $pro_budget = '';
+            foreach($request->pro_budget as $key => $budget){
+                if($budget != "Choose..."){
+                    if($key != 0){
+                        $pro_budget = $pro_budget.','.$budget;
+                    }else{
+                        $pro_budget = $budget;
+                    }
+                }
+            }
+        }
+
+        // ------------post-----------
+        if(!empty($request->post_position_id)){
+            $post_id = '';
+            foreach($request->post_position_id as $key => $position_id){
+                if($key != 0){
+                    $post_id = $post_id.','.$position_id;
+                }else{
+                    $post_id = $position_id;
+                }
+            }
+        }
+        if(!empty($request->post_person)){
+            $post_person = '';
+            foreach($request->post_person as $key => $person){
+                if($person != 0){
+                    if($key != 0){
+                        $post_person = $post_person.','.$person;
+                    }else{
+                        $post_person = $person;
+                    }
+                }
+            }
+        }
+        if(!empty($request->post_budget)){
+            $post_budget = '';
+            foreach($request->post_budget as $key => $budget){
+                if($budget != "Choose..."){
+                    if($key != 0){
+                        $post_budget = $post_budget.','.$budget;
+                    }else{
+                        $post_budget = $budget;
+                    }
+                }
+            }
+        }
+
+         $stores = new PostTeam;
+
+        $stores->name = $request->name;
+        $stores->detail = $request->detail;
+        $stores->start_date = $request->start_date;
+        $stores->end_date = $request->end_date;
+        $stores->pre_position_id = $pre_id;
+        $stores->pre_person = $pre_person;
+        $stores->pre_budget = $pre_budget;
+        $stores->pro_position_id = $pro_id;
+        $stores->pro_person = $pro_person;
+        $stores->pro_budget = $pro_budget;
+        $stores->post_position_id = $post_id;
+        $stores->post_person = $post_person;
+        $stores->post_budget = $post_budget;
+
+
+        $stores->save();
+
+        // return 'pre position :'.$pre_id.'<br> pre person :'.$pre_person.'<br> pre budjet :'.$pre_budget.'pro position :'.$pro_id.'<br> pro person :'.$pro_person.'<br> pro budjet :'.$pro_budget.'post position :'.$post_id.'<br> post person :'.$post_person.'<br> post budjet :'.$post_budget;
+        return view('findteam.createteam');
+
+      //แปลงค่าจาก db
+    //   $pre_id_explode = explode(',',$pre_id);
+    //     foreach($pre_id_explode as $key => $id){
+    //         $position_name['name'][$key] = Position::where('id',$id)->first();
+    //     }
+
+    //     return $position_name;
 
     }
 

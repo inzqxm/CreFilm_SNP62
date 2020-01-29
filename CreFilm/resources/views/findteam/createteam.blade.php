@@ -148,7 +148,7 @@
                             <div class="col-md-3 ">
                                 <div class="box-moneylow" style="width:240px;">
                                     <select class="custom-select" style="border-radius: 18px;background-color: #f4f4f4;border: none;" name="pre_person[]">
-                                        <option selected>0</option>
+                                        <option >0</option>
                                         <option value="1">1</option>
                                         <option value="2">2</option>
                                         <option value="3">3</option>
@@ -165,7 +165,7 @@
                             <div class="col-md-3">
                                 <div class="box-moneylow" style="width:240px;">
                                     <select class="custom-select" style="border-radius: 18px;background-color: #f4f4f4;border: none;" name="pre_budget[]">
-                                        <option selected>Choose...</option>
+                                        <option >Choose...</option>
                                         <option value="300">300</option>
                                         <option value="400">400</option>
                                         <option value="500">500</option>
