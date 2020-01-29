@@ -35,14 +35,7 @@ class TeamController extends Controller
      */
     public function store(Request $request)
     {
-        $this->validate($request, [
-            'fname' => 'required',
-            'lname' => 'required',
-            'name' => 'required',
-            'name' => 'required',
-            'name' => 'required',
-            'name' => 'required',
-        ]);
+
     }
 
     /**

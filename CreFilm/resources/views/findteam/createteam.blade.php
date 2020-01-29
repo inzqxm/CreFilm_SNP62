@@ -63,7 +63,7 @@
                         <div class="col-12">
                             <h5 style="padding-top: 28px;">สถานะของงาน</h5>
 {{--                            <input type="text" name="status" placeholder="กรอกสถานะสั้นๆ เช่น ด่วนมาก, สายลุย, ไม่เก่งก็ทำได้" style="width:100%;height: 50px;background-color: #f4f4f4;box-sizing: border-box;font-family: Kanit;border: none;padding: 15px;color: #000000;border-radius: 20px;font-size: 18px;" />--}}
-                            <h5>tag jaaaa</h5>
+                            <h5>tag</h5>
                         </div>
 
                         <div class="col-12">

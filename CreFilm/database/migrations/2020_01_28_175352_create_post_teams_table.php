@@ -20,16 +20,16 @@ class CreatePostTeamsTable extends Migration
             $table->text('detail');
             $table->string('start_date');
             $table->string('end_date');
-            $table->string('pre_position_id')->nullable();
-            $table->string('pre_person')->nullable();
-            $table->string('pre_budget')->nullable();
-            $table->string('pro_position_id')->nullable();
-            $table->string('pro_person')->nullable();
-            $table->string('pro_budget')->nullable();
-            $table->string('post_position_id')->nullable();
-            $table->string('post_person')->nullable();
-            $table->string('post_budget')->nullable();
-            $table->string('img_head')->nullable();
+            $table->string('pre_position_id');
+            $table->string('pre_person');
+            $table->string('pre_budget');
+            $table->string('pro_position_id');
+            $table->string('pro_person');
+            $table->string('pro_budget');
+            $table->string('post_position_id');
+            $table->string('post_person');
+            $table->string('post_budget');
+            $table->string('img_head');
             $table->timestamps();
         });
     }

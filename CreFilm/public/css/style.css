@@ -623,7 +623,7 @@ body {
     border: 2px solid #FBB040;
 }
 
-/* When the checkbox is checked, add a blue background */
+/* When the checkbox is checked, add a ylw background */
 .fillterCheck input:checked ~ .checkmark {
     background-color: #FBB040;
     border: 2px solid #FBB040;

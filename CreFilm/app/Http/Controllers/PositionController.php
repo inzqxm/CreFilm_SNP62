@@ -27,6 +27,7 @@ class PositionController extends Controller
      */
     public function create()
     {
+
         return view('findteam.createteam');
     }
 
@@ -76,6 +77,7 @@ class PositionController extends Controller
         $count = count($stores->pre_person);
     else $count = count($stores->pre_position_id);
 
+
     // for($i = 0; $i < $count; $i++){
     //     $data = array(
     //         'pre_position_id' => $stores->pre_position_id[$i],
@@ -97,7 +99,21 @@ class PositionController extends Controller
         // PostTeam::insert($insertData);
         // return redirect()->route('/findTeam')->with('success','data insert');
 
-}
+        if(!empty($request['pro_position_id'])){
+            $pro_id = '';
+            foreach($request['pro_position_id'] as $stores){
+                if($pro_id != ''){
+                    $pro_id = $pro_id.','.$stores;
+                }else{
+                    $pro_id = $stores;
+                }
+            }
+            $request['pro_position_id'] = $pro_id;
+        }
+
+        return $request;
+
+    }
 
     /**
      * Display the specified resource.
