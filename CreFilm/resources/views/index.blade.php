@@ -20,7 +20,7 @@
                     <h1>เรามีกว่า 200 ทีม</h1>
                     <h1 class="testH1img">ที่รอให้คุณมาร่วมสร้างสรรค์ผลงานกับเรา</h1>
                     <div class="box-buttonBannerHead">
-                        <a class="btnCreatTeam" href="/createTeam"><button>สรา้งทีม</button></a>
+                        <a class="btnCreatTeam" href="/createTeam"><button>สร้างทีม</button></a>
                         <a class="btnFindTeam" href="/findTeam"><button>หาทีมกับเรา</button></a>
                     </div>
                 </div>
@@ -282,7 +282,9 @@
         </div><!-- row -->
 
 
-        <div class="row">
+
+        {{-- --------------------บทความ-------------------- --}}
+        {{-- <div class="row">
 
             <div class="col">
                 <p style="color: #000000; font-family: Kanit; font-size: 25px; font-weight: bold; padding: 29px 0 20.5px 0;" class="text-left">บทความ</p>
@@ -341,7 +343,7 @@
                     <a href="contest.html"><button type="button" class="btn btn-outline-warning">บทความทั้งหมด</button></a>
                 </div>
             </div>
-        </div><!-- row -->
+        </div><!-- row --> --}}
 
 
     </div><!-- container -->

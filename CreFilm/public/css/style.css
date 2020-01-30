@@ -436,9 +436,9 @@ body {
 }
 .box-tag-position button {
     color: #939393;
-    width: 52px;
-    height: 24px;
-    border-radius: 12px;
+    /* width: 52px;
+    height: 24px; */
+    border-radius: 25px;
     font-size: 13px;
     background-color: #f5f5f5;
 }
@@ -913,3 +913,18 @@ body {
 /*.mt-10 {*/
     /*margin-top: 6rem!important;*/
 /*}*/
+
+/* Bootstrap css */
+@import "https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css";
+
+/* Google Material icons */
+@import "http://fonts.googleapis.com/icon?family=Material+Icons";
+
+/* Propeller css */
+@import "dist/css/propeller.min.css";
+
+/* Bootstrap datetimepicker */
+@import "datetimepicker/css/bootstrap-datetimepicker.css";
+
+/* Propeller datetimepicker */
+@import "datetimepicker/css/pmd-datetimepicker.css";

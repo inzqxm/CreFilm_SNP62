@@ -49,7 +49,7 @@
 
         <br>
 
-        <form role="form" action="{{action('PositionController@store')}}" method="post">
+        <form role="form" action="{{action('PositionController@store')}}" method="post" enctype="multipart/form-data">
             {{csrf_field()}}
 <!-- {{--            -----------------------step1----------------------}} -->
             <div class="row setup-content" id="step-1">
@@ -60,10 +60,14 @@
                             <input type="text" id="name"  name="name" placeholder="กรอกชื่อหัวข้องานที่ทำ เช่น ชื่องานที่ลงประกวด, งานหนังสั้นนักศึกษา มหาวิทยาลัย" style="width:100%;height: 50px;background-color: #f4f4f4;box-sizing: border-box;font-family: Kanit;border: none;padding: 20px;color: #000000;border-radius: 15px;font-size: 18px;" />
 
                         </div>
-                        <div class="col-12">
+                        <div class="col-4">
                             <h5 style="padding-top: 28px;">สถานะของงาน</h5>
-{{--                            <input type="text" name="status" placeholder="กรอกสถานะสั้นๆ เช่น ด่วนมาก, สายลุย, ไม่เก่งก็ทำได้" style="width:100%;height: 50px;background-color: #f4f4f4;box-sizing: border-box;font-family: Kanit;border: none;padding: 15px;color: #000000;border-radius: 20px;font-size: 18px;" />--}}
-                            <h5>tag</h5>
+                            <select class="custom-select" style="border-radius: 18px;background-color: #f4f4f4;color: #000;border: none;" name="status">
+                                <option selected> </option>
+                                <option value="ด่วน">ด่วน</option>
+                                <option value="ไม่เก่งก็ทำได้">ไม่เก่งก็ทำได้</option>
+                                <option value="ด่วนที่สุด">ด่วนที่สุด</option>
+                            </select>
                         </div>
 
                         <div class="col-12">
@@ -75,8 +79,8 @@
                             <div class="row">
                                 <div class="col-4">
                                     <h6>เริ่ม : </h6>
-                                    <div id="datepick" class="col-12 input-group date" data-provide="datepicker">
-                                        <i class="fas">&#xf073;</i>&nbsp;&nbsp;<input type="text" class="form-control" name="start_date"  style="background-color: #f4f4f4;border-radius: 50px;border-color: transparent;font-family: Kanit" placeholder="mm/dd/yyy">
+                                    <div id="datepick" class="col-12 input-group date" data-provide="datepicker" data-date-format="dd/mm/yyyy">
+                                        <i class="fas">&#xf073;</i>&nbsp;&nbsp;<input type="text" class="form-control" name="start_date"  style="background-color: #f4f4f4;border-radius: 50px;border-color: transparent;font-family: Kanit" placeholder="dd/mm/yyyy">
                                         <div class="input-group-addon">
                                             <span class="glyphicon glyphicon-th"></span>
                                         </div>
@@ -84,8 +88,8 @@
                                 </div>
                                 <div class="col-4">
                                     <h6>สิ้นสุด : </h6>
-                                    <div id="datepick" class="col-12 input-group date" data-provide="datepicker">
-                                        <i class="fas">&#xf073;</i>&nbsp;&nbsp;<input type="text" class="form-control" name="end_date" style="background-color: #f4f4f4;border-radius: 50px;border-color: transparent;font-family: Kanit" placeholder="mm/dd/yyy">
+                                    <div id="datepick" class="col-12 input-group date" data-provide="datepicker" data-date-format="dd/mm/yyyy">
+                                        <i class="fas">&#xf073;</i>&nbsp;&nbsp;<input type="text" class="form-control" name="end_date" style="background-color: #f4f4f4;border-radius: 50px;border-color: transparent;font-family: Kanit" placeholder="dd/mm/yyyy">
                                         <div class="input-group-addon">
                                             <span class="glyphicon glyphicon-th"></span>
                                         </div>
@@ -401,10 +405,10 @@
                             <h4 style="padding-top: 28px;">วันเริ่ม/จบ Project</h4>
                             <div class="row">
                                 <div class="col-4">
-                                    <span style="color: #6c757d">เริ่ม :</span>&nbsp;<span>}</span>
+                                <span style="color: #6c757d">เริ่ม :</span>&nbsp;<span name="start_date"></span>
                                 </div>
                                 <div class="col-4">
-                                    <span style="color: #6c757d">สิ้นสุด :</span>&nbsp;<span>}</span>
+                                <span style="color: #6c757d">สิ้นสุด :</span>&nbsp;<span name="start_date"></span>
                                 </div>
                             </div>
                         </div>
@@ -416,9 +420,10 @@
                              {{-- <p id="name1"></p> --}}
                              <p id="text" style="display:none"></p>
                         </div>
+                        
                         <div class="col-12">
                             <h4 style="padding-top: 28px;">ภาพปกของงาน</h4>
-                            <input type="file">
+                            <input type="file" name="img_head">
 
                         </div>
 
@@ -491,7 +496,7 @@
 
         $(function () {
             $('#datepicker').datepicker({
-                format: "dd/mm/yyyy",
+                dateFormat: "dd-mm-yyyy",
                 autoclose: true,
                 todayHighlight: true,
                 showOtherMonths: true,

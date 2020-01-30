@@ -24,7 +24,7 @@ Route::get('/findTeam','FindteamController@index');
 
 Route::resource('/createTeam', 'PositionController');
 
-Route::get('/search','FindteamController@show');
+Route::post('/findTeam/search','FindteamController@show');
 // Route::get('/createTeam','FindteamController@create');
 
 

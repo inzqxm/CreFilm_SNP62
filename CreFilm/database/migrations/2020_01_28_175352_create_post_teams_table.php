@@ -13,6 +13,8 @@ class CreatePostTeamsTable extends Migration
      */
     public function up()
     {
+        $datetime = date('Y-m-d H:i:s');
+        
         Schema::create('post_teams', function (Blueprint $table) {
             $table->bigIncrements('id');
             $table->string('name');
