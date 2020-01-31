@@ -53,89 +53,69 @@
 
                 <div class="col-md-12">
 
-                    @if(!empty($post_teams))
+{{--                    @if(!empty($post_teams))--}}
                         @foreach($post_teams as $post_team)
 
                             <div class="box-teammer">
                                 <div class="card" style="border: none;">
                                     <div class="box-imgCoverTeamBig">
-                                        <div class="box-joinNum">
-                                            <div class="box-textUpImg01">
-                                                <p class="text-center">ผู้ขอเข้าร่วม</p>
-                                            </div>
-                                            <div class="box-textUpImg02">
-                                                <p class="text-center">8</p>
-                                            </div>
-                                            <div class="box-textUpImg03">
-                                                <p class="text-center">/4</p>
-                                            </div>
-                                        </div><!-- box-joinNum -->
+{{--                                        <div class="box-joinNum">--}}
+{{--                                            <div class="box-textUpImg01">--}}
+{{--                                                <p class="text-center">ผู้ขอเข้าร่วม</p>--}}
+{{--                                            </div>--}}
+{{--                                            <div class="box-textUpImg02">--}}
+{{--                                                <p class="text-center">8</p>--}}
+{{--                                            </div>--}}
+{{--                                            <div class="box-textUpImg03">--}}
+{{--                                                <p class="text-center">/4</p>--}}
+{{--                                            </div>--}}
+{{--                                        </div><!-- box-joinNum -->--}}
                                         <div class="box-headTeamName">
-                                            <a href="#"><h3>&#9679; {{$post_teams->name}}</h2></a>
+                                            <h3>&#9679; {{$post_team->name}}</h3>
                                         </div><!-- box-headTeamName -->
-                                        <img class="card-img-top" src="image/coverbig_team_01.jpg" alt="Card image cap">
+                                        <img class="card-img-top" src="/uploads/covers_team/{{$post_team->img_head}}" alt="Cover Team" style="height: 250px;background-position: center;object-fit: cover;">
                                     </div><!-- box-imgCover -->
                                     <div class="card-body" style="width: 100%; height: 110px; box-shadow: 0 -0.5px 10px 0 rgba(96, 96, 96, 0.16); border-radius: 15px; margin-top: -100px; background-color: #ffffff; ">
-                                        <a href="#"><img src="image/profile_01.jpg" alt="..." class="rounded-circle" style="width: 60px; height: 60px; margin-top: -40px; border: 4px solid #ffffff;"></a>
+                                        <a href="#"><img src="" alt="..." class="rounded-circle" style="width: 60px; height: 60px; margin-top: -40px; border: 4px solid #ffffff;"></a>
                                         <div class="box-team">
                                             <div class="mediaCardTeam-body">
-                                                <a href="#"><h5 class="mt-0">user_id</h5></a>
+                                                <a href="#"><h5 class="mt-0">{{$post_team->user_name}}</h5></a>
                                                 <div class="row">
-                                                <p style="color: #939393; font-size: 14px; font-weight: lighter; padding-left: 15px;">สถานะ: <code style="color: #39b54a; font-family: Kanit; font-size: 14px;">{{$post_teams->status}}</code></p>
+                                                <p style="color: #939393; font-size: 14px; font-weight: lighter; padding-left: 15px;">สถานะ: <code style="color: #39b54a; font-family: Kanit; font-size: 14px;">{{$post_team->status}}</code></p>
                                                     <p class="offset-md-4" style="color: #939393; font-size: 14px; font-weight: lighter; "></p>
                                                 </div><!-- row -->
                                             </div><!-- media-body -->
 
                                             <div class="box-tag-position">
-                                                <button type="button" class="btn text-center">position</button>
+                                                <button type="button" class="btn text-center">{{$post_team->status}}</button>
                                                 <div class="box-btnViewDetailTeam">
-                                                    <a href="#" class="btn btn-primary">รายละเอียด</a>
+                                                    <a href="/findTeam/detail/{{$post_team->id}}" class="btn btn-primary">รายละเอียด</a>
                                                 </div>
                                             </div><!-- box-tag-position -->
                                         </div><!-- box-team -->
                                     </div><!-- card-body -->
+                                    <br><br>
 
                                 </div><!-- card -->
                             </div><!-- box-teammer -->
 
-                            <div class="col-md-3 offset-md-4 boxNextPageView">
-                                    <nav aria-label="...">
-                                        <ul class="pagination">
-                                            <li class="page-item disabled">
-                                                <a class="page-link" href="/findTeam" tabindex="-1" style="color: #000000;">Previous</a>
-                                            </li>
-                
-                                            <li class="page-item active" style="background-color: #fbb040;"><a class="page-link" href="/findTeam" style="color: #ffffff; background-color: #fbb040; border: none;">1</a></li>
-                
-                                            <li class="page-item">
-                                                <a class="page-link" href="/findTeamSecond" style="color: #939393;">2 <span class="sr-only" style="color: #939393;">(current)</span></a>
-                                            </li>
-                
-                                            <li class="page-item" style="color: #939393;"><a class="page-link" href="/findTeamThird" style="color: #939393;">3</a></li>
-                
-                                            <li class="page-item">
-                                                <a class="page-link" href="#" style="color: #000000;">Next</a>
-                                            </li>
-                                        </ul>
-                                    </nav>
-                
-                                </div><!-- col-md-3 offset-md-5 -->
+
 
                         @endforeach
 
-                    @else
-                        <div class="text-center">
-                            <p> No Team</p>
-                        </div>
-                        <div class="text-center">
-                            <p style="color: #d0d0d0"> - โปรดสร้างทีมของคุณ -</p>
-                        </div>
-                    @endif
+{{--                    @else--}}
+{{--                        <div class="text-center">--}}
+{{--                            <p> No Team</p>--}}
+{{--                        </div>--}}
+{{--                        <div class="text-center">--}}
+{{--                            <p style="color: #d0d0d0"> - โปรดสร้างทีมของคุณ -</p>--}}
+{{--                        </div>--}}
+{{--                    @endif--}}
 
                 </div><!-- col-md-12 -->
 
 
-                
+
 
             </div><!-- col -->
 
@@ -144,6 +124,8 @@
                     <form role="form" action="{{action('FindteamController@show')}}" method="post">
                         {{csrf_field()}}
                         <div class="card bg-white text-white" style="width: 280px; padding-bottom: 20px; border-radius: 15px; border: 2px solid #fbb040; box-shadow: 0 0 10px 0 rgba(96, 96, 96, 0.16);">
+
+                            <form action="/search" method="get">
 
                             <div class="card-img-overlayy">
                                 <h4 class="text-center" style="font-size: 18px; font-weight: bold; padding-top: 10px; color: #000000;">ตัวกรอง</h4>
@@ -155,7 +137,7 @@
 
 
                             <div class="box-checkboxx">
-                                <form action="/search" method="get">
+
                                 @foreach ($positions as $row)
 
                                     <div class="box-checkListPosition">
@@ -167,8 +149,8 @@
 
 
                                 @endforeach
-                                <button type="submit" >search</button>
-                            </form>
+                                {{-- <button id="findBtn" type="submit" >search</button> --}}
+
                             </div><!-- box-checkboxx -->
 
 
@@ -220,13 +202,13 @@
                                 </select>
 
                                 <div class="box-selectposition">
-                                    <input class="btn btn-primary" type="submit" value="กรอง">
+                                    <input class="btn btn-primary" id="findBtn" type="submit" value="กรอง">
                                 </div><!-- box-selectposition -->
 
 
                             </div>
 
-
+                        </form>
 
 
 

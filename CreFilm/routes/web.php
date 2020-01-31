@@ -25,6 +25,10 @@ Route::get('/findTeam','FindteamController@index');
 Route::resource('/createTeam', 'PositionController');
 
 Route::post('/findTeam/search','FindteamController@show');
+Route::get('/findTeam/detail/{id}','TeamController@show');
+
+//Route::get('/findTeam/detail/{username}','TeamController@show');
+Route::get('/profile/{username}','ProfileController@index');
 // Route::get('/createTeam','FindteamController@create');
 
 
