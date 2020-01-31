@@ -17,9 +17,12 @@ use Illuminate\Support\Facades\Route;
 
 Auth::routes();
 
-Route::get('/', function () {
-    return view('index');
-});
+//Route::get('/', function () {
+//    return view('HomeController@index');
+//});
+Route::get('/','HomeController@index');
+
+
 Route::get('/findteam','FindteamController@index');
 
 Route::resource('/createTeam', 'PositionController');

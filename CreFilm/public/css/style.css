@@ -1311,12 +1311,12 @@ body {
 }
 .box-headTeamName {
     position: absolute;
-    top: 135px;
+    top: 120px;
     left: 90px;
 }
 .box-headTeamName h3 {
     font-size: 17px;
-    color: #ffffff;
+    color: #C1C1C1;
     font-weight: bold;
 }
 .box-imgCoverTeamBig img {

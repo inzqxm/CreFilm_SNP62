@@ -11,6 +11,7 @@ use App\PostTeam;
 use Illuminate\Contracts\View\View;
 use Illuminate\Support\Facades\Input;
 use DB;
+use App\Http\Resources\PostTeamCollection;
 
 class FindteamController extends Controller
 {
@@ -41,10 +42,18 @@ class FindteamController extends Controller
             ->leftJoin('positions as pro_id','post_teams.pro_position_id','=','pro_id.id')
             ->leftJoin('positions as post_id','post_teams.post_position_id','=','post_id.id')
             ->leftJoin('users','post_teams.user_id','=','users.id')
+            ->orderBy('post_teams.id', 'DESC')
+
             ->get()->toArray();
+
+//        $post_teams = PostTeamCollection::collection(DB::table('post_teams')->all());
+
+//        $post_teams = PostTeamCollection::collection(DB::table('post_teams')->get());
+
 //        dd($post_teams);
+//        return PostTeamCollection::collection(DB::table('post_teams')->get());
 
-
+//
         return view('findteam.findteam',compact('post_teams','positions'));
     }
 
@@ -57,31 +66,55 @@ class FindteamController extends Controller
 
         // dd($request->all());
 
-
-        if(!empty($request->position_id)){
-            $position_search = '';
-            foreach($request->position_id as $key => $id){
-                if($key != 0){
-                    $position_search = $position_search.','.$id;
-                }else{
-                    $position_search = $id;
-                }
-            }
-            return $position_search;
-        }
+//        $post_teams = PostTeamCollection::collection(DB::table('post_teams')->all());
 
 
-        $position_search_explode = explode(',',$position_search);
-        foreach($position_search_explode as $key => $id){
-            $position_name['name'][$key] = Position::where('id',$id)->first();
-        }
+//        $post_teams[0] = DB::table('post_teams')->where('pre_position_id','like','2,%')->get();
+//        $post_teams[1] = DB::table('post_teams')->where('pre_position_id','like','3,%')->get();
+//
+//        $post_teams = DB::table('post_teams')->get();
+//
+//
+//        $merged = $post_teams->merge(['pre_position_id' => '%2%', 'pro_position_id' => '%11%']);
+//        return $merged;
 
-        return $position_name;
+
+        $findteam = Position::whereHas('position', function($q) use ($request) {
+            $q->whereIn('name', $request);
+        })->get();
+
+        dd($findteam);
+
+
+
+//
+//
+//        if(!empty($request->position_id)){
+//            $position_search = '';
+//            foreach($request->position_id as $key => $id){
+//                if($key != 0){
+//                    $position_search = $position_search.','.$id;
+//                }else{
+//                    $position_search = $id;
+//                }
+//            }
+//            return $position_search;
+//        }
+//
+//
+//        $position_search_explode = explode(',',$position_search);
+//        foreach($position_search_explode as $key => $id){
+//            $position_name['name'][$key] = Position::where('id',$id)->first();
+//        }
+//
+//        return $position_name;
+
+
 
 
 
         // -----1-----
-        $tags = Input::get($position_name);
+//        $tags = Input::get($position_name);
 
         $search =  $this->user
                         ->join('positions','positions.id','=', $position_name)

@@ -44,7 +44,7 @@ class PositionController extends Controller
     {
 
         // dd($request->all());
-        
+
         $this->validate($request, [
             "name" => 'required',
             "detail" =>  'required',
@@ -205,7 +205,7 @@ class PositionController extends Controller
         $stores->save();
 
         // return 'pre position :'.$pre_id.'<br> pre person :'.$pre_person.'<br> pre budjet :'.$pre_budget.'pro position :'.$pro_id.'<br> pro person :'.$pro_person.'<br> pro budjet :'.$pro_budget.'post position :'.$post_id.'<br> post person :'.$post_person.'<br> post budjet :'.$post_budget;
-        return redirect('/findteam')->with('success','Post Success');
+        return redirect('/findteam')->with('success');
         // return $stores;
 
       //แปลงค่าจาก db

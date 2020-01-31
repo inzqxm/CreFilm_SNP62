@@ -20,8 +20,8 @@
 
     <div class="row">
         <div class="col-3">
-            <div class="boxImgProfile">
-                <img src="image/profile_01.jpg" class="rounded-circle">
+            <div class="boxImgProfile"style="background-color: #d0d0d0;border-radius: 50%;">
+                <img src="" class="rounded-circle">
             </div>
         </div>
 
@@ -180,7 +180,7 @@
                                         <img class="card-img-top" src="/uploads/covers_team/{{$post_team->img_head}}" alt="Card image cap" style="height: 200px;background-position: center;object-fit: cover;">
                                     </div>
                                     <div class="media position-relative">
-                                        <img src="/upload/user/" class="rounded-circle" alt="...">
+                                        <img src="" class="rounded-circle" alt="..." style="background-color: #d0d0d0;border-radius: 50%;background-size: cover;">
                                         <div class="media-body">
                                             <a href="#"><h5 class="mt-0">{{$post_team->name}}</h5></a>
                                             <div class="box-statusText">

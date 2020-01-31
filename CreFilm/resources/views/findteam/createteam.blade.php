@@ -420,7 +420,7 @@
                              {{-- <p id="name1"></p> --}}
                              <p id="text" style="display:none"></p>
                         </div>
-                        
+
                         <div class="col-12">
                             <h4 style="padding-top: 28px;">ภาพปกของงาน</h4>
                             <input type="file" name="img_head">
@@ -517,14 +517,14 @@
               "pre_pos").innerHTML = x;
         }
         function myFunction2() {
-  var checkBox = document.getElementById("pre_position_id");
-  var text = document.getElementById("text");
-  if (checkBox.checked == true){
-    text.style.display = "block";
-  } else {
-     text.style.display = "none";
-  }
-}
+          var checkBox = document.getElementById("pre_position_id");
+          var text = document.getElementById("text");
+          if (checkBox.checked == true){
+            text.style.display = "block";
+          } else {
+             text.style.display = "none";
+          }
+        }
 
     </script>
 

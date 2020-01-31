@@ -10,17 +10,17 @@
                 <a class="nav-link" href="/">หน้าหลัก</a>
             </li>
             <li class="nav-item" style="padding-right: 32px;">
-                <a class="nav-link" href="/findTeam">หาทีม</a>
+                <a class="nav-link" href="/findteam">หาทีม</a>
             </li>
             <li class="nav-item" style="padding-right: 32px;">
                 <a class="nav-link" href="#">รวมคนทำงาน</a>
             </li>
             <li class="nav-item" style="padding-right: 32px;">
-                <a class="nav-link disabled" href="contest.html">งานประกวด</a>
+                <a class="nav-link disabled" href="/contest">งานประกวด</a>
             </li>
-            <li class="nav-item" style="padding-right: 32px;">
-                <a class="nav-link disabled" href="#">บทความ</a>
-            </li>
+{{--            <li class="nav-item" style="padding-right: 32px;">--}}
+{{--                <a class="nav-link disabled" href="#">บทความ</a>--}}
+{{--            </li>--}}
             <li class="nav-item" style="padding-right: 32px;">
                 <a class="nav-link disabled" href="#">ติดต่อเรา</a>
             </li>

@@ -76,7 +76,7 @@
                                         <img class="card-img-top" src="/uploads/covers_team/{{$post_team->img_head}}" alt="Cover Team" style="height: 250px;background-position: center;object-fit: cover;">
                                     </div><!-- box-imgCover -->
                                     <div class="card-body" style="width: 100%; height: 110px; box-shadow: 0 -0.5px 10px 0 rgba(96, 96, 96, 0.16); border-radius: 15px; margin-top: -100px; background-color: #ffffff; ">
-                                        <a href="#"><img src="" alt="..." class="rounded-circle" style="width: 60px; height: 60px; margin-top: -40px; border: 4px solid #ffffff;"></a>
+                                        <a href="#"><img src="/uploads/image/profile_01.jpg" alt="..." class="rounded-circle" style="width: 60px; height: 60px; margin-top: -40px; border: 4px solid #ffffff;background-color: #d0d0d0;border-radius: 50%;background-size: cover;"></a>
                                         <div class="box-team">
                                             <div class="mediaCardTeam-body">
                                                 <a href="#"><h5 class="mt-0">{{$post_team->user_name}}</h5></a>
