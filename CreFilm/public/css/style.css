@@ -26,7 +26,913 @@ body {
 /*--------------------------------------------*/
 
 
+/*.container {*/
+/*    font-family: Kanit;*/
+/*}*/
+/*!*--------------------------------navbar---------------------------------*!*/
+/*.navbar-brand {*/
+/*    padding-left: 94px;*/
+/*}*/
+/*.navbar-brand img {*/
+/*    width: 55px;*/
+/*    height: 55px;*/
+/*}*/
+/*.navbar-nav {*/
+/*    font-family: Kanit;*/
+/*    padding-right: 153px;*/
+/*}*/
+/*.nav-item li.active:after{*/
+/*    color: #fbb040;*/
+/*}*/
+/*!*--------------------------------navbar---------------------------------*!*/
+
+/*.footer p {*/
+/*    color: #cccccc;*/
+/*    font-size: 17px;*/
+/*    font-family: Kanit;*/
+/*}*/
+
+
+/*.box-under-slide p {*/
+/*    background-color: #000000;*/
+/*    width: 100%;*/
+/*    height: 46px;*/
+/*    color: #ffffff;*/
+/*    font-size: 20px;*/
+/*    line-height: 1.5;*/
+/*    padding: 8px 0 8px 0;*/
+/*    font-family: Kanit;*/
+/*}*/
+/*.box-headTopic p {*/
+/*    color: #000000;*/
+/*    font-family: Kanit;*/
+/*    font-size: 25px;*/
+/*    font-weight: bold;*/
+/*    line-height: 1.5;*/
+/*    padding: 36px 0 20px 0;*/
+/*}*/
+/*.box-imgPosition img {*/
+/*    font-size: 12px;*/
+/*    width: 250px;*/
+/*    height: 290px;*/
+/*    border-radius: 15px;*/
+/*}*/
+/*.box-detailInCard p {*/
+/*    font-size: 12px;*/
+/*    font-weight: lighter;*/
+/*    margin-top: -13px;*/
+/*}*/
+/*.box-detailInCard img {*/
+/*    width: 42px;*/
+/*    height: 42px;*/
+/*    margin: 60px 100px -50px 85px;*/
+/*}*/
+/*.card-img-overlay h5 {*/
+/*    font-size: 25px;*/
+/*    padding: 110px 0 0 0;*/
+/*}*/
+/*.box-imgCover {*/
+/*    width: 340px;*/
+/*    height: 172.9px;*/
+/*}*/
+/*.box-imgCover img {*/
+/*    border-radius: 15px 15px 0 0;*/
+/*}*/
+/*.media {*/
+/*    width: 340px;*/
+/*    height: 120px;*/
+/*    border-radius: 15px;*/
+/*    box-shadow: 0 -0.5px 10px 0 rgba(96, 96, 96, 0.16);*/
+/*    background-color: #ffffff;*/
+/*    margin-top: -20px;*/
+/*}*/
+/*.media img {*/
+/*    width: 60px;*/
+/*    height: 60px;*/
+/*    border: 4px solid #ffffff;*/
+/*    margin-top: -18px;*/
+/*}*/
+/*.media-body {*/
+/*    padding: 15px 0 0 10px;*/
+/*}*/
+/*.media-body h5 {*/
+/*    font-size: 15px;*/
+/*    color: #000000;*/
+/*}*/
+/*.box-buttonViewPage a {*/
+/*    color: #fbb040;*/
+/*    float: right;*/
+/*    padding-right: 15px;*/
+/*    margin-top: -37px;*/
+/*    font-size: 14px;*/
+/*}*/
+/*.box-buttonViewPage:hover a {*/
+/*    color: #000000;*/
+/*}*/
+/*.box-statusText p {*/
+/*    color: #939393;*/
+/*    font-size: 14px;*/
+/*    font-weight: lighter;*/
+/*}*/
+/*.box-statusPosition p {*/
+/*    color: #939393;*/
+/*    font-size: 14px;*/
+/*    font-weight: lighter;*/
+/*    margin-top: -15px;*/
+/*}*/
+/*.box-statusText2 {*/
+/*    padding-top: 20px;*/
+/*}*/
+/*.box-statusText2 p {*/
+/*    color: #939393;*/
+/*    font-size: 14px;*/
+/*    font-weight: lighter;*/
+/*}*/
+/*.box-textStatus2 p {*/
+/*    color: #939393;*/
+/*    font-size: 14px;*/
+/*    font-weight: lighter;*/
+/*    margin-top: -15px;*/
+/*}*/
+/*.box-buttonViewAll button {*/
+/*    font-weight: bold;*/
+/*    border-radius: 30px;*/
+/*    width: 170px;*/
+/*    height: 45px;*/
+/*    border: solid 2px #fbb040;*/
+/*    color: #fbb040;*/
+/*    font-size: 18px;*/
+/*}*/
+/*.box-buttonViewAll:hover button {*/
+/*    color: #ffffff;*/
+/*}*/
+/*.mediaa {*/
+/*    width: 540px;*/
+/*    height: 350px;*/
+/*    border-radius: 15px;*/
+/*    box-shadow: 0 0 15px 0 rgba(0, 0, 0, 0.16);*/
+/*    background-color: #ffffff;*/
+/*}*/
+/*.mediaa img {*/
+/*    width: 250px;*/
+/*    height: 350.5px;*/
+/*    border-radius: 15px 0 0 15px;*/
+/*}*/
+/*.media-bodyy h5 {*/
+/*    font-size: 18px;*/
+/*    color: #000000;*/
+/*    position: absolute;*/
+/*    top: 20px;*/
+/*    right: 90px;*/
+/*}*/
+/*.box-buttonHeadContest {*/
+/*    margin: 205px 0 0 22px;*/
+/*}*/
+/*.box-buttonHeadContest button {*/
+/*    background-color: #000000;*/
+/*    color: #ffffff;*/
+/*    font-size: 20px;*/
+/*    width: 210px;*/
+/*    height: 40px;*/
+/*    border-radius: 30px;*/
+/*    border: none;*/
+/*    cursor: pointer;*/
+/*}*/
+/*.box-cardContest {*/
+/*    width: 18rem;*/
+/*    width: 224px;*/
+/*    height: 350px;*/
+/*    box-shadow: 0 0 15px 0 rgba(0, 0, 0, 0.16);*/
+/*    border-radius: 15px;*/
+/*}*/
+/*.box-cardContest img {*/
+/*    width: 224px;*/
+/*    height: 241.5px;*/
+/*    border-radius: 15px 15px 0 0;*/
+/*}*/
+/*.card-body h5 {*/
+/*    font-weight: bold;*/
+/*    font-size: 14px;*/
+/*    color: #000000;*/
+/*}*/
+/*.box-btnDetail a {*/
+/*    background-color: #000000;*/
+/*    border: none;*/
+/*    width: 224px;*/
+/*    height: 40px;*/
+/*    margin: 0 0 0 -20px;*/
+/*    border-radius: 0 0 15px 15px;*/
+/*}*/
+/*.box-cardArticle {*/
+/*    width: 530px;*/
+/*    height: 350px;*/
+/*    border-radius: 15px;*/
+/*    border: none;*/
+/*}*/
+/*.box-cardArticle img {*/
+/*    font-size: 12px;*/
+/*    width: 530px;*/
+/*    height: 350px;*/
+/*    border-radius: 15px;*/
+/*}*/
+/*.box-cardArticle h5 {*/
+/*    font-size: 25px;*/
+/*    padding: 215px 30px 0 0;*/
+/*    font-weight: bold;*/
+/*    color: #ffffff;*/
+/*}*/
+/*.box-cardArticle:hover h5 {*/
+/*    color: #FBB040;*/
+/*}*/
+/*.box-cardArticleSmall {*/
+/*    width: 535px;*/
+/*    height: 166px;*/
+/*    border-radius: 15px;*/
+/*    border: none;*/
+/*}*/
+/*.box-cardArticleSmall img {*/
+/*    font-size: 19px;*/
+/*    width: 535px;*/
+/*    height: 166px;*/
+/*    border-radius: 15px;*/
+/*}*/
+/*.box-topicArticle h5 {*/
+/*    font-size: 19px;*/
+/*    padding: 100px 0 0 0;*/
+/*    font-weight: bold;*/
+/*    color: #ffffff;*/
+/*}*/
+/*.box-cardArticleSmall h5 {*/
+/*    font-size: 19px;*/
+/*    padding: 100px 20px 0 0;*/
+/*    font-weight: bold;*/
+/*    color: #ffffff;*/
+/*}*/
+/*.box-cardArticleSmall:hover h5 {*/
+/*    color: #FBB040;*/
+/*}*/
+/*.box-cardArticleSmallDown {*/
+/*    width: 535px;*/
+/*    height: 166px;*/
+/*    border-radius: 15px;*/
+/*    border: none;*/
+/*}*/
+/*.box-cardArticleSmallDown img {*/
+/*    font-size: 19px;*/
+/*    width: 535px;*/
+/*    height: 166px;*/
+/*    border-radius: 15px;*/
+/*}*/
+/*.box-cardArticleSmallDown h5 {*/
+/*    font-size: 19px;*/
+/*    padding: 280px 20px 0 0;*/
+/*    font-weight: bold;*/
+/*    color: #ffffff;*/
+/*}*/
+/*.box-cardArticleSmallDown:hover h5 {*/
+/*    color: #FBB040;*/
+/*}*/
+/*.box-headPage p {*/
+/*    color: #000000;*/
+/*    font-family: Kanit;*/
+/*    font-size: 25px;*/
+/*    font-weight: bold;*/
+/*    line-height: 1.5;*/
+/*    padding: 70px 0 47.1px 0;*/
+/*}*/
+/*.box-dropDown {*/
+/*    float: right;*/
+/*    padding-top: 70px;*/
+/*}*/
+/*.box-cardContestAll {*/
+/*    width: 18rem;*/
+/*    width: 100%;*/
+/*    height: 410px;*/
+/*    border-radius: 15px;*/
+/*    box-shadow: 0 0 15px 0 rgba(0, 0, 0, 0.16);*/
+/*    background-color: #ffffff;*/
+/*    border: none;*/
+/*}*/
+/*.box-cardContestAll img {*/
+/*    width: 100%;*/
+/*    height: 300px;*/
+/*    border-radius: 15px 15px 0  0;*/
+/*}*/
+/*.box-textDetailContest {*/
+/*    width: 100%;*/
+/*    height: 345px;*/
+/*    padding-top: 20px;*/
+/*}*/
+/*.box-textDetailContest p {*/
+/*    font-size: 13px;*/
+/*    color: #fbb040;*/
+/*    font-size: 13px;*/
+/*    margin-top: -13px;*/
+/*}*/
+/*.box-textDetailContest h4 {*/
+/*    font-size: 14px;*/
+/*    color: #000000;*/
+/*    margin-top: -10px;*/
+/*    font-weight: bold;*/
+/*}*/
+/*.box-textDetailContest h5 {*/
+/*    font-size: 16px;*/
+/*    color: #939393;*/
+/*}*/
+/*.box-buttonCreatTeam {*/
+/*    float: right;*/
+/*    padding-top: 70px*/
+/*}*/
+/*.box-buttonCreatTeam button {*/
+/*    width: 170px;*/
+/*    height: 45px;*/
+/*    border-radius: 30px;*/
+/*    border: solid 2px #fbb040;*/
+/*    background-color: #ffffff;*/
+/*    font-size: 18px;*/
+/*    color: #fbb040;*/
+/*    font-weight: bold;*/
+/*    cursor: pointer;*/
+/*}*/
+/*.box-buttonCreatTeam:hover button {*/
+/*    background-color: #fbb040;*/
+/*    color: #ffffff;*/
+/*}*/
+/*.card {*/
+/*    width: 18rem;*/
+/*    border-radius: 15px;*/
+/*    width: 100%;*/
+/*    height: auto;*/
+/*    !*  border-radius: 15px;*!*/
+/*    border: none;*/
+/*}*/
+/*.box-imgCoverTeamBig {*/
+/*    width: 100%;*/
+/*    height: auto;*/
+/*}*/
+/*.box-joinNum {*/
+/*    right: 0;*/
+/*    top: 17.4px;*/
+/*    position: absolute;*/
+/*    width: 81px;*/
+/*    height: 55px;*/
+/*    opacity: 0.95;*/
+/*    box-shadow: 0 3px 6px 0 rgba(0, 0, 0, 0.16);*/
+/*    background-color: #ffffff;*/
+/*    border-radius: 15px 0 0 15px;*/
+/*}*/
+/*.box-textUpImg01 {*/
+/*    font-size: 13px;*/
+/*    padding-top: 3px;*/
+/*    color: #939393;*/
+/*}*/
+/*.box-textUpImg02 {*/
+/*    font-size: 18px;*/
+/*    color: #fbb040;*/
+/*    font-weight: bold;*/
+/*    margin-top: -23px;*/
+/*}*/
+/*.box-textUpImg03 {*/
+/*    font-size: 13px;*/
+/*    color: #000000;*/
+/*    font-weight: lighter;*/
+/*    margin: -25px 0 0 20px;*/
+/*}*/
+/*.box-headTeamName {*/
+/*    position: absolute;*/
+/*    top: 120px;*/
+/*    left: 90px;*/
+/*}*/
+/*.box-headTeamName h3 {*/
+/*    font-size: 17px;*/
+/*    color: #C1C1C1;*/
+/*    font-weight: bold;*/
+/*}*/
+/*.box-imgCoverTeamBig img {*/
+/*    border-radius: 15px 15px 0 0;*/
+/*    width: 100%;*/
+/*    height: auto;*/
+/*}*/
+/*.box-btnViewDetailTeam a {*/
+/*    color: #ffffff;*/
+/*    width: 120px;*/
+/*    height: 35px;*/
+/*    border-radius: 23px;*/
+/*    background-color: #fbb040;*/
+/*    border: none;*/
+/*    margin-top: -35px;*/
+/*    float: right;*/
+/*    text-align: center;*/
+/*}*/
+/*.box-btnViewDetailTeam:hover a {*/
+/*    color: #fbb040;*/
+/*    border-radius: 23px;*/
+/*    background-color: #ffffff;*/
+/*    border: solid 2px #fbb040;*/
+/*    text-align: center;*/
+/*}*/
+/*.box-tag-position {*/
+/*    margin: -10px 0 0 70px;*/
+/*}*/
+/*.box-tag-position button {*/
+/*    color: #939393;*/
+/*    !* width: 52px;*/
+/*    height: 24px; *!*/
+/*    border-radius: 25px;*/
+/*    font-size: 13px;*/
+/*    background-color: #f5f5f5;*/
+/*}*/
+/*.box-team {*/
+/*    margin-top: -40px;*/
+/*}*/
+/*.mediaCardTeam-body {*/
+/*    padding: 10px 0 0 70px;*/
+/*}*/
+/*.mediaCardTeam-body h5 {*/
+/*    font-size: 15px;*/
+/*    color: #000000;*/
+/*}*/
+/*.boxNextPageView {*/
+/*    padding: 46.5px 0 62px 0;*/
+/*}*/
+/*.box-moneylow {*/
+/*    padding: 10px 0 0 20px;*/
+/*}*/
+/*.box-moneylow h5 {*/
+/*    font-size: 16px;*/
+/*    color: #000000;*/
+/*    font-weight: bold;*/
+/*}*/
+/*.box-moneylow button {*/
+/*    width: 235px;*/
+/*    height: 35px;*/
+/*    border-radius: 18px;*/
+/*    background-color: #f4f4f4;*/
+/*    color: #d0d0d0;*/
+/*    font-size: 15px;*/
+/*    border: none;*/
+/*}*/
+/*.box-moneyhight {*/
+/*    padding: 20px 0 0 20px;*/
+/*}*/
+/*.box-moneyhight h5 {*/
+/*    font-size: 16px;*/
+/*    color: #000000;*/
+/*    font-weight: bold;*/
+/*}*/
+/*.box-moneyhight button {*/
+/*    width: 235px;*/
+/*    height: 35px;*/
+/*    border-radius: 18px;*/
+/*    background-color: #f4f4f4;*/
+/*    color: #d0d0d0;*/
+/*    font-size: 15px;*/
+/*    border: none;*/
+/*}*/
+/*.box-selectposition {*/
+/*    padding-top: 20px;*/
+/*}*/
+/*.box-selectposition input {*/
+/*    width: 235px;*/
+/*    height: 35px;*/
+/*    border-radius: 30px;*/
+/*    background-color: #000000;*/
+/*    font-weight: bold;*/
+/*    border: none;*/
+/*    cursor: pointer;*/
+/*}*/
+/*.boxListCheckPosition {*/
+/*    float: right;*/
+/*}*/
+/*.box-checkboxx {*/
+/*    color: #000000;*/
+/*    padding: 10px 0 0 20px;*/
+/*    font-size: 14px;*/
+/*}*/
+/*.boxHeadPageRight h1 {*/
+/*    color: #000000;*/
+/*    font-family: Kanit;*/
+/*    font-size: 30px;*/
+/*    font-weight: bold;*/
+/*    line-height: 1.5;*/
+/*    padding: 70px 0 47.1px 0;*/
+/*}*/
+/*.boxTextCreatH2 h2 {*/
+/*    padding-top: 28px;*/
+/*}*/
+/*.boxTextCreatH4 h4 {*/
+/*    padding-top: 11px;*/
+/*    font-size: 20px;*/
+/*    font-weight: normal;*/
+/*}*/
+/*.boxInputDateFirst {*/
+/*    padding-top: 8px;*/
+/*}*/
+/*.boxTextCreatH4End h4 {*/
+/*    padding-top: 11px;*/
+/*    font-size: 20px;*/
+/*    font-weight: normal;*/
+/*}*/
+/*.box-nextStep {*/
+/*    padding: 20px 0 63.7px 0;*/
+/*}*/
+
+
+
+/*!*--------------------------------slide---------------------------------*!*/
+/*.carousel {*/
+/*    font-family: Kanit;*/
+/*}*/
+/*.d-block .w-100 img {*/
+/*    width: 1366px;*/
+/*    height: 300px;*/
+/*}*/
+/*.testH1img h1 {*/
+/*    padding-bottom: 10px;*/
+/*}*/
+/*.carousel-caption {*/
+/*    font-size: 35px;*/
+/*}*/
+/*.box-buttonBannerHead {*/
+/*    margin-bottom: 30px;*/
+/*}*/
+/*.box-buttonBannerHead button {*/
+/*    width: 170px;*/
+/*    height: 45px;*/
+/*    border-radius: 30px;*/
+/*    border: solid 2px #fbb040;*/
+/*    background: no-repeat;*/
+/*    color: #fbb040;*/
+/*    font-size: 20px;*/
+/*    cursor: pointer;*/
+/*}*/
+/*.box-buttonBannerHead .btnCreatTeam:hover button {*/
+/*    border: solid 2px #fbb040;*/
+/*    background: #fbb040;*/
+/*    color: #ffffff;*/
+/*    cursor: pointer;*/
+/*}*/
+/*.box-buttonBannerHead .btnFindTeam:hover button {*/
+/*    border: solid 2px #fbb040;*/
+/*    background: #fbb040;*/
+/*    color: #ffffff;*/
+/*    cursor: pointer;*/
+/*}*/
+/*!*--------------------------------slide---------------------------------*!*/
+
+
+
+/*!*--------------------------------list Position---------------------------------*!*/
+/*.fillterCheck {*/
+/*    display: block;*/
+/*    position: relative;*/
+/*    padding-left: 35px;*/
+/*    margin-bottom: 12px;*/
+/*    cursor: pointer;*/
+/*    font-size: 22px;*/
+/*    -webkit-user-select: none;*/
+/*    -moz-user-select: none;*/
+/*    -ms-user-select: none;*/
+/*    user-select: none;*/
+/*}*/
+
+/*!* Hide the browser's default checkbox *!*/
+/*.fillterCheck input {*/
+/*    position: absolute;*/
+/*    opacity: 0;*/
+/*    cursor: pointer;*/
+/*    height: 0;*/
+/*    width: 0;*/
+/*}*/
+
+/*!* Create a custom checkbox *!*/
+/*.checkmark {*/
+/*    position: absolute;*/
+/*    border-radius: 3px;*/
+/*    top: 0;*/
+/*    left: 0;*/
+/*    height: 25px;*/
+/*    width: 25px;*/
+/*    background-color: #ffffff;*/
+/*    border: 2px solid #000000;*/
+/*}*/
+
+/*!* On mouse-over, add a grey background color *!*/
+/*.fillterCheck:hover input ~ .checkmark {*/
+/*    background-color: #FBB040;*/
+/*    border: 2px solid #FBB040;*/
+/*}*/
+
+/*!* When the checkbox is checked, add a ylw background *!*/
+/*.fillterCheck input:checked ~ .checkmark {*/
+/*    background-color: #FBB040;*/
+/*    border: 2px solid #FBB040;*/
+/*}*/
+
+/*!* Create the checkmark/indicator (hidden when not checked) *!*/
+/*.checkmark:after {*/
+/*    content: "";*/
+/*    position: absolute;*/
+/*    display: none;*/
+/*    width: 16.5px;*/
+/*    height: 16.5px;*/
+/*}*/
+
+/*!* Show the checkmark when checked *!*/
+/*.fillterCheck input:checked ~ .checkmark:after {*/
+/*    display: block;*/
+/*    margin: -3px 0px 0 -3px;*/
+/*}*/
+
+/*!* Style the checkmark/indicator *!*/
+/*.fillterCheck .checkmark:after {*/
+/*    left: 9px;*/
+/*    top: 5px;*/
+/*    width: 5px;*/
+/*    height: 10px;*/
+/*    border: solid white;*/
+/*    border-width: 0 3px 3px 0;*/
+/*    -webkit-transform: rotate(45deg);*/
+/*    -ms-transform: rotate(45deg);*/
+/*    transform: rotate(45deg);*/
+/*}*/
+/*!*--------------------------------list Position---------------------------------*!*/
+
+
+/*!*------------------------------------------Step-----------------------------------------*!*/
+/*!*custom font*!*/
+/*!*@import url(https://fonts.googleapis.com/css?family=Montserrat);*!*/
+
+/*!*basic reset*!*/
+/*!** {*/
+/*    margin: 0;*/
+/*    padding: 0;*/
+/*}*!*/
+
+/*!*html {*/
+/*    height: 100%;*/
+/*    background: #6441A5;*/
+/*    background: -webkit-linear-gradient(to left, #6441A5, #2a0845);*/
+/*}*!*/
+
+/*!*body {*/
+/*    font-family: montserrat, arial, verdana;*/
+/*    background: transparent;*/
+/*}*!*/
+
+/*!*form styles*!*/
+/*#msform {*/
+/*    text-align: center;*/
+/*    position: relative;*/
+/*    margin-top: 30px;*/
+/*}*/
+
+/*!*#msform fieldset {*/
+/*    padding: 20px 30px;*/
+/*    box-sizing: border-box;*!*/
+/*!*width: 80%;*!*/
+/*!*margin: 0 10%;*!*/
+
+/*!*stacking fieldsets above each other*!*/
+/*!*    position: relative;*/
+/*}*!*/
+
+/*!*Hide all except first fieldset*!*/
+/*#msform fieldset:not(:first-of-type) {*/
+/*    display: none;*/
+/*}*/
+
+/*!*inputs*!*/
+/*#msform input, #msform textarea {*/
+/*    padding: 15px;*/
+/*    border: none;*/
+/*    margin-bottom: 10px;*/
+/*    width: 100%;*/
+/*    box-sizing: border-box;*/
+/*    font-family: Kanit;*/
+/*    color: #000000;*/
+/*    font-size: 18px;*/
+/*    border-radius: 15px;*/
+/*    background-color: #f4f4f4;*/
+/*}*/
+
+/*#msform input:focus, #msform textarea:focus {*/
+/*    -moz-box-shadow: none !important;*/
+/*    -webkit-box-shadow: none !important;*/
+/*    box-shadow: none !important;*/
+/*    border: 1px solid #fbb040;*/
+/*    outline-width: 0;*/
+/*    transition: All 0.5s ease-in;*/
+/*    -webkit-transition: All 0.5s ease-in;*/
+/*    -moz-transition: All 0.5s ease-in;*/
+/*    -o-transition: All 0.5s ease-in;*/
+/*}*/
+
+/*!*buttons*!*/
+/*#msform .action-button {*/
+/*    !* background: #ee0979;*!*/
+/*    font-weight: bold;*/
+/*    color: #ffffff;*/
+/*    border: 0 none;*/
+/*    text-align: center;*/
+/*    !* border-radius: 25px;*!*/
+/*    cursor: pointer;*/
+/*    padding: 0 5px;*/
+/*    margin: 10px 5px;*/
+/*    width: 170px;*/
+/*    height: 45px;*/
+/*    border-radius: 23px;*/
+/*    background-color: #fbb040;*/
+/*}*/
+
+/*#msform .action-button:hover, #msform .action-button:focus {*/
+/*    box-shadow: 0 0 0 2px red, 0 0 0 3px #ee0979;*/
+/*}*/
+
+/*#msform .action-button-previous {*/
+/*    width: 100px;*/
+/*    background: #C5C5F1;*/
+/*    font-weight: bold;*/
+/*    color: red;*/
+/*    border: 0 none;*/
+/*    border-radius: 25px;*/
+/*    cursor: pointer;*/
+/*    padding: 10px 5px;*/
+/*    margin: 10px 5px;*/
+/*}*/
+
+/*#msform .action-button-previous:hover, #msform .action-button-previous:focus {*/
+/*    box-shadow: 0 0 0 2px red, 0 0 0 3px #C5C5F1;*/
+/*}*/
+
+/*!*headings*!*/
+/*.fs-title {*/
+/*    font-size: 22px;*/
+/*    font-family: Kanit;*/
+/*    float: left;*/
+/*    !*    text-transform: uppercase;*!*/
+/*    color: #000000;*/
+/*    margin-bottom: 20px;*/
+/*    !*letter-spacing: 2px;*!*/
+/*    font-weight: bold;*/
+/*}*/
+
+/*.fs-subtitle {*/
+/*    font-weight: normal;*/
+/*    font-size: 13px;*/
+/*    color: #666;*/
+/*    margin-bottom: 20px;*/
+/*}*/
+
+/*!*progressbar*!*/
+/*#progressbar {*/
+/*    margin-bottom: 30px;*/
+/*    overflow: hidden;*/
+/*    !*CSS counters to number the steps*!*/
+/*    counter-reset: step;*/
+/*}*/
+
+/*#progressbar li {*/
+/*    list-style-type: none;*/
+/*    color: #939393;*/
+/*    text-transform: uppercase;*/
+/*    font-size: 13px;*/
+/*    width: 19.33%;*/
+/*    float: left;*/
+/*    position: relative;*/
+/*    letter-spacing: 1px;*/
+/*}*/
+
+/*#progressbar li:before {*/
+/*    content: counter(step);*/
+/*    counter-increment: step;*/
+/*    width: 55px;*/
+/*    height: 55px;*/
+/*    line-height: 26px;*/
+/*    display: block;*/
+/*    font-size: 25px;*/
+/*    color: #ffffff;*/
+/*    background: #e8e8e8;*/
+/*    border-radius: 15px;*/
+/*    margin: 0 auto 10px auto;*/
+/*    padding: 15px;*/
+/*    !*  background-color: #fbb040;*!*/
+/*}*/
+
+/*!*progressbar connectors*!*/
+/*#progressbar li:after {*/
+/*    content: '';*/
+/*    width: 100%;*/
+/*    height: 2px;*/
+/*    background: #cccccc;*/
+/*    position: absolute;*/
+/*    left: -50%;*/
+/*    top: 9px;*/
+/*    z-index: -1; !*put it behind the numbers*!*/
+/*}*/
+
+/*#progressbar li:first-child:after {*/
+/*    !*connector not needed before the first step*!*/
+/*    content: none;*/
+/*}*/
+
+/*!*marking active/completed steps green*!*/
+/*!*The number of the step and the connector before it = green*!*/
+/*#progressbar li.active:before, #progressbar li.active:after {*/
+/*    background: #fbb040;*/
+/*    color: #ffffff;*/
+/*    padding: 15px;*/
+/*}*/
+
+
+/*!* Not relevant to this form *!*/
+/*.dme_link {*/
+/*    margin-top: 30px;*/
+/*    text-align: center;*/
+/*}*/
+/*.dme_link a {*/
+/*    background: #FFF;*/
+/*    font-weight: bold;*/
+/*    color: #ee0979;*/
+/*    border: 0 none;*/
+/*    border-radius: 25px;*/
+/*    cursor: pointer;*/
+/*    padding: 5px 25px;*/
+/*    font-size: 12px;*/
+/*}*/
+
+/*.dme_link a:hover, .dme_link a:focus {*/
+/*    background: #C5C5F1;*/
+/*    text-decoration: none;*/
+/*}*/
+/*!*------------------------------------------Step-----------------------------------------*!*/
+
+
+/*------------------------------------------Step2----------------------------------------*/
+.stepwizard-step p {
+    /*margin-top: 10px;*/
+    color: #fff;
+}
+.stepwizard-row {
+    display: table-row;
+}
+.stepwizard {
+    display: table;
+    width: 50%;
+    position: relative;
+}
+.stepwizard-step button[disabled] {
+    opacity: 1 !important;
+    filter: alpha(opacity=100) !important;
+}
+.stepwizard-row:before {
+    top: 14px;
+    bottom: 0;
+    position: absolute;
+    content: " ";
+    width: 100%;
+    height: 1px;
+    background-color: #ccc;
+    z-order: 0;
+}
+.stepwizard-step {
+    display: table-cell;
+    text-align: center;
+    position: relative;
+}
+.btn-circle {
+    width: 30px;
+    height: 30px;
+    text-align: center;
+    padding: 6px 0;
+    font-size: 12px;
+    line-height: 1.428571429;
+    border-radius: 15px;
+}
+/*------------------------------------------Step2----------------------------------------*/
+/*.mt-10 {*/
+    /*margin-top: 6rem!important;*/
+/*}*/
+
+/* Bootstrap css */
+@import "https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css";
+
+/* Google Material icons */
+@import "http://fonts.googleapis.com/icon?family=Material+Icons";
+
+/* Propeller css */
+@import "dist/css/propeller.min.css";
+
+/* Bootstrap datetimepicker */
+@import "datetimepicker/css/bootstrap-datetimepicker.css";
+
+/* Propeller datetimepicker */
+@import "datetimepicker/css/pmd-datetimepicker.css";
+
 .container {
+    font-family: Kanit;
+}
+.container-fluid {
     font-family: Kanit;
 }
 /*--------------------------------navbar---------------------------------*/
@@ -46,10 +952,15 @@ body {
 }
 /*--------------------------------navbar---------------------------------*/
 
+
 .footer p {
     color: #cccccc;
     font-size: 17px;
     font-family: Kanit;
+}
+.footer {
+    background-color: #ffffff;
+    padding-top: 135px;
 }
 
 
@@ -400,12 +1311,12 @@ body {
 }
 .box-headTeamName {
     position: absolute;
-    top: 120px;
+    top: 135px;
     left: 90px;
 }
 .box-headTeamName h3 {
     font-size: 17px;
-    color: #C1C1C1;
+    color: #ffffff;
     font-weight: bold;
 }
 .box-imgCoverTeamBig img {
@@ -436,9 +1347,9 @@ body {
 }
 .box-tag-position button {
     color: #939393;
-    /* width: 52px;
-    height: 24px; */
-    border-radius: 25px;
+    width: 52px;
+    height: 24px;
+    border-radius: 12px;
     font-size: 13px;
     background-color: #f5f5f5;
 }
@@ -536,6 +1447,372 @@ body {
 .box-nextStep {
     padding: 20px 0 63.7px 0;
 }
+.boxTextHeadTeam {
+    width: 100%;
+    height: 70px;
+    border-radius: 15px;
+    box-shadow: 0 0 15px 0 rgba(0, 0, 0, 0.16);
+    background-color: #ffffff;
+}
+.boxTextHeadTeam h1 {
+    font-size: 25px;
+    padding: 20px 0 20px 20px;
+    font-weight: bold;
+}
+.boxTextDetailTeam02 {
+    width: 100%;
+    height: 125px;
+    border-radius: 15px;
+    box-shadow: 0 0 15px 0 rgba(0, 0, 0, 0.16);
+    background-color: #ffffff;
+}
+.boxTextDetailTeam02 h4 {
+    font-size: 18px;
+    font-weight: bold;
+    padding: 10px 0 0 20px;
+}
+.boxTextDetailTeam02 p {
+    font-size: 15px;
+    padding: 0 0 10px 20px;
+    font-weight: lighter;
+}
+.boxTextDateTeam03 {
+    width: 100%;
+    height: 70px;
+    border-radius: 15px;
+    box-shadow: 0 0 15px 0 rgba(0, 0, 0, 0.16);
+    background-color: #ffffff;
+}
+.boxTextDateTeam03 h4 {
+    font-size: 18px;
+    font-weight: bold;
+    padding: 10px 0 0 20px;
+}
+.boxTextDateTeam03 p {
+    font-size: 15px;
+    padding: 0 0 10px 20px;
+    font-weight: lighter;
+}
+.boxProfileLeft {
+    width: 100%;
+    height: 315px;
+    border-radius: 15px;
+    box-shadow: 0 0 15px 0 rgba(0, 0, 0, 0.16);
+    border: solid 2px #fbb040;
+    background-color: #ffffff;
+}
+.boxImgDetailProfile {
+    padding-top: 15px;
+}
+.boxImgDetailProfile img {
+    width: 140px;
+    height: 140px;
+}
+.boxImgDetailProfile h4 {
+    font-size: 20px;
+    padding-top: 8px;
+}
+.boxImgDetailProfile p {
+    font-size: 13px;
+    color: #9a9a9a;
+    padding-top: 5px;
+}
+.boxImgIconForProfile {
+    margin-top: -15px;
+}
+.boxImgIconForProfile img {
+    width: 130px;
+    height: 22px;
+}
+.boxBtnViewProfile {
+    padding: 15px 0 15px 0;
+}
+.boxBtnViewProfile button {
+    width: 140px;
+    height: 35px;
+    border-radius: 30px;
+    box-shadow: 0 0 10px 0 rgba(251, 172, 64, 0.45);
+    background-color: #fff9f0;
+    font-size: 16px;
+    color: #fbb040;
+    font-weight: bold;
+    border: none;
+    cursor: pointer;
+}
+.boxHeadPositionLeft h4 {
+    font-size: 22px;
+}
+.boxHeadPositionRight h4 {
+    font-size: 14px;
+    color: #b2b2b2;
+}
+.boxCardPosition {
+    /*width: 210px;*/
+    width: 100%;
+    height: 165px;
+    /*opacity: 0.5;*/
+    border-radius: 15px;
+    background-color: #000000;
+    padding-top: 20px;
+}
+.boxInCardPositionn {
+    border-radius: 15px;
+    padding-top: 20px;
+    position: relative;
+    top: -80px;
+}
+.boxCardPosition h3 {
+    font-size: 25px;
+    font-weight: bold;
+    color: #fbb040;
+}
+.boxCardPosition h5 {
+    font-size: 18px;
+    font-style: italic;
+    color: #ffffff;
+}
+.boxTextLRInbox p {
+    font-size: 13px;
+    color: #939393;
+}
+.boxTextLRInbox h6 {
+    font-size: 18px;
+    color: #000000;
+}
+.box-buttonRegister {
+    padding-right: 18px;
+    font-family: Kanit;
+}
+.box-buttonRegister button {
+    width: 126px;
+    height: 45px;
+    border-radius: 23px;
+    background-color: #fbb040;
+    color: #ffffff;
+}
+.box-buttonLogin button {
+    width: 126px;
+    height: 45px;
+    border-radius: 23px;
+    font-color: #ffffff;
+    border: solid 2px #fbb040;
+    font-family: Kanit;
+}
+::placeholder { /* Firefox */
+    color: #cccccc;
+    opacity: 1;
+}
+:-ms-input-placeholder  { /* Internet Explorer 10-11 */
+    color: #cccccc;
+}
+::-ms-input-placeholder  { /* Microsoft Edge */
+    color: #cccccc;
+}
+.boxDetailRegister {
+    width: 515px;
+    height: 650px;
+    border-radius: 25px;
+    background-color: #ffffff;
+}
+.boxDetailLogin {
+    width: 515px;
+    height: 450px;
+    border-radius: 25px;
+    background-color: #ffffff;
+}
+.boxHeadRegister {
+    padding: 40px 0 12px 0;
+}
+.boxHeadRegister h1 {
+    font-size: 40px;
+    font-weight: bold;
+}
+.boxHeadRegister h5 {
+    font-size: 20px;
+    font-weight: normal;
+}
+.boxInsertName {
+    padding: 0 47px 0 48px;
+}
+.boxInsertName h4 {
+    font-size: 20px;
+    font-weight: bold;
+}
+.boxInsertName input {
+    width: 420px;
+    height: 37px;
+    border-radius: 30px;
+    background-color: #f4f4f4;
+    border: none;
+    font-size: 18px;
+    padding-left: 15px;
+}
+.boxInsertEmail {
+    padding: 22px 47px 0 48px;
+}
+.boxInsertEmail h4 {
+    font-size: 20px;
+    font-weight: bold;
+}
+.boxInsertEmail input {
+    width: 420px;
+    height: 37px;
+    border-radius: 30px;
+    background-color: #f4f4f4;
+    border: none;
+    font-size: 18px;
+    padding-left: 15px;
+}
+.boxInsertPassword {
+    padding: 22px 47px 0 48px;
+}
+.boxInsertPassword h4 {
+    font-size: 20px;
+    font-weight: bold;
+}
+.boxInsertPassword input {
+    width: 420px;
+    height: 37px;
+    border-radius: 30px;
+    background-color: #f4f4f4;
+    border: none;
+    font-size: 18px;
+    padding-left: 15px;
+}
+.boxInsertPassword p {
+    font-size: 15px;
+    color: #939393;
+}
+.boxInsertPasswordConfirm {
+    padding: 5px 47px 0 48px;
+}
+.boxInsertPasswordConfirm h4 {
+    font-size: 20px;
+    font-weight: bold;
+}
+.boxInsertPasswordConfirm input {
+    width: 420px;
+    height: 37px;
+    border-radius: 30px;
+    background-color: #f4f4f4;
+    border: none;
+    font-size: 18px;
+    padding-left: 15px;
+}
+.boxBTNregister {
+    padding-top: 26px;
+}
+.boxBTNregister button {
+    width: 100%;
+    height: 40px;
+    border-radius: 20px;
+    background-color: #fbb040;
+    font-size: 18px;
+    color: #ffffff;
+    border: none;
+    font-weight: bold;
+}
+.boxInsertPasswordConfirm p {
+    font-size: 14px;
+    color: #bcbcbc;
+    padding-top: 12px;
+}
+.boxImgProfile {
+    width: 218.1px;
+    height: 218.1px;
+}
+.boxImgProfile img {
+    width: 100%;
+    height: auto;
+}
+.boxDetailProfile h3 {
+    font-size: 25px;
+    color: #000000;
+    font-weight: bold;
+}
+.boxDetailProfile02 {
+    padding-top: 16px;
+}
+.boxDetailProfile02 p {
+    font-size: 16px;
+    color: #9a9a9a;
+    font-weight: lighter;
+}
+.boxDetailProfile02 h5 {
+    display: inline;
+    color: #fbb040;
+    font-size: 25px;
+}
+.boxDetailProfile02 {
+    padding-top: 14px;
+}
+.boxDetailProfile02 p {
+    font-size: 16px;
+    color: #9a9a9a;
+    font-weight: lighter;
+}
+.boxPositionProfile {
+    margin-top: -5px;
+}
+.boxContactProfile {
+    padding: 30px 0 0 0;
+}
+.boxContactProfile button {
+    color: #fbb040;
+    font-size: 16px;
+    width: 170px;
+    height: 45px;
+    border-radius: 23px;
+    border: solid 2px #fbb040;
+    background-color: #ffffff;
+    font-weight: bold;
+}
+.boxContactProfile p {
+    color: #939393;
+    font-size: 15px;
+    padding-top: 44px;
+}
+.boxAboutProfile {
+    width: 100%;
+    height: 130px;
+    border-radius: 15px;
+    box-shadow: 0 0 10px 0 rgba(96, 96, 96, 0.16);
+    background-color: #ffffff;
+}
+.boxDetailAboutProfile {
+    padding: 10px 30px 0 20px;
+}
+.boxDetailAboutProfile h5 {
+    color: #939393;
+    font-size: 18px;
+    font-weight: lighter;
+}
+.boxDetailAboutProfile p {
+    font-size: 15px;
+}
+.boxTabsMenu {
+    padding-top: 44px;
+}
+.tab button {
+    font-size: 18px; color: #000000; border: none;
+}
+.tabcontent h6 {
+    color: #939393; font-size: 16px; font-weight: bold; float: right; padding-bottom: 5px;
+}
+.boxVideoPort {
+    width: 100%; height: 300px;
+}
+.boxVideoBG {
+    width: 100%; height: 200px; background-color: #cccccc;
+}
+.boxVideoPort h3 {
+    font-size: 17px; color: #000000; font-weight: bold; padding-top: 14px;
+}
+.boxVideoPort p {
+    color: #939393; font-size: 12px; margin-top: -10px;
+}
+
+
 
 
 
@@ -623,7 +1900,7 @@ body {
     border: 2px solid #FBB040;
 }
 
-/* When the checkbox is checked, add a ylw background */
+/* When the checkbox is checked, add a blue background */
 .fillterCheck input:checked ~ .checkmark {
     background-color: #FBB040;
     border: 2px solid #FBB040;
@@ -866,65 +2143,3 @@ body {
     text-decoration: none;
 }
 /*------------------------------------------Step-----------------------------------------*/
-
-
-/*------------------------------------------Step2----------------------------------------*/
-.stepwizard-step p {
-    /*margin-top: 10px;*/
-    color: #fff;
-}
-.stepwizard-row {
-    display: table-row;
-}
-.stepwizard {
-    display: table;
-    width: 50%;
-    position: relative;
-}
-.stepwizard-step button[disabled] {
-    opacity: 1 !important;
-    filter: alpha(opacity=100) !important;
-}
-.stepwizard-row:before {
-    top: 14px;
-    bottom: 0;
-    position: absolute;
-    content: " ";
-    width: 100%;
-    height: 1px;
-    background-color: #ccc;
-    z-order: 0;
-}
-.stepwizard-step {
-    display: table-cell;
-    text-align: center;
-    position: relative;
-}
-.btn-circle {
-    width: 30px;
-    height: 30px;
-    text-align: center;
-    padding: 6px 0;
-    font-size: 12px;
-    line-height: 1.428571429;
-    border-radius: 15px;
-}
-/*------------------------------------------Step2----------------------------------------*/
-/*.mt-10 {*/
-    /*margin-top: 6rem!important;*/
-/*}*/
-
-/* Bootstrap css */
-@import "https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css";
-
-/* Google Material icons */
-@import "http://fonts.googleapis.com/icon?family=Material+Icons";
-
-/* Propeller css */
-@import "dist/css/propeller.min.css";
-
-/* Bootstrap datetimepicker */
-@import "datetimepicker/css/bootstrap-datetimepicker.css";
-
-/* Propeller datetimepicker */
-@import "datetimepicker/css/pmd-datetimepicker.css";

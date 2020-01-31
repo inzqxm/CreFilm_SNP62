@@ -29,6 +29,7 @@ Route::get('/findTeam/detail/{id}','TeamController@show');
 
 //Route::get('/findTeam/detail/{username}','TeamController@show');
 Route::get('/profile/{username}','ProfileController@index');
+Route::get('/profile/{username}','ProfileController@show');
 // Route::get('/createTeam','FindteamController@create');
 
 
