@@ -10,7 +10,7 @@
         <div class="row">
 
             <div class="col" style="padding-top: 70px">
-                <a href="/findTeam"><i style="font-size: 20px; color: #000000; cursor: pointer;" class='fas'>&#xf060;  <span style="font-family:Kanit;">ย้อนกลับ</span></i></a>
+                <a href="/findteam"><i style="font-size: 20px; color: #000000; cursor: pointer;" class='fas'>&#xf060;  <span style="font-family:Kanit;">ย้อนกลับ</span></i></a>
             </div>
 
             <div class="col">

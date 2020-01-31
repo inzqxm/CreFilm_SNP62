@@ -198,7 +198,7 @@
                                     ภายใต้แนวคิด<br>
                                     “Game in real life”</h5></a>
                             <div class="box-buttonHeadContest">
-                                <a href="#" class="stretched-link"><button>รายละเอียด</button></a>
+{{--                                <a href="#" class="stretched-link"><button>รายละเอียด</button></a>--}}
                             </div><!-- box-buttonHeadContest -->
                         </div>
                     </div><!-- box-detailCardContest -->
