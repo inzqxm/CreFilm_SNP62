@@ -50,7 +50,7 @@ class TeamController extends Controller
     public function show($id)
     {
         //
-//        $positions = Position::all();
+        $positions = Position::all();
         $post_teams = DB::table('post_teams')
             ->select('post_teams.*',
 
@@ -72,8 +72,11 @@ class TeamController extends Controller
             ->join('positions as pro_id','post_teams.pro_position_id','=','pro_id.id')
             ->join('positions as post_id','post_teams.post_position_id','=','post_id.id')
             ->get();
-        dd($post_teams);
-//        return view('findteam.detail',compact('post_teams'));
+
+
+
+//        dd($post_teams);
+        return view('findteam.detail',compact('post_teams','positions'));
     }
 
     /**

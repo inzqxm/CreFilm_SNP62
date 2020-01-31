@@ -30,9 +30,7 @@
 {{--                                <img src="/uploads/image/Icon_profile.png">--}}
                             </div>
                             <div class="boxBtnViewProfile">
-                                <a href="#">
-                                    <button>ดูโปรไฟล์</button>
-                                </a>
+                                <a href="/profile/{{$post_team->user_id}}" class="btn btn-primary">ดูโปรไฟล์</a>
                             </div>
 
 
@@ -101,13 +99,14 @@
                     <!--                 <div class="boxCardPosition text-center">
 
                                     </div> -->
-                    <img src="/uploads/image/positionCameraMan_in_Team_01.jpg" style="width: 100%; height: auto;" class="boxCardPosition text-center">
-                    <div class="boxInCardPositionn text-center">
-                        <h3>ช่างภาพ</h3>
-                        <h5>1,000 บาท/วัน</h5>
+{{--                    @foreach($positions as $position)--}}
+                    <img src="/uploads/image/{{$post_team->pre_position_name}}" style="width: 100%; height: 230px;" class="boxCardPosition text-center">
+                    <div class="boxInCardPositionn text-center" >
+                        <h3>{{$post_team->pre_position_name}}</h3>
+                        <h5></h5>
                     </div>
 
-                    <div class="row text-center" style="padding: 13px 0 13px 0;">
+                    <div class="row text-center">
                         <div class="col-6 boxTextLRInbox">
                             <p>ผู้ขอเข้าร่วม</p>
                             <h6>3</h6>
@@ -120,6 +119,64 @@
                     <a href="#">
                         <button style="width: 100%; height: 40px; border-radius: 30px; background-color: #fbb040;  font-size: 18px; color: #ffffff; font-weight: bold; border: none; cursor: pointer;">เข้าร่วม</button>
                     </a>
+{{--                        @endforeach--}}
+
+                </div><!-- col-md-3 -->
+
+                <div class="col-md-3">
+                    <!--                 <div class="boxCardPosition text-center">
+
+                                    </div> -->
+                    {{--                    @foreach($positions as $position)--}}
+                    <img src="/uploads/image/{{$post_team->pro_position_name}}" style="width: 100%; height: 230px;" class="boxCardPosition text-center">
+                    <div class="boxInCardPositionn text-center" >
+                        <h3>{{$post_team->pro_position_name}}</h3>
+                        <h5></h5>
+                    </div>
+
+                    <div class="row text-center">
+                        <div class="col-6 boxTextLRInbox">
+                            <p>ผู้ขอเข้าร่วม</p>
+                            <h6>3</h6>
+                        </div>
+                        <div class="col-6 boxTextLRInbox">
+                            <p style="font-size: 13px; color: #939393;">ต้องการ</p>
+                            <h6 style="font-size: 18px; color: #000000;">2</h6>
+                        </div>
+                    </div><!-- row -->
+                    <a href="#">
+                        <button style="width: 100%; height: 40px; border-radius: 30px; background-color: #fbb040;  font-size: 18px; color: #ffffff; font-weight: bold; border: none; cursor: pointer;">เข้าร่วม</button>
+                    </a>
+                    {{--                        @endforeach--}}
+
+                </div><!-- col-md-3 -->
+
+                <div class="col-md-3">
+                    <!--                 <div class="boxCardPosition text-center">
+
+                                    </div> -->
+                    {{--                    @foreach($positions as $position)--}}
+                    <img src="/uploads/image/{{$post_team->post_position_name}}" style="width: 100%; height: 230px;" class="boxCardPosition text-center">
+                    <div class="boxInCardPositionn text-center" >
+                        <h3>{{$post_team->post_position_name}}</h3>
+                        <h5></h5>
+                    </div>
+
+                    <div class="row text-center">
+                        <div class="col-6 boxTextLRInbox">
+                            <p>ผู้ขอเข้าร่วม</p>
+                            <h6>3</h6>
+                        </div>
+                        <div class="col-6 boxTextLRInbox">
+                            <p style="font-size: 13px; color: #939393;">ต้องการ</p>
+                            <h6 style="font-size: 18px; color: #000000;">2</h6>
+                        </div>
+                    </div><!-- row -->
+                    <a href="#">
+                        <button style="width: 100%; height: 40px; border-radius: 30px; background-color: #fbb040;  font-size: 18px; color: #ffffff; font-weight: bold; border: none; cursor: pointer;">เข้าร่วม</button>
+                    </a>
+                    {{--                        @endforeach--}}
+
                 </div><!-- col-md-3 -->
 
 

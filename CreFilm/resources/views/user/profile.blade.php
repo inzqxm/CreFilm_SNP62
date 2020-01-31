@@ -62,7 +62,7 @@
     <div class="row">
         <div class="col-md-3">
             <div class="boxContactProfile text-center">
-                <a href="#"><button>แก้ไขข้อมูลส่วนตัว</button></a>
+                <a href="/profile/{{Auth::user()->id}}/edit"><button>แก้ไขข้อมูลส่วนตัว</button></a>
                 <p>{{Auth::user()->email}}</p>
             </div>
         </div>
@@ -71,7 +71,7 @@
             <div class="boxAboutProfile">
                 <div class="boxDetailAboutProfile">
                     <h5>เกี่ยวกับฉัน</h5>
-                    <p>&#9679; รางวัลรองชนะเลิศอันดับ 1 งานประกวดภาพยนตร์สั้น “Cat Radio” ประกาศผลหนังสั้น“GPX presents Cat Film 3 เอาเพลงมาทำเป็นหนัง” ปี 2019 </p>
+                    <p>{{Auth::user()->about}}</p>
                 </div>
             </div>
         </div>

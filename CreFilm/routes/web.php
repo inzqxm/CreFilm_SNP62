@@ -20,16 +20,18 @@ Auth::routes();
 Route::get('/', function () {
     return view('index');
 });
-Route::get('/findTeam','FindteamController@index');
+Route::get('/findteam','FindteamController@index');
 
 Route::resource('/createTeam', 'PositionController');
 
-Route::post('/findTeam/search','FindteamController@show');
-Route::get('/findTeam/detail/{id}','TeamController@show');
+Route::post('/findteam/search','FindteamController@show');
+Route::get('/findteam/detail/{id}','TeamController@show');
 
 //Route::get('/findTeam/detail/{username}','TeamController@show');
-Route::get('/profile/{username}','ProfileController@index');
-Route::get('/profile/{username}','ProfileController@show');
+Route::get('/profile/{id}','ProfileController@index');
+Route::get('/profile/{id}','ProfileController@show');
+Route::get('/profile/{id}/edit','ProfileController@edit');
+Route::post('/profile/{id}','ProfileController@update');
 // Route::get('/createTeam','FindteamController@create');
 
 

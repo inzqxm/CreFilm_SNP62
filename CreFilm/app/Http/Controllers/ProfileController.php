@@ -58,4 +58,31 @@ class ProfileController extends Controller
 
         return view('user.profile',compact('post_teams','positions'));
     }
+
+    public function edit($id)
+    {
+        $user = User::find(Auth::id());
+        return view('user.edit-profile',compact('user'));
+
+    }
+    public function update(Request $request, $id)
+    {
+//        $this->validate($request,[
+//            'name'=>'required',
+//            'about'=>'required',
+////            'img_profile'=>'image|max:1999'
+//        ]);
+
+        $user = User::find(Auth::id());
+        $user->name = $request->input('name');
+        $user->about = $request->input('about');
+//        $user->img_profile = $request->input('img_profile');
+
+        $user->save();
+
+        return redirect('/profile/'.$user->id);
+    }
+
+
+
 }
