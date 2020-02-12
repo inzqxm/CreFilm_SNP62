@@ -73,6 +73,17 @@ class TeamController extends Controller
             ->join('positions as post_id','post_teams.post_position_id','=','post_id.id')
             ->get();
 
+//        $filenameWithExt = $request->file('img_head')->getClientOriginalName();
+//        $filename = pathinfo($filenameWithExt,PATHINFO_FILENAME);
+//
+//        $extension = $request->file('img_head')->getClientOriginalName();
+//
+//        //create new file name
+//        $filenameToStore = Date('YmdHis').'_'.$extension;
+//
+//        //upload
+//        $request->file('img_head')->move('uploads/covers_team',$filenameToStore);
+
 
 
 //        dd($post_teams);

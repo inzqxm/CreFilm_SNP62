@@ -80,7 +80,7 @@ class FindteamController extends Controller
 
 
         $findteam = Position::whereHas('position', function($q) use ($request) {
-            $q->whereIn('name', $request);
+            $q->whereIn('position_name', $request);
         })->get();
 
         dd($findteam);

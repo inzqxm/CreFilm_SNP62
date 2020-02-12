@@ -21,7 +21,7 @@ class PostTeamCollection extends JsonResource
             //รวมทุกค่า
 //            if( $text == null){
 //                $text = $position->position_name;
-//            }else{
+//            }else{ 
 //                $text = $text.','.$position->position_name;
 //            }
 

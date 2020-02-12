@@ -1,4 +1,9 @@
 <nav class="navbar navbar-expand-lg navbar-light bg-light" style="padding: 20px 0 20px 0;">
+{{--    <div class="container">--}}
+{{--        <div class="row">--}}
+{{--            --}}
+{{--        </div>--}}
+{{--    </div>--}}
     <a class="navbar-brand" href="/"><img src="https://uppic.cc/d/5Coh"></a>
     <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>

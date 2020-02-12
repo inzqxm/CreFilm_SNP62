@@ -20,6 +20,7 @@ Auth::routes();
 //Route::get('/', function () {
 //    return view('HomeController@index');
 //});
+
 Route::get('/','HomeController@index');
 
 

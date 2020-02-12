@@ -3,8 +3,17 @@
   <component name="ChangeListManager">
     <list default="true" id="5d066003-5556-4220-ad84-00343c608811" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/findteam/createteam.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/findteam/createteam.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/index.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/index.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/Auth/ResetPasswordController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/Auth/ResetPasswordController.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/FindteamController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/FindteamController.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/TeamController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/TeamController.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Http/Middleware/Authenticate.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Middleware/Authenticate.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Http/Middleware/RedirectIfAuthenticated.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Middleware/RedirectIfAuthenticated.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Http/Resources/PostTeamCollection.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Resources/PostTeamCollection.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/findteam/detail.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/findteam/detail.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/findteam/findteam.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/findteam/findteam.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/inc/navbar.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/inc/navbar.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/user/profile.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/user/profile.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/routes/web.php" beforeDir="false" afterPath="$PROJECT_DIR$/routes/web.php" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -160,7 +169,9 @@
       <workItem from="1579247020007" duration="3682000" />
       <workItem from="1579343716272" duration="5254000" />
       <workItem from="1580198905177" duration="22991000" />
-      <workItem from="1580454233675" duration="34633000" />
+      <workItem from="1580454233675" duration="37937000" />
+      <workItem from="1581239751710" duration="649000" />
+      <workItem from="1581483857150" duration="303000" />
     </task>
     <servers />
   </component>

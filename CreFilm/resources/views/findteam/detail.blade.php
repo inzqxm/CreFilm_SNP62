@@ -23,7 +23,7 @@
                 <div class="col-md-3">
                     <div class="boxProfileLeft">
                         <div class="boxImgDetailProfile text-center">
-                            <img src="/uploads/user" alt="..." class="rounded-circle">
+                            <img src="/uploads/image/profile_01.jpg" alt="..." class="rounded-circle">
                             <h4>{{$post_team->user_name}}</h4>
                             <p>ความสามารถ :</p>
                             <div class="boxImgIconForProfile">

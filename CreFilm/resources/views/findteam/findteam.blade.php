@@ -89,7 +89,7 @@
                                             <div class="box-tag-position">
                                                 <button type="button" class="btn text-center">{{$post_team->status}}</button>
                                                 <div class="box-btnViewDetailTeam">
-                                                    <a href="/findTeam/detail/{{$post_team->id}}" class="btn btn-primary">รายละเอียด</a>
+                                                    <a href="/findteam/detail/{{$post_team->id}}" class="btn btn-primary">รายละเอียด</a>
                                                 </div>
                                             </div><!-- box-tag-position -->
                                         </div><!-- box-team -->
