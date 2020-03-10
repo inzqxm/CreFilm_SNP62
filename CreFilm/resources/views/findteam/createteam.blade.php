@@ -177,16 +177,16 @@
                                         <option value="700">700</option>
                                         <option value="800">800</option>
                                         <option value="900">900</option>
-                                        <option value="1,000">1,000</option>
-                                        <option value="2,000">2,000</option>
-                                        <option value="3,000">3,000</option>
-                                        <option value="4,000">4,000</option>
-                                        <option value="5,000">5,000</option>
-                                        <option value="10,000">10,000</option>
-                                        <option value="15,000">15,000</option>
-                                        <option value="20,000">20,000</option>
-                                        <option value="25,000">25,000</option>
-                                        <option value="30,000">30,000</option>
+                                        <option value="1000">1,000</option>
+                                        <option value="2000">2,000</option>
+                                        <option value="3000">3,000</option>
+                                        <option value="4000">4,000</option>
+                                        <option value="5000">5,000</option>
+                                        <option value="10000">10,000</option>
+                                        <option value="15000">15,000</option>
+                                        <option value="20000">20,000</option>
+                                        <option value="25000">25,000</option>
+                                        <option value="30000">30,000</option>
                                     </select>
                                 </div>
                             </div>
@@ -272,16 +272,16 @@
                                         <option value="700">700</option>
                                         <option value="800">800</option>
                                         <option value="900">900</option>
-                                        <option value="1,000">1,000</option>
-                                        <option value="2,000">2,000</option>
-                                        <option value="3,000">3,000</option>
-                                        <option value="4,000">4,000</option>
-                                        <option value="5,000">5,000</option>
-                                        <option value="10,000">10,000</option>
-                                        <option value="15,000">15,000</option>
-                                        <option value="20,000">20,000</option>
-                                        <option value="25,000">25,000</option>
-                                        <option value="30,000">30,000</option>
+                                        <option value="1000">1,000</option>
+                                        <option value="2000">2,000</option>
+                                        <option value="3000">3,000</option>
+                                        <option value="4000">4,000</option>
+                                        <option value="5000">5,000</option>
+                                        <option value="10000">10,000</option>
+                                        <option value="15000">15,000</option>
+                                        <option value="20000">20,000</option>
+                                        <option value="25000">25,000</option>
+                                        <option value="30000">30,000</option>
                                     </select>
                                 </div>
                             </div>
@@ -362,16 +362,16 @@
                                         <option value="700">700</option>
                                         <option value="800">800</option>
                                         <option value="900">900</option>
-                                        <option value="1,000">1,000</option>
-                                        <option value="2,000">2,000</option>
-                                        <option value="3,000">3,000</option>
-                                        <option value="4,000">4,000</option>
-                                        <option value="5,000">5,000</option>
-                                        <option value="10,000">10,000</option>
-                                        <option value="15,000">15,000</option>
-                                        <option value="20,000">20,000</option>
-                                        <option value="25,000">25,000</option>
-                                        <option value="30,000">30,000</option>
+                                        <option value="1000">1,000</option>
+                                        <option value="2000">2,000</option>
+                                        <option value="3000">3,000</option>
+                                        <option value="4000">4,000</option>
+                                        <option value="5000">5,000</option>
+                                        <option value="10000">10,000</option>
+                                        <option value="15000">15,000</option>
+                                        <option value="20000">20,000</option>
+                                        <option value="25000">25,000</option>
+                                        <option value="30000">30,000</option>
                                     </select>
                                 </div>
                             </div>

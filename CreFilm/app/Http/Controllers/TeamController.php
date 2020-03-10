@@ -50,8 +50,8 @@ class TeamController extends Controller
     public function show($id)
     {
         //
-        $positions = Position::all();
-        $post_teams = DB::table('post_teams')
+        // $positions = Position::all();
+        $post_team = DB::table('post_teams')
             ->select('post_teams.*',
 
                 'users.name as user_name',
@@ -71,7 +71,7 @@ class TeamController extends Controller
             ->join('positions as pre_id','post_teams.pre_position_id','=','pre_id.id')
             ->join('positions as pro_id','post_teams.pro_position_id','=','pro_id.id')
             ->join('positions as post_id','post_teams.post_position_id','=','post_id.id')
-            ->get();
+            ->first();
 
 //        $filenameWithExt = $request->file('img_head')->getClientOriginalName();
 //        $filename = pathinfo($filenameWithExt,PATHINFO_FILENAME);
@@ -83,11 +83,66 @@ class TeamController extends Controller
 //
 //        //upload
 //        $request->file('img_head')->move('uploads/covers_team',$filenameToStore);
+        $positions = [];
+        $prices = [];
+        $persons = [];
+        if(!empty($post_team->pre_position_id)) {
+            $ex = explode(',',$post_team->pre_position_id);
+            $ex_bg = explode(',',$post_team->pre_budget);
+            $ex_ps = explode(',',$post_team->pre_person);
+            if(!empty($ex)) {
+                foreach($ex as $index=>$e) {
+                    $positions[] = $e;
+                    if(!empty($ex_bg)) {
+                        $prices[$e] = $ex_bg[$index];
+                    }
+                    if(!empty($ex_ps)) {
+                        $persons[$e] = $ex_ps[$index];
+                    }
+                }
+            }
+
+        }
+
+        if(!empty($post_team->pro_position_id)) {
+            $ex = explode(',',$post_team->pro_position_id);
+            $ex_bg = explode(',',$post_team->pro_budget);
+            $ex_ps = explode(',',$post_team->pro_person);
+            if(!empty($ex)) {
+                foreach($ex as $index=>$e) {
+                    $positions[] = $e;
+                    if(!empty($ex_bg)) {
+                        $prices[$e] = $ex_bg[$index];
+                    }
+                    if(!empty($ex_ps)) {
+                        $persons[$e] = $ex_ps[$index];
+                    }
+                }
+            }
+        }
+        if(!empty($post_team->post_position_id)) {
+            $ex = explode(',',$post_team->post_position_id);
+            $ex_bg = explode(',',$post_team->post_budget);
+            $ex_ps = explode(',',$post_team->post_person);
+            if(!empty($ex)) {
+                foreach($ex as $index=>$e) {
+                    $positions[] = $e;
+                    if(!empty($ex_bg)) {
+                        $prices[$e] = $ex_bg[$index];
+                    }
+                    if(!empty($ex_ps)) {
+                        $persons[$e] = $ex_ps[$index];
+                    }
+                }
+            }
+        }
+
+        $result_postisions = DB::table('positions')->whereIn('id',$positions)->get();
 
 
 
-//        dd($post_teams);
-        return view('findteam.detail',compact('post_teams','positions'));
+    //    dd($post_teams);
+        return view('findteam.detail',compact('post_team','result_postisions','prices','persons'));
     }
 
     /**

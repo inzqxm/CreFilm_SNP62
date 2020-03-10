@@ -32,113 +32,67 @@
 
 
     <div class="container" style="font-family: Kanit;">
-        <div class="row">
+		<div class="row">
 
-            <div class="col-6">
-                <div class="box-headPage">
-                    <p class="text-left">หาทีม</p>
-                </div>
-            </div><!-- col 1 -->
+			<div class="col-6">
+				<div class="box-headPage">
+					<p class="text-left">หาทีม</p>
+				</div>
+			</div><!-- col 1 -->
 
-            <div class="col-6">
-                <div class="box-buttonCreatTeam">
-                    <a href="/createTeam"><button class="buttonCreatTeam" type="button">สร้างทีม</button></a>
-                </div>
-            </div><!-- col -->
+			<div class="col-6">
+				<div class="box-buttonCreatTeam">
+					<a href="/createTeam"><button class="buttonCreatTeam" type="button">สร้างทีม</button></a>
+				</div>
+			</div><!-- col -->
 
-        </div><!-- row -->
-
-        <div class="row">
-            <div class="col-8">
-
-                <div class="col-md-12">
-
-{{--                    @if(!empty($post_teams))--}}
-                        @foreach($post_teams as $post_team)
-
-                            <div class="box-teammer">
-                                <div class="card" style="border: none;">
-                                    <div class="box-imgCoverTeamBig">
-{{--                                        <div class="box-joinNum">--}}
-{{--                                            <div class="box-textUpImg01">--}}
-{{--                                                <p class="text-center">ผู้ขอเข้าร่วม</p>--}}
-{{--                                            </div>--}}
-{{--                                            <div class="box-textUpImg02">--}}
-{{--                                                <p class="text-center">8</p>--}}
-{{--                                            </div>--}}
-{{--                                            <div class="box-textUpImg03">--}}
-{{--                                                <p class="text-center">/4</p>--}}
-{{--                                            </div>--}}
-{{--                                        </div><!-- box-joinNum -->--}}
-                                        <div class="box-headTeamName">
-                                            <h3>&#9679; {{$post_team->name}}</h3>
-                                        </div><!-- box-headTeamName -->
-                                        <img class="card-img-top" src="/uploads/covers_team/{{$post_team->img_head}}" alt="Cover Team" style="height: 250px;background-position: center;object-fit: cover;">
-                                    </div><!-- box-imgCover -->
-                                    <div class="card-body" style="width: 100%; height: 110px; box-shadow: 0 -0.5px 10px 0 rgba(96, 96, 96, 0.16); border-radius: 15px; margin-top: -100px; background-color: #ffffff; ">
-                                        <a href="#"><img src="/uploads/image/profile_01.jpg" alt="..." class="rounded-circle" style="width: 60px; height: 60px; margin-top: -40px; border: 4px solid #ffffff;background-color: #d0d0d0;border-radius: 50%;background-size: cover;"></a>
-                                        <div class="box-team">
-                                            <div class="mediaCardTeam-body">
-                                                <a href="#"><h5 class="mt-0">{{$post_team->user_name}}</h5></a>
-                                                <div class="row">
-                                                <p style="color: #939393; font-size: 14px; font-weight: lighter; padding-left: 15px;">สถานะ: <code style="color: #39b54a; font-family: Kanit; font-size: 14px;">{{$post_team->status}}</code></p>
-                                                    <p class="offset-md-4" style="color: #939393; font-size: 14px; font-weight: lighter; "></p>
-                                                </div><!-- row -->
-                                            </div><!-- media-body -->
-
-                                            <div class="box-tag-position">
-                                                <button type="button" class="btn text-center">{{$post_team->status}}</button>
-                                                <div class="box-btnViewDetailTeam">
-                                                    <a href="/findteam/detail/{{$post_team->id}}" class="btn btn-primary">รายละเอียด</a>
-                                                </div>
-                                            </div><!-- box-tag-position -->
-                                        </div><!-- box-team -->
-                                    </div><!-- card-body -->
-                                    <br><br>
-
-                                </div><!-- card -->
-                            </div><!-- box-teammer -->
-
-
-
-                        @endforeach
-
-{{--                    @else--}}
-{{--                        <div class="text-center">--}}
-{{--                            <p> No Team</p>--}}
-{{--                        </div>--}}
-{{--                        <div class="text-center">--}}
-{{--                            <p style="color: #d0d0d0"> - โปรดสร้างทีมของคุณ -</p>--}}
-{{--                        </div>--}}
-{{--                    @endif--}}
-
-                </div><!-- col-md-12 -->
+		</div><!-- row -->
 
 
 
 
-            </div><!-- col -->
+		<div class="row">
 
-            <div class="col-4">
-                <div class="col-md-10 boxListCheckPosition">
-                    <form role="form" action="{{action('FindteamController@show')}}" method="post">
-                        {{csrf_field()}}
-                        <div class="card bg-white text-white" style="width: 280px; padding-bottom: 20px; border-radius: 15px; border: 2px solid #fbb040; box-shadow: 0 0 10px 0 rgba(96, 96, 96, 0.16);">
+				<div class="col-md-3 boxListCheckPosition">
+					<div class="boxFindTeamsSearch">
+						<div class="card-img-overlayy">
+						  	<h4 class="text-center" style="font-size: 18px; font-weight: bold; padding-top: 10px; color: #000000;">ตัวกรอง</h4>
+						  	<!-- <br> = เว้นบรรทัด -->
+						  	<!-- line -->
+						  	<hr style="border: solid 0.5px #fbb040; width: 90%">
+						    <h5 class="text-left" style="font-size: 16px; color: #000000; font-weight: bold; padding-left: 20px;">เลือกตำแหน่งจากที่สนใจ</h5>
+						</div>
 
-                            <form action="/search" method="get">
+						<div class="input-group">
+							  <select class="custom-select" id="inputGroupSelect04" aria-label="Example select with button addon">
+								    <option selected>ค้นหาอาชีพที่ท่านสนใจ</option>
+								    <option value="1">ผู้กำกับนักแสดง</option>
+								    <option value="2">ผู้กำกับฝ่ายศิลป์</option>
+								    <option value="3">ผู้กำกับภาพ</option>
+								    <option value="3">ผู้กำกับเสียง</option>
+								    <option value="3">ผู้ช่วยผู้กำกับ</option>
+								    <option value="3">ผู้กำกับ</option>
+								    <option value="3">ผู้ดูแลอุปกรณ์ประกอบฉาก</option>
+								    <option value="3">ผู้ดูแลไมค์บูม</option>
+								    <option value="3">ผู้ตัดต่อลำดับภาพ</option>
+								    <option value="3">ผู้บันทึกเสียงและมิกซ์เสียง</option>
+								    <option value="3">ผู้ปรับแต่งสี</option>
+								    <option value="3">ผู้ปรับโฟกัสระยะถ่าย</option>
+								    <option value="3">ผู้ออกแบบเครื่องแต่งกาย</option>
+								    <option value="3">ผู้แต่งหน้าและทำผม</option>
+								    <option value="3">ผู้ควบคุมแสง</option>
+								    <option value="3">ช่างภาพเบื้องหลัง</option>
+								    <option value="3">ผู้เขียนบท</option>
+								    <option value="3">ผู้อำนวยการสร้าง</option>
+								    <option value="3">นักแสดงหญิง</option>
+								    <option value="3">นักแสดงชาย</option>
+								    <option value="3">ผู้จัดหาสถานที่ถ่ายทำ</option>
+                              </select>
 
-                            <div class="card-img-overlayy">
-                                <h4 class="text-center" style="font-size: 18px; font-weight: bold; padding-top: 10px; color: #000000;">ตัวกรอง</h4>
-                                <!-- <br> = เว้นบรรทัด -->
-                                <!-- line -->
-                                <hr style="border: solid 0.5px #fbb040; width: 90%">
-                                <h5 class="text-left" style="font-size: 16px; color: #000000; font-weight: bold; padding-left: 20px;">เลือกตำแหน่งจากที่สนใจ</h5>
-                            </div>
-
-
-                            <div class="box-checkboxx">
-
-                                @foreach ($positions as $row)
+							  <div class="input-group-append">
+							    <button class="btn btn-outline-secondary" type="button">ค้นหา</button>
+                              </div>
+                              {{-- @foreach ($positions as $row)
 
                                     <div class="box-checkListPosition">
                                         <label class="fillterCheck" style="font-size: 15px;">{{$row->position_name}}
@@ -148,16 +102,15 @@
                                     </div>
 
 
-                                @endforeach
-                                {{-- <button id="findBtn" type="submit" >search</button> --}}
+                                @endforeach --}}
+						</div>
 
-                            </div><!-- box-checkboxx -->
+						<div class="row">
 
-
-                            <div class="box-moneylow" style="width:250px;">
-                                <h5 class="text-left">เลือกรายได้ขั้นต่ำ</h5>
-                                <select class="custom-select" style="border-radius: 18px;background-color: #f4f4f4;color: #d0d0d0;border: none;">
-                                    <option selected>Choose...</option>
+							<div class="col-md-12 col-6 box-moneylow">
+								<h5 class="text-left">เลือกรายได้ขั้นต่ำ</h5>
+								<select class="custom-select" style="border-radius: 18px;background-color: #f4f4f4;color: #d0d0d0;border: none;">
+                                    <option selected>เลือกรายได้ขั้นต่ำ</option>
                                     <option value="300">300</option>
                                     <option value="400">400</option>
                                     <option value="500">500</option>
@@ -165,23 +118,23 @@
                                     <option value="700">700</option>
                                     <option value="800">800</option>
                                     <option value="900">900</option>
-                                    <option value="1,000">1,000</option>
-                                    <option value="2,000">2,000</option>
-                                    <option value="3,000">3,000</option>
-                                    <option value="4,000">4,000</option>
-                                    <option value="5,000">5,000</option>
-                                    <option value="10,000">10,000</option>
-                                    <option value="15,000">15,000</option>
-                                    <option value="20,000">20,000</option>
-                                    <option value="25,000">25,000</option>
-                                    <option value="30,000">30,000</option>
+                                    <option value="1000">1,000</option>
+                                    <option value="2000">2,000</option>
+                                    <option value="3000">3,000</option>
+                                    <option value="4000">4,000</option>
+                                    <option value="5000">5,000</option>
+                                    <option value="10000">10,000</option>
+                                    <option value="15000">15,000</option>
+                                    <option value="20000">20,000</option>
+                                    <option value="25000">25,000</option>
+                                    <option value="30000">30,000</option>
                                 </select>
-                            </div>
+							</div><!-- box-moneylow -->
 
-                            <div class="box-moneylow" style="width:250px;">
-                                <h5 class="text-left">เลือกรายได้สูงสุด</h5>
-                                <select class="custom-select" style="border-radius: 18px;background-color: #f4f4f4;color: #d0d0d0;border: none;">
-                                    <option selected>Choose...</option>
+							<div class="col-md-12 col-6 box-moneyhight">
+								<h5 class="text-left">เลือกรายได้ขั้นสูงสุด</h5>
+								<select class="custom-select" style="border-radius: 18px;background-color: #f4f4f4;color: #d0d0d0;border: none;">
+                                    <option selected>เลือกรายได้ขั้นสูงสุด</option>
                                     <option value="300">300</option>
                                     <option value="400">400</option>
                                     <option value="500">500</option>
@@ -189,37 +142,125 @@
                                     <option value="700">700</option>
                                     <option value="800">800</option>
                                     <option value="900">900</option>
-                                    <option value="1,000">1,000</option>
-                                    <option value="2,000">2,000</option>
-                                    <option value="3,000">3,000</option>
-                                    <option value="4,000">4,000</option>
-                                    <option value="5,000">5,000</option>
-                                    <option value="10,000">10,000</option>
-                                    <option value="15,000">15,000</option>
-                                    <option value="20,000">20,000</option>
-                                    <option value="25,000">25,000</option>
-                                    <option value="30,000">30,000</option>
+                                    <option value="1000">1,000</option>
+                                    <option value="2000">2,000</option>
+                                    <option value="3000">3,000</option>
+                                    <option value="4000">4,000</option>
+                                    <option value="5000">5,000</option>
+                                    <option value="10000">10,000</option>
+                                    <option value="15000">15,000</option>
+                                    <option value="20000">20,000</option>
+                                    <option value="25000">25,000</option>
+                                    <option value="30000">30,000</option>
                                 </select>
+							</div><!-- box-moneyhight -->
+						</div><!-- row -->
 
-                                <div class="box-selectposition">
-                                    <input class="btn btn-primary" id="findBtn" type="submit" value="กรอง">
-                                </div><!-- box-selectposition -->
+						<div class="box-selectposition">
+							<a href="#"><input class="btn btn-primary" type="submit" value="กรอง"></a>
+						</div><!-- box-selectposition -->
 
+				  	</div><!-- card -->
+				</div><!-- col-md-10 -->
 
+			<div class="col-md-9 boxTeams">
+                <div class="row">
+
+                    @foreach($post_teams as $post_team)
+                        <div class="col-md-6 col-12">
+                            <div class="boxTeamsText">
+                                <div class="box-teammer">
+                                    <div class="card" style="border: none;">
+                                        <div class="box-imgCoverTeamBig">
+                                            <div class="box-joinNum">
+                                                <!-- <div class="box-textUpImg01"> -->
+                                                    <p class="text-center">ผู้ขอเข้าร่วม</p>
+                                                <!-- </div> -->
+                                                <div class="box-textUpImg02">
+                                                    <p class="text-center">-</p>
+                                                </div>
+                                                <div class="box-textUpImg03">
+                                                    <p class="text-center">/-</p>
+                                                </div>
+                                            </div><!-- box-joinNum -->
+                                            <div class="box-headTeamName">
+                                                <a href="/findteam/detail/{{$post_team->id}}" style="text-decoration:none;"><h3>&#9679; {{$post_team->name}}</h2></a>
+                                            </div><!-- box-headTeamName -->
+                                            <img class="card-img-top" src="/uploads/covers_team/{{$post_team->img_head}}" alt="Card image cap">
+                                        </div><!-- box-imgCover -->
+                                        <div class="card-body boxTeamsFindPage">
+                                            <div class="boxImgCoverTeams">
+                                                <a href="/profile/{id}"><img src="/uploads/image/profile_01.jpg" alt="..." class="rounded-circle" style="width:50px;height:50px;"></a>
+                                            </div>
+                                            <div class="box-team">
+                                                <div class="mediaCardTeam-body">
+                                                        <a href="/profile/{id}" style="text-decoration:none;"><h5 class="mt-0">{{$post_team->user_name}}</h5></a>
+                                                        <div class="row text-center">
+                                                            <!-- <div class="bb"> -->
+                                                                <p style="color: #939393; font-size: 14px; font-weight: lighter; padding-left: 15px; ">สถานะ: <code style="color: #39b54a; font-family: Kanit; font-size: 14px;"> {{$post_team->status}}</code></p>
+                                                                {{-- <p class="offset-md-3" style="color: #939393; font-size: 14px; font-weight: lighter; ">| ฿500 - 5,000 บาท</p> --}}
+                                                            <!-- </div> -->
+                                                        </div><!-- row -->
+                                                </div><!-- media-body -->
+                                                <div class="row">
+                                                    <div class="col-md-8 offset-md-3">
+                                                        <div class="box-tag-position">
+                                                            {{-- <a href="#"><button type="button" class="btn btn text-center">โฟกัส</button></a> --}}
+                                                        </div><!-- box-tag-position -->
+
+                                                    </div>
+                                                    <div class="col-md-12" style="float:left">
+                                                        <div class="box-btnViewDetailTeam d-none d-md-block" style="padding-top:50px;">
+                                                            <a href="/findteam/detail/{{$post_team->id}}" class="btn btn-primary">รายละเอียด</a>
+                                                        </div>
+                                                        <div class="box-btnViewDetailTeamm d-md-none">
+                                                            <a href="/findteam/detail/{{$post_team->id}}" class="btn btn-primary"><i class="fas fa-chevron-right"></i></a>
+                                                        </div>
+                                                    </div>
+                                                </div>
+
+                                            </div><!-- box-team -->
+                                        </div><!-- card-body -->
+
+                                    </div><!-- card -->
+                                </div><!-- box-teammer -->
                             </div>
-
-                        </form>
-
-
-
-                        </div><!-- card -->
-                    </form>
-                </div><!-- col-md-10 -->
-            </div><!-- col-4 -->
-
-        </div><!-- row -->
+                        </div><!-- col-6 -->
+                    @endforeach
 
 
-    </div><!-- container -->
+                    {{-- <div class="col-12">
+                    	<div class="col-md-3 offset-md-4 boxNextPageView">
+							<nav aria-label="...">
+								<ul class="pagination">
+								    <li class="page-item disabled">
+								      <a class="page-link" href="findTeam.html" tabindex="-1" style="color: #000000;">Previous</a>
+								    </li>
+
+								    <li class="page-item active" style="background-color: #fbb040;"><a class="page-link" href="findTeam.html" style="color: #ffffff; background-color: #fbb040; border: none;">1</a></li>
+
+								    <li class="page-item">
+								      <a class="page-link" href="findTeamSecond.html" style="color: #939393;">2 <span class="sr-only" style="color: #939393;">(current)</span></a>
+								    </li>
+
+								    <li class="page-item" style="color: #939393;"><a class="page-link" href="findTeamThird.html" style="color: #939393;">3</a></li>
+
+								    <li class="page-item">
+								      <a class="page-link" href="#" style="color: #000000;">Next</a>
+								    </li>
+								</ul>
+							</nav>
+
+						</div><!-- col-md-3 offset-md-5 -->
+                    </div> --}}
+
+                </div><!-- row -->
+            </div><!-- col-9 -->
+
+
+		</div><!-- row -->
+
+
+	</div><!-- container -->
 
 @endsection

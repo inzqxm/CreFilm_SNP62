@@ -17,9 +17,6 @@ use Illuminate\Support\Facades\Route;
 
 Auth::routes();
 
-//Route::get('/', function () {
-//    return view('HomeController@index');
-//});
 
 Route::get('/','HomeController@index');
 
@@ -28,7 +25,7 @@ Route::get('/findteam','FindteamController@index');
 
 Route::resource('/createTeam', 'PositionController');
 
-Route::post('/findteam/search','FindteamController@show');
+// Route::post('/findteam/search','FindteamController@show');
 Route::get('/findteam/detail/{id}','TeamController@show');
 
 //Route::get('/findTeam/detail/{username}','TeamController@show');

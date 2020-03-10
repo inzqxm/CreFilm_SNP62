@@ -76,110 +76,92 @@ class PositionController extends Controller
 
         // ------------pre-----------
         if(!empty($request->pre_position_id)){
-                $pre_id = '';
+            $pre_id = [];
             foreach($request->pre_position_id as $key => $position_id){
-                if($key != 0){
-                    $pre_id = $pre_id.','.$position_id;
-                }else{
-                    $pre_id = $position_id;
+                if($position_id != 0){
+                    $pre_id[] = $position_id;
                 }
             }
+            $pre_id = implode(',',$pre_id);
         }
+
         if(!empty($request->pre_person)){
-            $pre_ps = '';
-            foreach($request->pre_person as $key => $person){
-                if($person != 0){
-                    if($key != 0){
-                        $pre_ps = $pre_ps.','.$person;
-                    }else{
-                        $pro_ps = $person;
-                    }
+            $pre_ps = [];
+            foreach($request->pre_person as $key => $position_id){
+                if($position_id != 0){
+                    $pre_ps[] = $position_id;
                 }
             }
+            $pre_ps = implode(',',$pre_ps);
         }
         if(!empty($request->pre_budget)){
-            $pre_bg = '';
-            foreach($request->pre_budget as $key => $budget){
-                if($budget != "Choose..."){
-                    if($key != 0){
-                        $pre_bg = $pre_bg.','.$budget;
-                    }else{
-                        $pre_bg = $budget;
-                    }
+            $pre_bg = [];
+            foreach($request->pre_budget as $key => $position_id){
+                if($position_id != "Choose..."){
+                    $pre_bg[] = $position_id;
                 }
             }
+            $pre_bg = implode(',',$pre_bg);
         }
 
         // ------------pro-----------
         if(!empty($request->pro_position_id)){
-            $pro_id = '';
+            $pro_id = [];
             foreach($request->pro_position_id as $key => $position_id){
-                if($key != 0){
-                    $pro_id = $pro_id.','.$position_id;
-                }else{
-                    $pro_id = $position_id;
+                if($position_id != 0){
+                    $pro_id[] = $position_id;
                 }
             }
+            $pro_id = implode(',',$pro_id);
         }
+
         if(!empty($request->pro_person)){
-            $pro_ps = '';
-            foreach($request->pro_person as $key => $person){
-                if($person != 0){
-                    if($key != 0){
-                        $pro_ps = $pro_ps.','.$person;
-                    }else{
-                        $pro_ps = $person;
-                    }
+            $pro_ps = [];
+            foreach($request->pro_person as $key => $position_id){
+                if($position_id != 0){
+                    $pro_ps[] = $position_id;
                 }
             }
+            $pro_ps = implode(',',$pro_ps);
         }
         if(!empty($request->pro_budget)){
-            $pro_bg = '';
-            foreach($request->pro_budget as $key => $budget){
-                if($budget != "Choose..."){
-                    if($key != 0){
-                        $pro_bg = $pro_bg.','.$budget;
-                    }else{
-                        $pro_bg = $budget;
-                    }
+            $pro_bg = [];
+            foreach($request->pro_budget as $key => $position_id){
+                if($position_id != "Choose..."){
+                    $pro_bg[] = $position_id;
                 }
             }
+            $pro_bg = implode(',',$pro_bg);
         }
 
         // ------------post-----------
         if(!empty($request->post_position_id)){
-            $post_id = '';
+            $post_id = [];
             foreach($request->post_position_id as $key => $position_id){
-                if($key != 0){
-                    $post_id = $post_id.','.$position_id;
-                }else{
-                    $post_id = $position_id;
+                if($position_id != 0){
+                    $post_id[] = $position_id;
                 }
             }
+            $post_id = implode(',',$post_id);
         }
+
         if(!empty($request->post_person)){
-            $post_ps = '';
-            foreach($request->post_person as $key => $person){
-                if($person != 0){
-                    if($key != 0){
-                        $post_ps = $post_ps.','.$person;
-                    }else{
-                        $post_ps = $person;
-                    }
+            $post_ps = [];
+            foreach($request->post_person as $key => $position_id){
+                if($position_id != 0){
+                    $post_ps[] = $position_id;
                 }
             }
+            $post_ps = implode(',',$post_ps);
         }
         if(!empty($request->post_budget)){
-            $post_bg = '';
-            foreach($request->post_budget as $key => $budget){
-                if($budget != "Choose..."){
-                    if($key != 0){
-                        $post_bg = $post_bg.','.$budget;
-                    }else{
-                        $post_bg = $budget;
-                    }
+            $post_bg = [];
+            foreach($request->post_budget as $key => $position_id){
+                if($position_id != "Choose..."){
+                    $post_bg[] = $position_id;
                 }
             }
+            $post_bg = implode(',',$post_bg);
         }
 
         $stores = new PostTeam;
