@@ -17,7 +17,7 @@ class PositionController extends Controller
      */
     public function index()
     {
-        $positions = Position::all();
+//        $positions = Position::all();
         $positions = Position::orderBy('created_at','desc')->get();
         return view('findteam.createteam',compact('positions'));
 

@@ -227,7 +227,7 @@
                             </div>
                             <div class="col-md-3">
                                 <h5 class="text-center">กำหนดรายได้</h5>
-                                <p class="text-center" style="color: #6c757d">เลือกอัตรารายได้/วัน</p>
+                                <p class="text-center" style="color: #6c757d">เลือกอัตรารายได้/งาน</p>
                             </div>
                         </div>
                         @foreach ($positions as $row)
@@ -317,7 +317,7 @@
                             </div>
                             <div class="col-md-3">
                                 <h5 class="text-center">กำหนดรายได้</h5>
-                                <p class="text-center" style="color: #6c757d">เลือกอัตรารายได้/วัน</p>
+                                <p class="text-center" style="color: #6c757d">เลือกอัตรารายได้/งาน</p>
                             </div>
                         </div>
 @foreach ($positions as $row)
@@ -396,30 +396,6 @@
             <div class="row setup-content" id="step-5">
                 <div class="col-md-12">
                     <div class="col-md-12">
-                        <div class="col-12">
-                            <h4>รายละเอียดงานโดยรวม</h4>
-                            <p>ต้องการคนมาช่วยเขียนบท และผู้ช่วยผู้กำกับกับช่างภาพลุยงานวันจริง เป็นงานถ่ายโฆษณาแบรนด์ดังจากเกาหลี สามารถ
-                                เลือกวันที่สะดวกได้เลยครับ</p>
-                        </div>
-                        <div class="col-12">
-                            <h4 style="padding-top: 28px;">วันเริ่ม/จบ Project</h4>
-                            <div class="row">
-                                <div class="col-4">
-                                <span style="color: #6c757d">เริ่ม :</span>&nbsp;<span name="start_date"></span>
-                                </div>
-                                <div class="col-4">
-                                <span style="color: #6c757d">สิ้นสุด :</span>&nbsp;<span name="start_date"></span>
-                                </div>
-                            </div>
-                        </div>
-
-                        <div class="col-12">
-                            <h4 style="padding-top: 28px;">รายละเอียดงานโดยรวม</h4>
-
-                             <p id="pre_pos"></p>
-                             {{-- <p id="name1"></p> --}}
-                             <p id="text" style="display:none"></p>
-                        </div>
 
                         <div class="col-12">
                             <h4 style="padding-top: 28px;">ภาพปกของงาน</h4>

@@ -1,5 +1,9 @@
 @extends('layouts.app')
 @section('content')
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css?family=Kanit&display=swap" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+    <script src='https://kit.fontawesome.com/a076d05399.js'></script>
 
     <div class="collapse navbar-collapse" id="navbarNav">
         <ul class="navbar-nav" style="font-family: Kanit; padding-right: 153px;">
@@ -109,7 +113,7 @@
 
 							<div class="col-md-12 col-6 box-moneylow">
 								<h5 class="text-left">เลือกรายได้ขั้นต่ำ</h5>
-								<select class="custom-select" style="border-radius: 18px;background-color: #f4f4f4;color: #d0d0d0;border: none;">
+								<select class="custom-select" style="width: 230px;border-radius: 18px;background-color: #f4f4f4;color: #d0d0d0;border: none;">
                                     <option selected>เลือกรายได้ขั้นต่ำ</option>
                                     <option value="300">300</option>
                                     <option value="400">400</option>
@@ -133,7 +137,7 @@
 
 							<div class="col-md-12 col-6 box-moneyhight">
 								<h5 class="text-left">เลือกรายได้ขั้นสูงสุด</h5>
-								<select class="custom-select" style="border-radius: 18px;background-color: #f4f4f4;color: #d0d0d0;border: none;">
+								<select class="custom-select" style="width: 230px;border-radius: 18px;background-color: #f4f4f4;color: #d0d0d0;border: none;">
                                     <option selected>เลือกรายได้ขั้นสูงสุด</option>
                                     <option value="300">300</option>
                                     <option value="400">400</option>
@@ -167,25 +171,26 @@
                 <div class="row">
 
                     @foreach($post_teams as $post_team)
-                        <div class="col-md-6 col-12">
+                        <br>
+
+                        <div class="col-md-6 col-12 mb-3">
                             <div class="boxTeamsText">
-                                <div class="box-teammer">
-                                    <div class="card" style="border: none;">
+                                <div class="box-teammer" style="">
+                                    <div class="card" style="border: none;box-shadow: 0 -0.5px 10px 0 rgba(96, 96, 96, 0.16);">
                                         <div class="box-imgCoverTeamBig">
-                                            <div class="box-joinNum">
-                                                <!-- <div class="box-textUpImg01"> -->
-                                                    <p class="text-center">ผู้ขอเข้าร่วม</p>
-                                                <!-- </div> -->
-                                                <div class="box-textUpImg02">
-                                                    <p class="text-center">-</p>
-                                                </div>
-                                                <div class="box-textUpImg03">
-                                                    <p class="text-center">/-</p>
-                                                </div>
-                                            </div><!-- box-joinNum -->
-                                            <div class="box-headTeamName">
-                                                <a href="/findteam/detail/{{$post_team->id}}" style="text-decoration:none;"><h3>&#9679; {{$post_team->name}}</h2></a>
-                                            </div><!-- box-headTeamName -->
+{{--                                            <div class="box-joinNum">--}}
+{{--                                                <!-- <div class="box-textUpImg01"> -->--}}
+{{--                                                    <p class="text-center">ผู้ขอเข้าร่วม</p>--}}
+{{--                                                <!-- </div> -->--}}
+{{--                                                <div class="box-textUpImg02">--}}
+{{--                                                    <p class="text-center">-</p>--}}
+{{--                                                </div>--}}
+{{--                                                    @foreach ($result_postisions as $item)--}}
+{{--                                                        <div class="box-textUpImg03">--}}
+{{--                                                            <p class="text-center">/ {{$persons[$item->id]}}</p>--}}
+{{--                                                        </div>--}}
+{{--                                                    @endforeach--}}
+{{--                                            </div><!-- box-joinNum -->--}}
                                             <img class="card-img-top" src="/uploads/covers_team/{{$post_team->img_head}}" alt="Card image cap">
                                         </div><!-- box-imgCover -->
                                         <div class="card-body boxTeamsFindPage">
@@ -194,7 +199,8 @@
                                             </div>
                                             <div class="box-team">
                                                 <div class="mediaCardTeam-body">
-                                                        <a href="/profile/{id}" style="text-decoration:none;"><h5 class="mt-0">{{$post_team->user_name}}</h5></a>
+                                                    <a href="/findteam/detail/{{$post_team->id}}" style="text-decoration:none;color: black;"><h4 style="white-space: nowrap; width: 300px;overflow: hidden;text-overflow: ellipsis;">&#9679; {{$post_team->name}}</h2></a>
+                                                        <a href="/profile/{id}" style="text-decoration:none;"><h5 class="mt-0" style="color: #939393;">โดย: {{$post_team->user_name}}</h5></a>
                                                         <div class="row text-center">
                                                             <!-- <div class="bb"> -->
                                                                 <p style="color: #939393; font-size: 14px; font-weight: lighter; padding-left: 15px; ">สถานะ: <code style="color: #39b54a; font-family: Kanit; font-size: 14px;"> {{$post_team->status}}</code></p>
@@ -209,12 +215,12 @@
                                                         </div><!-- box-tag-position -->
 
                                                     </div>
-                                                    <div class="col-md-12" style="float:left">
-                                                        <div class="box-btnViewDetailTeam d-none d-md-block" style="padding-top:50px;">
+                                                    <div class="col-md-12" >
+                                                        <div class="box-btnViewDetailTeam d-none d-md-block" style="padding-top:50px;text-align: center;">
                                                             <a href="/findteam/detail/{{$post_team->id}}" class="btn btn-primary">รายละเอียด</a>
                                                         </div>
                                                         <div class="box-btnViewDetailTeamm d-md-none">
-                                                            <a href="/findteam/detail/{{$post_team->id}}" class="btn btn-primary"><i class="fas fa-chevron-right"></i></a>
+                                                            <a href="/findteam/detail/{{$post_team->id}}" class="btn btn-primary" style="background-color: #fbb040 !important;border: none;float: right"><i class="fas fa-chevron-right"></i></a>
                                                         </div>
                                                     </div>
                                                 </div>

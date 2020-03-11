@@ -6,6 +6,7 @@ use App\Position;
 use App\PostTeam;
 use App\Team;
 use Illuminate\Http\Request;
+use Illuminate\Support\Facades\Auth;
 use Illuminate\Support\Facades\DB;
 
 class TeamController extends Controller
@@ -50,7 +51,7 @@ class TeamController extends Controller
     public function show($id)
     {
         //
-        // $positions = Position::all();
+        $positions = Position::all();
         $post_team = DB::table('post_teams')
             ->select('post_teams.*',
 
@@ -137,12 +138,12 @@ class TeamController extends Controller
             }
         }
 
-        $result_postisions = DB::table('positions')->whereIn('id',$positions)->get();
+        $result_positions = DB::table('positions')->whereIn('id',$positions)->get();
 
 
 
     //    dd($post_teams);
-        return view('findteam.detail',compact('post_team','result_postisions','prices','persons'));
+        return view('findteam.detail',compact('post_team','positions','result_positions','prices','persons'));
     }
 
     /**
@@ -174,6 +175,37 @@ class TeamController extends Controller
      * @param  \App\Team  $team
      * @return \Illuminate\Http\Response
      */
+    public function join($request)
+    {
+        $team_id = $request->post_fw_id;
+
+        dd($team_id);
+
+        if (!empty($team_id)) {
+            $user_id = Auth::id();
+            $user_joins =  DB::table('join_teams')->where('user_id',$user_id)->first();
+            if (empty($user_joins)) {
+                $joins = [$team_id];
+                $joins = json_encode($joins);
+                DB::table('join_teams')->insert(['user_id'=>$user_id,'joins_id'=>$joins,'created_at'=>Date('Y-m-d H:i:s')]);
+            }
+            else {
+                $joins = json_decode($user_joins->joins_id,TRUE);
+                if (!in_array($team_id, $joins)) {
+                    $joins[] = $team_id;
+                }
+                $joins = json_encode($joins);
+                DB::table('join_teams')->where('user_id',$user_id)->update(['joins_id'=>$joins,'updated_at'=>Date('Y-m-d H:i:s')]);
+            }
+
+            return response([
+                'type'=>'refresh',
+                'message'=>'join success'
+            ],200);
+
+        }
+    }
+
     public function destroy(Team $team)
     {
         //

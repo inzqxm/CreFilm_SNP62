@@ -18,7 +18,7 @@
                 <a class="nav-link" href="/findteam">หาทีม</a>
             </li>
             <li class="nav-item" style="padding-right: 32px;">
-                <a class="nav-link" href="#">รวมคนทำงาน</a>
+                <a class="nav-link" href="/freelance">รวมคนทำงาน</a>
             </li>
             <li class="nav-item" style="padding-right: 32px;">
                 <a class="nav-link disabled" href="/contest">งานประกวด</a>

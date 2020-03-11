@@ -29,6 +29,8 @@ class ProfileController extends Controller
     }
     public function show()
     {
+
+//        $user = User::find($id);
         $positions = Position::all();
 
         $post_teams = DB::table('post_teams')
@@ -72,11 +74,21 @@ class ProfileController extends Controller
 //            'about'=>'required',
 ////            'img_profile'=>'image|max:1999'
 //        ]);
+        $filenameWithExt = $request->file('img_profile')->getClientOriginalName();
+        $filename = pathinfo($filenameWithExt,PATHINFO_FILENAME);
+
+        $extension = $request->file('img_profile')->getClientOriginalName();
+
+        //create new file name
+        $filenameToStore = Date('YmdHis').'_'.$extension;
+
+        //upload
+        $request->file('img_profile')->move('uploads/img_profile',$filenameToStore);
 
         $user = User::find(Auth::id());
         $user->name = $request->input('name');
         $user->about = $request->input('about');
-//        $user->img_profile = $request->input('img_profile');
+        $user->img_profile = $filenameToStore;
 
         $user->save();
 

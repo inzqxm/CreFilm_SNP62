@@ -21,7 +21,7 @@
     <div class="row">
         <div class="col-3">
             <div class="boxImgProfile"style="background-color: #d0d0d0;border-radius: 50%;">
-                <img src="/uploads/image/profile_01.jpg" class="rounded-circle">
+                <img src="/uploads/img_profile/default-avatar.jpg" class="rounded-circle">
             </div>
         </div>
 

@@ -4,6 +4,8 @@ namespace App\Http\Controllers\Auth;
 
 use App\User;
 use App\Http\Controllers\Controller;
+use Faker\Provider\Image;
+use Illuminate\Support\Facades\Auth;
 use Illuminate\Support\Facades\Hash;
 use Illuminate\Support\Facades\Validator;
 use Illuminate\Foundation\Auth\RegistersUsers;
@@ -52,8 +54,10 @@ class RegisterController extends Controller
      */
     protected function validator(array $data)
     {
+
         return Validator::make($data, [
             'name' => ['required', 'string', 'max:255'],
+
             'email' => ['required', 'string', 'email', 'max:255', 'unique:users'],
             'password' => ['required', 'string', 'min:8', 'confirmed'],
         ]);
@@ -67,8 +71,28 @@ class RegisterController extends Controller
      */
     protected function create(array $data)
     {
+//        $request = app('request');
+//        if($request->hasfile('img_profile')){
+//            $img_profile = $request->file('img_profile');
+//            $avatar = Date('YmdHis'). '.' . $img_profile->getClientOriginalExtension();
+//            $request->file('img_profile')->resize(300, 300)->save( public_path('/uploads/img_profile' . $avatar) );
+//        }
+//        dd($avatar);
+
+//        $request = request();
+//
+//        $profileImage = $request->file('img_profile');
+//        $extension = $request->file('img_profile')->getClientOriginalName();
+//        $profileImageSaveAsName = Date('YmdHis').Auth::id()."-profile.".$extension;
+//
+//        $upload_path = '/uploads/img_profile';
+//        $profile_image_url = $upload_path . $profileImageSaveAsName;
+//        $success = $profileImage->move($upload_path, $profileImageSaveAsName);
+//
+//        dd($profile_image_url);
         return User::create([
             'name' => $data['name'],
+//            'img_profile' => $profile_image_url,
             'email' => $data['email'],
             'password' => Hash::make($data['password']),
         ]);

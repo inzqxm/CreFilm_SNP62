@@ -2,9 +2,6 @@
 @section('content')
 
 
-
-
-
     <div class="container" style="font-family: Kanit;">
 		<div class="row">
 
@@ -325,23 +322,23 @@
 
 
         <div class="row">
-            @if(!empty($result_postisions))
-                @foreach ($result_postisions as $item)
-                <div class="col-md-3 col-6">
+            @if(!empty($result_positions))
+                @foreach ($result_positions as $item)
+                <div class="col-md-3 col-6" style="float: left;padding:20px;">
                     <div class="boxImgPositionInDetail col-12" style="width: 100%; height: 165px;">
                         <img src="/uploads/image/positionCameraMan_in_Team_01.jpg" style="width: 100%; height: auto;" class="boxCardPosition text-center">
                     </div>
                     <div class="boxInCardPositionn text-center col-12" style="float:left;">
-                        <h3>{{$item->position_name}}</h3>
-                    <h5>
+                        <h5>{{$item->position_name}}</h5>
+                    <h6 style="color: #fbb040;">
                         <em>
                             @if(isset($prices[$item->id]))
-                                {!! $prices[$item->id] !!}
+                                {!! $prices[$item->id] !!} บาท/งาน
                             @else
-                                -
+                                ไม่ระบุ
                             @endif
                         </em>
-                    </h5>
+                    </h6>
                     </div>
 
                     <div class="row boxNumberJoinDetailTeam text-center col-12" style="float:left;">
@@ -355,8 +352,13 @@
                                 </div>
                     </div><!-- row -->
                     <div class="boxBTNJoinInTeam">
-                        <form action="">
+                        <form method="POST"
+{{--                              action="{{action('TeamController@join')}}" --}}
+                        >
+                            {{csrf_field()}}
                             <button class="btn btn-lg col-12" type="submit" style="background-color: #fbb040;color: #fff;border-radius: 25px;float:left">เข้าร่วม</button>
+{{--                            {!! \App\Utils\Helper::check_join_btn($exits_page->id) !!} เรียกใช้ปุ่ม join & post ที่เราสร้างไว้เช็คใน Helper--}}
+{{--                            <h2></h2>--}}
                         </form>
                     </div>
                 </div><!-- col-md-3 -->
@@ -369,6 +371,24 @@
 
 
 	</div><!-- container -->
+
+    @push('scripts')
+        <script>
+            $(document).ready(function() {
+                $(document).on("click","#btn-join",function() {
+                    var cate_id = $(this).attr('data-cate');
+                    $.ajax({
+                        type: "POST",
+                        url: "/user-join",
+                        data: {cate_id:cate_id},
+                        success: function(res) {
+                            window.location.reload(true);
+                        }
+                    });
+                });
+
+            });
+        </script>
 
 
 @endsection
